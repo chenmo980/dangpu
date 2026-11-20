@@ -1,0 +1,19 @@
+# 原作逆向产物 —— 严禁入库（版权红线）
+source/
+decompiled/
+analysis/
+art-iteration/ref-study/
+study.cany/
+
+# 构建产物
+bin/
+obj/
+*.log
+publish/
+LOCK
+
+# 系统
+Thumbs.db
+.DS_Store
+__pycache__/
+*.pyc

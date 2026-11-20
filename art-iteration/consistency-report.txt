@@ -1,0 +1,10 @@
+《掌眼·当铺》当品库一致性核对报告
+生成时间: 2026-11-20 06:20
+CSV 条目: 120 | 图集帧: 120
+
+品类分布: 银器20件, 皮货20件, 字画20件, 瓷器20件, 钟表20件, 玉器20件
+
+[OK] 完全一致: CSV 120 条 <-> 图集 120 帧, 无一缺失、无一多余
+
+图集文件: pixel-art\pawnshop-icons2\pawnshop-atlas-120.png (410x342)
+Unity 切片: cell 34px, offset 2px (pawnshop-atlas-120.json)

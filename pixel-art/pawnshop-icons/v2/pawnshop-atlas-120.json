@@ -1,0 +1,858 @@
+{
+ "meta": {
+  "app": "pawnshop icon pipeline v2",
+  "image": "pawnshop-atlas-120.png",
+  "size": {
+   "w": 410,
+   "h": 342
+  },
+  "scale": "1",
+  "unity_grid": {
+   "cellSize": 34,
+   "offset": 2,
+   "padding": 2
+  }
+ },
+ "frames": [
+  {
+   "name": "album_leaf",
+   "x": 2,
+   "y": 2,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "album_thumbed",
+   "x": 36,
+   "y": 2,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "archer_ring_feicui",
+   "x": 70,
+   "y": 2,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "astrolabe",
+   "x": 104,
+   "y": 2,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "axe_jade_broken",
+   "x": 138,
+   "y": 2,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "bangle_jade_white",
+   "x": 172,
+   "y": 2,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "barometer",
+   "x": 206,
+   "y": 2,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "beads_jade_string",
+   "x": 240,
+   "y": 2,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "bell_silver",
+   "x": 274,
+   "y": 2,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "belt_hook_jade",
+   "x": 308,
+   "y": 2,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "bi_disc_jade",
+   "x": 342,
+   "y": 2,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "boulder_jade_shanzi",
+   "x": 376,
+   "y": 2,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "bowl_bq_longkou",
+   "x": 2,
+   "y": 36,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "bowl_celadon_lotus",
+   "x": 36,
+   "y": 36,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "bowl_cracked_junk",
+   "x": 70,
+   "y": 36,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "bowl_doucai_chicken",
+   "x": 104,
+   "y": 36,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "bowl_silver",
+   "x": 138,
+   "y": 36,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "bowl_wucai",
+   "x": 172,
+   "y": 36,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "bracelet_silver",
+   "x": 206,
+   "y": 36,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "bracer_leather",
+   "x": 240,
+   "y": 36,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "brush_washer_jade",
+   "x": 274,
+   "y": 36,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "buddha_silver",
+   "x": 308,
+   "y": 36,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "calligraphy_seal",
+   "x": 342,
+   "y": 36,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "calligraphy_verse",
+   "x": 376,
+   "y": 36,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "carving_jade_buddha",
+   "x": 2,
+   "y": 70,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "censer_jun_purple",
+   "x": 36,
+   "y": 70,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "censer_silver",
+   "x": 70,
+   "y": 70,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "chopsticks_silver",
+   "x": 104,
+   "y": 70,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "cicada_jade_han",
+   "x": 138,
+   "y": 70,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "clock_carriage",
+   "x": 172,
+   "y": 70,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "clock_cuckoo",
+   "x": 206,
+   "y": 70,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "clock_grandfather_knock",
+   "x": 240,
+   "y": 70,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "clock_mantel",
+   "x": 274,
+   "y": 70,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "clock_tallcase",
+   "x": 308,
+   "y": 70,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "clock_turret",
+   "x": 342,
+   "y": 70,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "clock_wall_round",
+   "x": 376,
+   "y": 70,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "compass_marine",
+   "x": 2,
+   "y": 104,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "cong_jade",
+   "x": 36,
+   "y": 104,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "couplet_pair",
+   "x": 70,
+   "y": 104,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "cow_hide",
+   "x": 104,
+   "y": 104,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "crown_silver",
+   "x": 138,
+   "y": 104,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "cup_celadon_pair",
+   "x": 172,
+   "y": 104,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "cup_jade",
+   "x": 206,
+   "y": 104,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "cup_silver",
+   "x": 240,
+   "y": 104,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "deer_pelt",
+   "x": 274,
+   "y": 104,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "earring_silver",
+   "x": 308,
+   "y": 104,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "fan_broken",
+   "x": 342,
+   "y": 104,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "fan_folded",
+   "x": 376,
+   "y": 104,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "fan_round",
+   "x": 2,
+   "y": 138,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "fox_collar",
+   "x": 36,
+   "y": 138,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "fox_pelt",
+   "x": 70,
+   "y": 138,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "fur_coat",
+   "x": 104,
+   "y": 138,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "fur_gloves",
+   "x": 138,
+   "y": 138,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "fur_hat",
+   "x": 172,
+   "y": 138,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "hairpin_jade",
+   "x": 206,
+   "y": 138,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "hairpin_silver",
+   "x": 240,
+   "y": 138,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "handscroll",
+   "x": 274,
+   "y": 138,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "horse_hide",
+   "x": 308,
+   "y": 138,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "hourglass",
+   "x": 342,
+   "y": 138,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "ingot_large",
+   "x": 376,
+   "y": 138,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "ingot_mid",
+   "x": 2,
+   "y": 172,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "ingot_small",
+   "x": 36,
+   "y": 172,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "jar_bq_guang",
+   "x": 70,
+   "y": 172,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "jar_celadon_buried",
+   "x": 104,
+   "y": 172,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "junk_jade_scraps",
+   "x": 138,
+   "y": 172,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "knife_silver",
+   "x": 172,
+   "y": 172,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "lock_silver",
+   "x": 206,
+   "y": 172,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "metronome",
+   "x": 240,
+   "y": 172,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "mirror_jade_bronze_back",
+   "x": 274,
+   "y": 172,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "mirror_silver",
+   "x": 308,
+   "y": 172,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "orrery_planet",
+   "x": 342,
+   "y": 172,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "otter_pelt",
+   "x": 376,
+   "y": 172,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "pack_leather",
+   "x": 2,
+   "y": 206,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "pads_leather",
+   "x": 36,
+   "y": 206,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "painting_bamboo",
+   "x": 70,
+   "y": 206,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "painting_fish",
+   "x": 104,
+   "y": 206,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "painting_horses",
+   "x": 138,
+   "y": 206,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "painting_orchid",
+   "x": 172,
+   "y": 206,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "peach_jade",
+   "x": 206,
+   "y": 206,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "pendant_jade_gu",
+   "x": 240,
+   "y": 206,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "pipe_jade",
+   "x": 274,
+   "y": 206,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "pipe_silver",
+   "x": 308,
+   "y": 206,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "plate_bq_fish",
+   "x": 342,
+   "y": 206,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "plate_ru_celadon",
+   "x": 376,
+   "y": 206,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "portrait_ancestor",
+   "x": 2,
+   "y": 240,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "pot_zisha",
+   "x": 36,
+   "y": 240,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "rabbit_bundle",
+   "x": 70,
+   "y": 240,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "ring_silver",
+   "x": 104,
+   "y": 240,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "rubbing",
+   "x": 138,
+   "y": 240,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "ruyi_jade",
+   "x": 172,
+   "y": 240,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "sable_pelt",
+   "x": 206,
+   "y": 240,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "sable_stole",
+   "x": 240,
+   "y": 240,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "saddle_leather",
+   "x": 274,
+   "y": 240,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "scroll_broken",
+   "x": 308,
+   "y": 240,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "scroll_flowers",
+   "x": 342,
+   "y": 240,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "scroll_imperial",
+   "x": 376,
+   "y": 240,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "scroll_landscape",
+   "x": 2,
+   "y": 274,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "scroll_spring",
+   "x": 36,
+   "y": 274,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "seal_jade",
+   "x": 70,
+   "y": 274,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "sextant",
+   "x": 104,
+   "y": 274,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "sheep_pelt",
+   "x": 138,
+   "y": 274,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "sundial_desk",
+   "x": 172,
+   "y": 274,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "teapot_silver",
+   "x": 206,
+   "y": 274,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "tiger_pelt",
+   "x": 240,
+   "y": 274,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "vase_bq_guan",
+   "x": 274,
+   "y": 274,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "vase_bq_meiping",
+   "x": 308,
+   "y": 274,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "vase_bq_yuhuchun",
+   "x": 342,
+   "y": 274,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "vase_fencai",
+   "x": 376,
+   "y": 274,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "vase_guan_ge_kai",
+   "x": 2,
+   "y": 308,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "vase_langhong",
+   "x": 36,
+   "y": 308,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "vase_ruyao_tianqing",
+   "x": 70,
+   "y": 308,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "watch_chain_gold",
+   "x": 104,
+   "y": 308,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "watch_pocket_broken",
+   "x": 138,
+   "y": 308,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "watch_pocket_gold",
+   "x": 172,
+   "y": 308,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "watch_pocket_silver",
+   "x": 206,
+   "y": 308,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "watch_wrist_leather",
+   "x": 240,
+   "y": 308,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "waterskin",
+   "x": 274,
+   "y": 308,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "wolf_pelt",
+   "x": 308,
+   "y": 308,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "yuanbao",
+   "x": 342,
+   "y": 308,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "name": "zun_tang_sancai",
+   "x": 376,
+   "y": 308,
+   "w": 32,
+   "h": 32
+  }
+ ]
+}

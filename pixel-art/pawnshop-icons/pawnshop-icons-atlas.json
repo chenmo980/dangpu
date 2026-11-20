@@ -1,0 +1,298 @@
+{
+ "meta": {
+  "app": "pawnshop icon pipeline",
+  "image": "pawnshop-icons-atlas.png",
+  "size": {
+   "w": 402,
+   "h": 252
+  },
+  "scale": "1",
+  "unity_grid": {
+   "cellSize": 50,
+   "offset": 2,
+   "padding": 2
+  }
+ },
+ "frames": [
+  {
+   "name": "ingot_small",
+   "x": 2,
+   "y": 2,
+   "w": 48,
+   "h": 48
+  },
+  {
+   "name": "ingot_mid",
+   "x": 52,
+   "y": 2,
+   "w": 48,
+   "h": 48
+  },
+  {
+   "name": "ingot_large",
+   "x": 102,
+   "y": 2,
+   "w": 48,
+   "h": 48
+  },
+  {
+   "name": "yuanbao",
+   "x": 152,
+   "y": 2,
+   "w": 48,
+   "h": 48
+  },
+  {
+   "name": "bracelet_silver",
+   "x": 202,
+   "y": 2,
+   "w": 48,
+   "h": 48
+  },
+  {
+   "name": "hairpin_silver",
+   "x": 252,
+   "y": 2,
+   "w": 48,
+   "h": 48
+  },
+  {
+   "name": "lock_silver",
+   "x": 302,
+   "y": 2,
+   "w": 48,
+   "h": 48
+  },
+  {
+   "name": "teapot_silver",
+   "x": 352,
+   "y": 2,
+   "w": 48,
+   "h": 48
+  },
+  {
+   "name": "cup_silver",
+   "x": 2,
+   "y": 52,
+   "w": 48,
+   "h": 48
+  },
+  {
+   "name": "chopsticks_silver",
+   "x": 52,
+   "y": 52,
+   "w": 48,
+   "h": 48
+  },
+  {
+   "name": "buddha_silver",
+   "x": 102,
+   "y": 52,
+   "w": 48,
+   "h": 48
+  },
+  {
+   "name": "bell_silver",
+   "x": 152,
+   "y": 52,
+   "w": 48,
+   "h": 48
+  },
+  {
+   "name": "mirror_silver",
+   "x": 202,
+   "y": 52,
+   "w": 48,
+   "h": 48
+  },
+  {
+   "name": "pipe_silver",
+   "x": 252,
+   "y": 52,
+   "w": 48,
+   "h": 48
+  },
+  {
+   "name": "knife_silver",
+   "x": 302,
+   "y": 52,
+   "w": 48,
+   "h": 48
+  },
+  {
+   "name": "bowl_silver",
+   "x": 352,
+   "y": 52,
+   "w": 48,
+   "h": 48
+  },
+  {
+   "name": "earring_silver",
+   "x": 2,
+   "y": 102,
+   "w": 48,
+   "h": 48
+  },
+  {
+   "name": "ring_silver",
+   "x": 52,
+   "y": 102,
+   "w": 48,
+   "h": 48
+  },
+  {
+   "name": "censer_silver",
+   "x": 102,
+   "y": 102,
+   "w": 48,
+   "h": 48
+  },
+  {
+   "name": "crown_silver",
+   "x": 152,
+   "y": 102,
+   "w": 48,
+   "h": 48
+  },
+  {
+   "name": "fox_pelt",
+   "x": 202,
+   "y": 102,
+   "w": 48,
+   "h": 48
+  },
+  {
+   "name": "sable_pelt",
+   "x": 252,
+   "y": 102,
+   "w": 48,
+   "h": 48
+  },
+  {
+   "name": "sheep_pelt",
+   "x": 302,
+   "y": 102,
+   "w": 48,
+   "h": 48
+  },
+  {
+   "name": "wolf_pelt",
+   "x": 352,
+   "y": 102,
+   "w": 48,
+   "h": 48
+  },
+  {
+   "name": "tiger_pelt",
+   "x": 2,
+   "y": 152,
+   "w": 48,
+   "h": 48
+  },
+  {
+   "name": "deer_pelt",
+   "x": 52,
+   "y": 152,
+   "w": 48,
+   "h": 48
+  },
+  {
+   "name": "fox_collar",
+   "x": 102,
+   "y": 152,
+   "w": 48,
+   "h": 48
+  },
+  {
+   "name": "fur_coat",
+   "x": 152,
+   "y": 152,
+   "w": 48,
+   "h": 48
+  },
+  {
+   "name": "fur_gloves",
+   "x": 202,
+   "y": 152,
+   "w": 48,
+   "h": 48
+  },
+  {
+   "name": "fur_hat",
+   "x": 252,
+   "y": 152,
+   "w": 48,
+   "h": 48
+  },
+  {
+   "name": "horse_hide",
+   "x": 302,
+   "y": 152,
+   "w": 48,
+   "h": 48
+  },
+  {
+   "name": "cow_hide",
+   "x": 352,
+   "y": 152,
+   "w": 48,
+   "h": 48
+  },
+  {
+   "name": "rabbit_bundle",
+   "x": 2,
+   "y": 202,
+   "w": 48,
+   "h": 48
+  },
+  {
+   "name": "otter_pelt",
+   "x": 52,
+   "y": 202,
+   "w": 48,
+   "h": 48
+  },
+  {
+   "name": "sable_stole",
+   "x": 102,
+   "y": 202,
+   "w": 48,
+   "h": 48
+  },
+  {
+   "name": "bracer_leather",
+   "x": 152,
+   "y": 202,
+   "w": 48,
+   "h": 48
+  },
+  {
+   "name": "saddle_leather",
+   "x": 202,
+   "y": 202,
+   "w": 48,
+   "h": 48
+  },
+  {
+   "name": "pack_leather",
+   "x": 252,
+   "y": 202,
+   "w": 48,
+   "h": 48
+  },
+  {
+   "name": "waterskin",
+   "x": 302,
+   "y": 202,
+   "w": 48,
+   "h": 48
+  },
+  {
+   "name": "pads_leather",
+   "x": 352,
+   "y": 202,
+   "w": 48,
+   "h": 48
+  }
+ ]
+}
