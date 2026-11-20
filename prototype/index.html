@@ -2,64 +2,59 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<title>掌眼·当铺 M0.5 原型</title>
+<title>掌眼·当铺 M0.9 竖切</title>
 <style>
 :root{
   --ink:#292234; --xuanqing:#3D3B4F; --dailan:#425066; --zhusa:#C3272B;
-  --yanzhi:#9D2933; --tenghuang:#FFB61E; --yuebai:#D6ECF0; --zhihuang:#E8D7B0;
-  --hutao:#8C5B3F; --zitan:#4C2A20; --dailv:#2B4A3D; --jingao:#FFB61E;
+  --yanzhi:#9D2933; --jingao:#FFB61E; --yuebai:#D6ECF0; --zhihuang:#E8D7B0;
+  --hutao:#8C5B3F; --zitan:#4C2A20; --dailv:#2B4A3D;
 }
 *{margin:0;padding:0;box-sizing:border-box;user-select:none}
 body{background:var(--xuanqing);color:var(--zhihuang);font-family:"Microsoft YaHei",sans-serif;
-     display:flex;justify-content:center;min-height:100vh;image-rendering:pixelated}
+     display:flex;justify-content:center;min-height:100vh}
 #game{width:1000px;display:flex;flex-direction:column;border-left:3px solid var(--ink);border-right:3px solid var(--ink);background:var(--dailan)}
-/* 顶部 HUD */
-#hud{display:flex;gap:14px;padding:10px 16px;background:var(--ink);border-bottom:2px solid var(--zitan);
-     font-size:15px;align-items:center;flex-wrap:wrap}
-#hud .tag{background:var(--zitan);padding:3px 10px;border-radius:3px;border:1px solid #6a5a48}
+#hud{display:flex;gap:10px;padding:10px 16px;background:var(--ink);border-bottom:2px solid var(--zitan);
+     font-size:14px;align-items:center;flex-wrap:wrap}
+#hud .tag{background:var(--zitan);padding:3px 9px;border-radius:3px;border:1px solid #6a5a48}
 #hud .warn{color:#ff9a8a;border-color:#8e4a3a}
-#evidence-bar{flex:1;min-width:160px;height:14px;background:#241f2e;border:1px solid var(--zitan);position:relative}
+#evidence-bar{flex:1;min-width:150px;height:13px;background:#241f2e;border:1px solid var(--zitan);position:relative}
 #evidence-fill{height:100%;background:linear-gradient(90deg,var(--yanzhi),var(--zhusa));width:0%}
 #evidence-text{position:absolute;right:4px;top:-1px;font-size:11px;color:#f0d0c0}
-/* 柜台区 */
-#counter{min-height:340px;padding:18px;position:relative;
+#counter{min-height:330px;padding:18px;position:relative;
   background:linear-gradient(180deg,var(--dailan) 0%,var(--dailan) 62%,var(--hutao) 62%,#5C3A21 100%)}
-#customer-card{position:absolute;left:36px;top:40px;width:640px}
+#customer-card{position:absolute;left:36px;top:36px;width:630px}
 #customer-name{font-size:18px;color:var(--jingao);margin-bottom:8px;text-shadow:1px 1px 0 #000}
-#item-row{display:flex;gap:16px;align-items:center;background:rgba(0,0,0,.25);padding:12px;border:1px solid var(--hutao);min-height:130px}
+#item-row{display:flex;gap:16px;align-items:center;background:rgba(0,0,0,.25);padding:12px;border:1px solid var(--hutao);min-height:128px}
 #item-icon{width:96px;height:96px;image-rendering:pixelated;background:#23252B;border:2px solid var(--hutao);flex-shrink:0}
-#item-info{font-size:15px;line-height:1.7}
-#appraise-result{margin-top:6px;font-size:14px;color:#c8e8c0;white-space:pre-line;min-height:20px}
-/* 按钮区 */
-#actions{display:flex;gap:10px;padding:14px 18px;background:#6B4423;border-top:2px solid #A9764F;flex-wrap:wrap}
-button{font-family:inherit;font-size:15px;padding:10px 18px;cursor:pointer;
+#item-info{font-size:15px;line-height:1.65}
+#appraise-result{margin-top:5px;font-size:14px;color:#c8e8c0;white-space:pre-line}
+#sidebar{position:absolute;right:14px;top:36px;width:286px;font-size:13px}
+#sidebar .panel{background:rgba(0,0,0,.3);border:1px solid var(--hutao);margin-bottom:10px;max-height:170px;overflow:auto}
+#sidebar .panel h3{background:var(--zitan);padding:4px 10px;font-size:13px;color:var(--jingao)}
+#sidebar .panel ul{list-style:none;padding:5px 10px}
+#sidebar .panel li{padding:2px 0;border-bottom:1px dashed #6a5a48}
+#actions{display:flex;gap:8px;padding:12px 16px;background:#6B4423;border-top:2px solid #A9764F;flex-wrap:wrap}
+button{font-family:inherit;font-size:14px;padding:9px 14px;cursor:pointer;
   background:var(--zhihuang);color:#4A3A20;border:2px solid var(--ink);border-radius:2px}
 button:hover{filter:brightness(1.1)}
 button:disabled{opacity:.4;cursor:not-allowed}
 button.bargain{background:var(--dailv);color:var(--yuebai)}
 button.reject{background:var(--yanzhi);color:#F0E6D0}
 button.appraise{background:var(--jingao);color:#4A3A20}
-/* 侧栏 */
-#sidebar{position:absolute;right:14px;top:40px;width:280px;font-size:13px}
-#sidebar .panel{background:rgba(0,0,0,.3);border:1px solid var(--hutao);margin-bottom:10px;max-height:200px;overflow:auto}
-#sidebar .panel h3{background:var(--zitan);padding:5px 10px;font-size:13px;color:var(--jingao)}
-#sidebar .panel ul{list-style:none;padding:6px 10px}
-#sidebar .panel li{padding:2px 0;border-bottom:1px dashed #6a5a48}
-/* 日志 */
-#log{height:120px;overflow:auto;background:#241f2e;padding:8px 14px;font-size:13px;line-height:1.6;border-top:2px solid var(--zitan)}
+button.manage{background:var(--dailan);color:var(--yuebai)}
+#log{height:110px;overflow:auto;background:#241f2e;padding:8px 14px;font-size:13px;line-height:1.55;border-top:2px solid var(--zitan)}
 #log .sys{color:#9fb4c9}
 #log .good{color:#a8d8a0}
 #log .bad{color:#ff9a8a}
 #log .event{color:var(--jingao)}
-/* 遮罩结算 */
-#overlay{position:fixed;inset:0;background:rgba(0,0,0,.75);display:none;justify-content:center;align-items:center;z-index:99}
-#overlay .box{background:var(--zhihuang);color:#3a2a1a;padding:30px 44px;border:3px solid var(--ink);max-width:520px;line-height:2;font-size:16px}
-#overlay .box h2{color:var(--yanzhi);margin-bottom:12px}
-#overlay button{margin-top:14px;font-size:16px}
-.hidden{display:none!important}
-/* 开场说明 */
+#overlay,#shop-overlay{position:fixed;inset:0;background:rgba(0,0,0,.75);display:none;justify-content:center;align-items:center;z-index:99}
+.box{background:var(--zhihuang);color:#3a2a1a;padding:28px 42px;border:3px solid var(--ink);max-width:560px;line-height:1.9;font-size:15px}
+.box h2{color:var(--yanzhi);margin-bottom:10px}
+.box button{margin-top:10px;font-size:15px;margin-right:8px}
+.box table{width:100%;border-collapse:collapse;margin:8px 0}
+.box td{padding:6px 8px;border-bottom:1px solid #c8b890}
 #intro{position:fixed;inset:0;background:rgba(0,0,0,.85);display:flex;justify-content:center;align-items:center;z-index:100}
-#intro .box{background:var(--zhihuang);color:#3a2a1a;padding:26px 40px;border:3px solid var(--ink);max-width:560px;line-height:2;font-size:15px}
+#intro .box{max-width:580px}
 #intro h2{color:var(--yanzhi);margin-bottom:8px}
 #intro li{margin-left:20px}
 </style>
@@ -67,12 +62,15 @@ button.appraise{background:var(--jingao);color:#4A3A20}
 <body>
 <div id="game">
   <div id="hud">
-    <span class="tag" id="hud-day">开业第1天（1月1日）</span>
-    <span class="tag" id="hud-cash">本银 200 两</span>
-    <div id="evidence-bar"><div id="evidence-fill"></div><span id="evidence-text">罪证 0/100</span></div>
-    <span class="tag">威望 <span id="hud-prestige">10</span></span>
-    <span class="tag">当票 <span id="hud-tickets">0</span></span>
-    <span class="tag">死当 <span id="hud-stock">0</span></span>
+    <span class="tag" id="hud-day"></span>
+    <span class="tag" id="hud-cash"></span>
+    <div id="evidence-bar"><div id="evidence-fill"></div><span id="evidence-text"></span></div>
+    <span class="tag">威望 <span id="hud-prestige"></span></span>
+    <span class="tag">掌眼 <span id="hud-eye"></span></span>
+    <span class="tag">当票 <span id="hud-tickets"></span></span>
+    <span class="tag">死当 <span id="hud-stock"></span></span>
+    <span class="tag" id="hud-market"></span>
+    <span class="tag" id="hud-loan" style="display:none"></span>
   </div>
   <div id="counter">
     <div id="customer-card">
@@ -89,8 +87,9 @@ button.appraise{background:var(--jingao);color:#4A3A20}
       </div>
     </div>
     <div id="sidebar">
-      <div class="panel"><h3>当票簿（活当·月息二分）</h3><ul id="ticket-list"><li style="color:#888">空</li></ul></div>
-      <div class="panel"><h3>死当库房（可上柜转卖）</h3><ul id="stock-list"><li style="color:#888">空</li></ul></div>
+      <div class="panel"><h3>当票簿（月息二分）</h3><ul id="ticket-list"></ul></div>
+      <div class="panel"><h3>死当库房</h3><ul id="stock-list"></ul></div>
+      <div class="panel"><h3>铺面设施</h3><ul id="amenity-list"></ul></div>
     </div>
   </div>
   <div id="actions">
@@ -101,25 +100,31 @@ button.appraise{background:var(--jingao);color:#4A3A20}
     <button class="reject" id="b-reject">拒收</button>
     <button id="b-sell">卖死当</button>
     <button id="b-stock">看库房</button>
+    <button class="manage" id="b-shop">钱庄·设施</button>
     <button id="b-close">打烊</button>
+    <button class="manage" id="b-save">存档</button>
     <span style="align-self:center;color:#c8b890;font-size:13px" id="offer-preview"></span>
   </div>
   <div id="log"></div>
 </div>
 
 <div id="overlay"><div class="box" id="overlay-box"></div></div>
+<div id="shop-overlay"><div class="box" id="shop-box"></div></div>
 <div id="intro">
   <div class="box">
-    <h2>掌眼 · 当铺 —— 高柜台前的三十天</h2>
-    <p>你是新顶班的少掌柜。每天 4-6 位客人上门，是活当还是销赃，收不收、压多少价，全凭你的眼力。</p>
+    <h2>掌眼 · 当铺 —— 高柜台前的三十天（M0.9 竖切）</h2>
+    <p>你是新顶班的少掌柜。收当、掌眼、磨价、放利，在官差查抄之前把库房变成真金白银。</p>
     <ul>
-      <li><b>掌眼细验</b>：看出瑕疵（磨价时更有底气）、辨出赝品、嗅出来路</li>
-      <li><b>收当立票</b>：付当价（估值三~五成），月息二分；到期不赎→死当归铺</li>
-      <li><b>死当转卖</b>：死当上柜卖出，赚眼力差价——赝品会砸手里</li>
-      <li><b>赃证值</b>：收了来路不明的东西就涨，满 100 官差查铺（罚银+充公）！每日风声 -1</li>
-      <li><b>目标</b>：30 天后净身价最高。开局本银 200 两，房租 8 两/月。</li>
+      <li><b>掌眼</b>：辨瑕疵/赝品/来路；<b>银钱可升级掌眼</b>（越级越高越毒）</li>
+      <li><b>当票</b>：月息二分，到期不赎→死当归铺转卖赚差价</li>
+      <li><b>行情</b>：每日浮动，影响死当售价——低吸高抛</li>
+      <li><b>设施</b>：茶炉(客流+1)/账房(利+10%)/镖柜(罚金减半)/库架(售价+10%)</li>
+      <li><b>印子钱</b>：缺本银可借，10 天还 1.25 倍，逾期拿死当抵债</li>
+      <li><b>赃证值</b>：满 100 官差查铺！镖柜可减半罚金</li>
     </ul>
-    <button onclick="startGame()">开 张</button>
+    <button onclick="loadOrNew(true)">继续经营（读档）</button>
+    <button onclick="loadOrNew(false)">新开一局</button>
+    <div id="save-info" style="margin-top:8px;font-size:13px;color:#8a6a3a"></div>
   </div>
 </div>
 
@@ -129,41 +134,52 @@ const ITEMS = [{"id": "ingot_small", "name": "小银锭", "cat": "银器", "lo":
 const FACTIONS = ["街坊小民","败家子弟","绿林朋友","官面衙门","古玩行家","洋行买办","当行同行","女眷","行脚商"];
 const SURNAMES = ["王","李","张","赵","钱","孙","周","吴","郑","冯"];
 const GIVEN = ["二","三","四","老蔫","瘸子","秀才","娘子","老刀","顺子","阿贵"];
-
+const AMENITIES = {
+  tea:    { name:'茶炉',  cost:60,  desc:'待客周到，客流 +1' },
+  account:{ name:'账房',  cost:80,  desc:'账目清楚，利息 +10%' },
+  secure: { name:'镖柜',  cost:100, desc:'查抄罚金减半' },
+  shelf:  { name:'库架',  cost:80,  desc:'死当保存好，售价 +10%' },
+};
+const SAVE_KEY = 'dangpu_m09_save';
 const TOTAL_DAYS = 30, RENT = 8, MONTH_DAYS = 10;
-let S;   // 游戏状态
-let rngState = Date.now() % 2147483647;
+
+let S, rngState = Date.now() % 2147483647;
 function rng(){ rngState = rngState * 48271 % 2147483647; return (rngState - 1) / 2147483646; }
 const ri = (a,b) => a + Math.floor(rng() * (b - a + 1));
 const pick = a => a[Math.floor(rng() * a.length)];
 
-function newState(){ return { day:1, cash:200, evidence:0, prestige:10,
-  tickets:[], stock:[], customer:null, log:[] }; }
+function freshState(){ return { day:1, cash:200, evidence:0, prestige:10, eyeLevel:1,
+  amenities:{tea:false,account:false,secure:false,shelf:false},
+  tickets:[], stock:[], customer:null, queue:[], loan:null, market:1.0, nextDayMod:1.0,
+  stats:{deals:0,redeems:0,raids:0,rejects:0} }; }
 
-function el(id){ return document.getElementById(id); }
-function hud(){
-  el('hud-day').textContent = `开业第${S.day}天（${Math.floor((S.day-1)/MONTH_DAYS)+1}月${(S.day-1)%MONTH_DAYS+1}日）`;
-  el('hud-cash').textContent = `本银 ${S.cash} 两`;
-  el('evidence-fill').style.width = S.evidence + '%';
-  el('evidence-text').textContent = `罪证 ${S.evidence}/100`;
-  el('hud-prestige').textContent = S.prestige;
-  el('hud-tickets').textContent = S.tickets.length;
-  el('hud-stock').textContent = S.stock.length;
-  // 侧栏
-  const tl = el('ticket-list');
-  tl.innerHTML = S.tickets.length ? '' : '<li style="color:#888">空</li>';
-  S.tickets.forEach(t => { const li = document.createElement('li');
-    li.textContent = `${t.item.name}｜当出 ${t.price} 两｜到期第${t.due}天`; tl.appendChild(li); });
-  const sl = el('stock-list');
-  sl.innerHTML = S.stock.length ? '' : '<li style="color:#888">空</li>';
-  S.stock.forEach(p => { const li = document.createElement('li');
-    li.textContent = `${p.tpl.name}｜估值 ${p.value} 两｜${p.fake?'(假)':''}可卖约 ${deadSale(p)}`; sl.appendChild(li); });
+// ---------- 存档 ----------
+function saveGame(manual){
+  try{
+    localStorage.setItem(SAVE_KEY, JSON.stringify({ state:S, rngState, savedAtDay:S.day }));
+    if (manual) log('账本封存完毕（已存档）。', 'sys');
+    return true;
+  }catch(e){ if(manual) log('存档失败：' + e.message, 'bad'); return false; }
 }
-function log(msg, cls){ const d = document.createElement('div'); d.className = cls||''; d.innerHTML = msg;
-  el('log').appendChild(d); el('log').scrollTop = el('log').scrollHeight; }
+function hasSave(){ try{ return !!localStorage.getItem(SAVE_KEY); }catch(e){ return false; } }
+function loadGame(){
+  const raw = localStorage.getItem(SAVE_KEY);
+  if (!raw) return false;
+  const d = JSON.parse(raw);
+  S = d.state; rngState = d.rngState || 7;
+  return true;
+}
+function showSaveInfo(){
+  try{
+    const raw = localStorage.getItem(SAVE_KEY);
+    if (raw){ const d = JSON.parse(raw);
+      el('save-info').textContent = `检测到存档：第${d.state.day}天，本银 ${d.state.cash} 两`; }
+    else el('save-info').textContent = '暂无存档，请选择「新开一局」';
+  }catch(e){}
+}
 
+// ---------- 品类与客流 ----------
 function makeItem(faction){
-  // 低值品更常见
   const weights = ITEMS.map(t => Math.max(1, 1000 / (Math.floor((t.lo+t.hi)/2) + 10)));
   let roll = rng() * weights.reduce((a,b)=>a+b,0), t = ITEMS[0];
   for (let i = 0; i < ITEMS.length; i++){ roll -= weights[i]; if (roll < 0){ t = ITEMS[i]; break; } }
@@ -175,16 +191,15 @@ function makeItem(faction){
     while (flaws.length < n) { const f = pick(t.flaws); if (!flaws.includes(f)) flaws.push(f); } }
   if (fake && !flaws.includes('疑似赝品')) flaws.push('疑似赝品');
   return { tpl:t, name:t.name, value, fake, stolen, flawsAll:flaws.slice(), flawsKnown:[], appraised:false,
-           ask: Math.max(1, Math.round(value * (0.8 + rng() * 0.4))) };
+           ask: Math.max(1, Math.round(value * (0.8 + rng() * 0.4))), id:'p'+Math.floor(rng()*1e9) };
 }
 function makeCustomer(){
   const faction = pick(FACTIONS);
   const item = makeItem(faction);
-  const c = { name: pick(SURNAMES)+pick(GIVEN), faction, ask: item.ask, item, stolen: item.stolen };
-  return c;
+  return { name: pick(SURNAMES)+pick(GIVEN), faction, ask: item.ask, item, stolen: item.stolen };
 }
 
-// ---- 磨价概率（与 C# 版一致）----
+// ---------- 磨价 ----------
 function acceptChance(c, offer){
   const ask = c.ask;
   const ratio = offer / Math.max(1, ask);
@@ -194,16 +209,70 @@ function acceptChance(c, offer){
          - (c.faction === '绿林朋友' ? 15 : 0) + (c.faction === '败家子弟' ? 10 : 0);
   return Math.max(5, Math.min(95, ch));
 }
+function deadSalePrice(p){
+  const base = p.fake ? Math.max(1, Math.round(p.value * 0.35)) : p.value;
+  let f = (0.6 + rng() * 0.3) * S.market * (S.amenities.shelf ? 1.1 : 1);
+  if (S.nextDayMod && S.nextDayMod !== 1.0) f *= S.nextDayMod;
+  return Math.max(1, Math.round(base * f));
+}
 
-function deadSale(p){ const base = p.fake ? Math.max(1, Math.round(p.value * 0.35)) : p.value;
-  return Math.max(1, Math.round(base * (0.6 + rng() * 0.3))); }
+// ---------- UI ----------
+function el(id){ return document.getElementById(id); }
+function hud(){
+  el('hud-day').textContent = `开业第${S.day}天（${Math.floor((S.day-1)/MONTH_DAYS)+1}月${(S.day-1)%MONTH_DAYS+1}日）`;
+  el('hud-cash').textContent = `本银 ${S.cash} 两`;
+  el('evidence-fill').style.width = S.evidence + '%';
+  el('evidence-text').textContent = `罪证 ${S.evidence}/100`;
+  el('hud-prestige').textContent = S.prestige;
+  el('hud-eye').textContent = S.eyeLevel + ' 级';
+  el('hud-tickets').textContent = S.tickets.length;
+  el('hud-stock').textContent = S.stock.length;
+  el('hud-market').textContent = `行情 ×${S.market.toFixed(2)}`;
+  el('hud-market').style.color = S.market >= 1 ? '#a8d8a0' : '#ff9a8a';
+  const loan = el('hud-loan');
+  if (S.loan){ loan.style.display = ''; loan.textContent = `印子钱：欠 ${S.loan.repay} 两（第${S.loan.due}天到期）`; loan.className = 'tag warn'; }
+  else loan.style.display = 'none';
+  const tl = el('ticket-list');
+  tl.innerHTML = S.tickets.length ? '' : '<li style="color:#888">空</li>';
+  S.tickets.forEach(t => { const li = document.createElement('li');
+    li.textContent = `${t.item.name}｜当出 ${t.price} 两｜到期第${t.due}天`; tl.appendChild(li); });
+  const sl = el('stock-list');
+  sl.innerHTML = S.stock.length ? '' : '<li style="color:#888">空</li>';
+  S.stock.forEach(p => { const li = document.createElement('li');
+    li.textContent = `${p.name}｜${p.fake?'假·':''}可卖约 ${deadSalePrice(p)} 两`; sl.appendChild(li); });
+  const am = el('amenity-list');
+  am.innerHTML = '';
+  Object.keys(AMENITIES).forEach(k => { const li = document.createElement('li');
+    li.textContent = (S.amenities[k] ? '✓ ' : '✗ ') + AMENITIES[k].name + '：' + AMENITIES[k].desc;
+    li.style.color = S.amenities[k] ? '#a8d8a0' : '#888'; am.appendChild(li); });
+}
+function log(msg, cls){ const d = document.createElement('div'); d.className = cls||''; d.innerHTML = msg;
+  el('log').appendChild(d); el('log').scrollTop = el('log').scrollHeight; }
+function setButtons(on){
+  ['b-eye','b-off5','b-off4','b-off3','b-reject','b-close'].forEach(id => el(id).disabled = !on);
+  el('b-sell').disabled = S.stock.length === 0 || !on;
+}
 
-// ---- 日循环 ----
+// ---------- 日循环 ----------
 let queue = [];
-function startGame(){
-  S = newState(); rngState = (Date.now() % 2147483647) || 7;
+function loadOrNew(cont){
   el('intro').style.display = 'none';
   el('overlay').style.display = 'none';
+  el('shop-overlay').style.display = 'none';
+  el('log').innerHTML = '';
+  if (cont && loadGame()){
+    log(`读档完成——接续第 ${S.day} 天的经营。`, 'event');
+    nextDay();
+  } else {
+    startGame();
+  }
+}
+function startGame(){
+  S = freshState(); rngState = (Date.now() % 2147483647) || 7;
+  saveGame(false);
+  el('intro').style.display = 'none';
+  el('overlay').style.display = 'none';
+  el('shop-overlay').style.display = 'none';
   el('log').innerHTML = '';
   log('铺子开张。本银 200 两，库房空，账上清净。', 'sys');
   nextDay();
@@ -211,12 +280,11 @@ function startGame(){
 function nextDay(){
   hud();
   if (S.day > TOTAL_DAYS){ endGame(); return; }
-  const ev = el('overlay'); ev.style.display = 'none';
-  // 打烊结算放 endDay()
+  el('overlay').style.display = 'none';
   queue = [];
-  const n = ri(4, 6);
+  const n = ri(4, 6) + (S.amenities.tea ? 1 : 0);
   for (let i = 0; i < n; i++) queue.push(makeCustomer());
-  log(`── 第${S.day}天 ── 今日上门 ${n} 位客人。`, 'event');
+  log(`── 第${S.day}天（行情 ×${S.market.toFixed(2)}）── 今日上门 ${n} 位客人。`, 'event');
   nextCustomer();
 }
 function nextCustomer(){
@@ -230,30 +298,22 @@ function nextCustomer(){
   el('item-eye').textContent = '';
   el('appraise-result').textContent = '';
   setButtons(true);
-  updateOfferPreview();
-}
-function setButtons(on){
-  ['b-eye','b-off5','b-off4','b-off3','b-reject','b-close'].forEach(id => el(id).disabled = !on);
-  el('b-sell').disabled = S.stock.length === 0;
-}
-function updateOfferPreview(){
-  if (!queue.length) { el('offer-preview').textContent = ''; return; }
-  const c = queue[0];
-  el('offer-preview').textContent = `五成 ${Math.round(c.item.value*0.5)} 两｜四成 ${Math.round(c.item.value*0.4)} 两｜三成 ${Math.round(c.item.value*0.3)} 两（按估值）`;
+  el('offer-preview').textContent = `五成 ${Math.round(c.item.value*0.5)}｜四成 ${Math.round(c.item.value*0.4)}｜三成 ${Math.round(c.item.value*0.3)} 两`;
 }
 function appraise(){
   const c = queue[0]; const item = c.item;
   item.appraised = true;
-  let msg = [];
-  const detect = 0.4 + 0.1;
-  if (item.fake && rng() < detect){ if(!item.flawsKnown.includes('疑似赝品')) item.flawsKnown.push('疑似赝品'); }
-  item.flawsAll.forEach(f => { if (!item.flawsKnown.includes(f)) item.flawsKnown.push(f); });
-  if (item.flawsKnown.length) msg.push('看出瑕疵/问题：' + item.flawsKnown.join('、'));
+  const msg = [];
+  const detectFake = 0.3 + 0.15 * S.eyeLevel;
+  if (item.fake && rng() < detectFake && !item.flawsKnown.includes('疑似赝品')) item.flawsKnown.push('疑似赝品');
+  const flawChance = 0.5 + 0.1 * S.eyeLevel;
+  item.flawsAll.forEach(f => { if (!item.flawsKnown.includes(f) && rng() < flawChance) item.flawsKnown.push(f); });
+  if (item.flawsKnown.length) msg.push('看出问题：' + item.flawsKnown.join('、'));
   else msg.push('没看出大问题，成色尚可。');
   if (item.stolen && rng() < 0.5 + S.prestige/40){ msg.push('⚠ 来路含糊，多半是销赃的。'); c._suspect = true; }
   el('item-eye').textContent = msg.join(' ');
   el('appraise-result').textContent = item.flawsKnown.includes('疑似赝品') ? '❗ 这物件怕是假的！' : '';
-  log(`掌眼「${item.name}」：${msg.join(' ')}`, item.flawsKnown.length ? 'bad' : 'sys');
+  log(`掌眼「${item.name}」（${S.eyeLevel}级）：${msg.join(' ')}`, item.flawsKnown.length ? 'bad' : 'sys');
 }
 function offerPct(pct){
   const c = queue[0];
@@ -268,6 +328,7 @@ function offerPct(pct){
     if (c.item.stolen){ const w = c.item.tpl.tags.includes('weapon_item') ? 20 : c.item.tpl.tags.includes('precious_item') ? 10 : 6;
       S.evidence = Math.min(100, S.evidence + w);
       log(`（来路不明之物入库——赃证值 +${w}）`, 'bad'); }
+    S.stats.deals++;
   } else {
     if (rng() < 0.3){ S.prestige = Math.max(0, S.prestige - 1); log('客人甩袖而去，街坊看着不太好看。（威望 -1）', 'bad'); }
     else log('客人收起物件，出门去了。', 'sys');
@@ -275,76 +336,174 @@ function offerPct(pct){
   queue.shift(); hud(); nextCustomer();
 }
 function reject(){
-  const c = queue[0];
   if (rng() < 0.15){ S.prestige = Math.max(0, S.prestige - 1); log('拒了不该拒的客……（威望 -1）', 'bad'); }
   else log('客人收起物件，出门去了。', 'sys');
+  S.stats.rejects++;
   queue.shift(); hud(); nextCustomer();
 }
 function sellDead(){
   if (!S.stock.length){ log('死当库房空着。', 'sys'); return; }
   const p = S.stock.shift();
-  const price = deadSale(p);
+  const price = deadSalePrice(p);
   S.cash += price;
   log(`死当「${p.name}」上柜转卖，得 ${price} 两。`, 'good');
   hud(); setButtons(true);
+}
+// ---------- 钱庄 / 设施 / 掌眼升级 ----------
+function openShop(){
+  const box = el('shop-box');
+  const eyeCost = 30 * S.eyeLevel;
+  const loan = S.loan;
+  box.innerHTML = `<h2>钱庄 · 设施 · 掌眼</h2>
+  <table>
+   <tr><td>掌眼升级（${S.eyeLevel}级→${S.eyeLevel+1}级）</td><td>辨伪率+15%、瑕疵发现+10%</td><td><button onclick="upgradeEye(${eyeCost})" ${S.eyeLevel>=5||S.cash<eyeCost?'disabled':''}>${S.eyeLevel>=5?'已满级':'升级 '+eyeCost+' 两'}</button></td></tr>
+   <tr><td>茶炉</td><td>客流 +1</td><td><button onclick="buyAmenity('tea')" ${S.amenities.tea||S.cash<60?'disabled':''}>${S.amenities.tea?'已购':'60 两'}</button></td></tr>
+   <tr><td>账房</td><td>利息 +10%</td><td><button onclick="buyAmenity('account')" ${S.amenities.account||S.cash<80?'disabled':''}>${S.amenities.account?'已购':'80 两'}</button></td></tr>
+   <tr><td>镖柜</td><td>查抄罚金减半</td><td><button onclick="buyAmenity('secure')" ${S.amenities.secure||S.cash<100?'disabled':''}>${S.amenities.secure?'已购':'100 两'}</button></td></tr>
+   <tr><td>库架</td><td>死当售价 +10%</td><td><button onclick="buyAmenity('shelf')" ${S.amenities.shelf||S.cash<80?'disabled':''}>${S.amenities.shelf?'已购':'80 两'}</button></td></tr>
+  </table>
+  <h2 style="margin-top:10px">印子钱（10 天还 1.25 倍）</h2>
+  ${loan ? `<p>当前欠款 ${loan.repay} 两，第 ${loan.due} 天到期。逾期以死当抵债，威望 -2。</p>`
+   : `<p>借 50 / 100 / 200 两：
+      <button onclick="takeLoan(50)">借 50</button>
+      <button onclick="takeLoan(100)">借 100</button>
+      <button onclick="takeLoan(200)">借 200</button></p>`}
+  <button onclick="closeShop()">关门</button>`;
+  el('shop-overlay').style.display = 'flex';
+}
+function closeShop(){ el('shop-overlay').style.display = 'none'; }
+function upgradeEye(cost){
+  if (S.cash < cost || S.eyeLevel >= 5) return;
+  S.cash -= cost; S.eyeLevel++;
+  log(`掌眼精进至 ${S.eyeLevel} 级（花了 ${cost} 两）。`, 'good');
+  openShop(); hud();
+}
+function buyAmenity(k){
+  const a = AMENITIES[k];
+  if (S.amenities[k] || S.cash < a.cost) return;
+  S.cash -= a.cost; S.amenities[k] = true;
+  log(`购入设施「${a.name}」：${a.desc}。`, 'good');
+  openShop(); hud();
+}
+function takeLoan(amount){
+  if (S.loan) return;
+  S.loan = { amount, repay: Math.round(amount * 1.25), due: S.day + 10 };
+  S.cash += amount;
+  log(`从钱庄借入 ${amount} 两，10 天后须还 ${S.loan.repay} 两。`, 'event');
+  openShop(); hud();
+}
+function loanCheck(msgs){
+  if (!S.loan || S.day <= S.loan.due) return;
+  const repay = S.loan.repay;
+  if (S.cash >= repay){
+    S.cash -= repay;
+    msgs.push(`钱庄收账：还印子钱 ${repay} 两。`);
+  } else {
+    let gap = repay - Math.max(0, S.cash);
+    S.cash = Math.max(0, S.cash - repay);
+    let taken = [];
+    while (gap > 0 && S.stock.length){
+      const p = S.stock.shift();
+      gap -= p.value; taken.push(p.name);
+    }
+    S.prestige = Math.max(0, S.prestige - 2);
+    msgs.push(`⚠ 还不上印子钱——钱庄没收死当：${taken.join('、') || '（无货可抵）'}。（威望 -2）`);
+  }
+  S.loan = null;
+}
+// ---------- 事件卡 ----------
+function eventCard(msgs){
+  if (rng() > 0.45) return;
+  const roll = pick(['price','gang','order','rumor','doctor','church']);
+  if (roll === 'price'){ S.nextDayMod = 0.8; msgs.push('📰 同行压价：明日死当售价 -20%。'); }
+  else if (roll === 'gang'){
+    const stolen = S.stock.filter(p => p.stolen);
+    if (stolen.length){ const p = stolen[0]; S.stock.splice(S.stock.indexOf(p),1);
+      const pay = Math.round(p.value * 0.5); S.cash += pay;
+      msgs.push(`🗡 绿林拜山：强买「${p.name}」，付 ${pay} 两。敢怒不敢言。`); }
+    else { S.prestige = Math.max(0, S.prestige - 1); msgs.push('🗡 绿林路过，看你无货可收，撂下狠话走了。（威望 -1）'); }
+  }
+  else if (roll === 'order'){
+    const nice = S.stock.filter(p => !p.fake && p.value >= 50);
+    if (nice.length){ const p = pick(nice); const price = Math.round(deadSalePrice(p));
+      const bonus = Math.round(price * 0.3);
+      S.stock.splice(S.stock.indexOf(p),1); S.cash += price + bonus;
+      msgs.push(`📜 洋行订单：「${p.name}」被高价相中，加价三成收走（得 ${price + bonus} 两）。`); }
+    else { S.cash += 10; msgs.push('📜 洋行采买空手而归，丢下 10 两定金意思意思。'); }
+  }
+  else if (roll === 'rumor'){ S.evidence = Math.min(100, S.evidence + 10); msgs.push('👁 街头风闻你店里收过黑货……（罪证 +10）'); }
+  else if (roll === 'doctor'){ S.prestige += 2; msgs.push('🌿 郎中义诊救了街坊，众人念你的好。（威望 +2）'); }
+  else { S.evidence = Math.max(0, S.evidence - 5); msgs.push('⛪ 教会募捐你出手大方——风声小了。（罪证 -5）'); }
+}
+function raidCheck(){
+  if (S.evidence < 100) return null;
+  S.stats.raids++;
+  let fine = Math.min(Math.max(S.cash, 0), 50);
+  if (S.amenities.secure) fine = Math.round(fine / 2);
+  S.cash -= fine;
+  const conf = S.stock.filter(p => p.stolen).length;
+  S.stock = S.stock.filter(p => !p.stolen);
+  S.evidence = 30; S.prestige = Math.max(0, S.prestige - 2);
+  return `⚠ 官差查铺！赃证值满 100——罚银 ${fine} 两，${conf} 件赃物充公。（罪证降至 30，威望 -2）`;
 }
 function endDay(){
   const msgs = [];
   S.evidence = Math.max(0, S.evidence - 1);
   const dom = (S.day-1) % MONTH_DAYS + 1;
-  if (dom === MONTH_DAYS){  // 月末（次日交租）
-    S.cash -= RENT; msgs.push(`交下月房租 ${RENT} 两。`);
-  }
-  // 到期死当
+  if (dom === MONTH_DAYS){ S.cash -= RENT; msgs.push(`交下月房租 ${RENT} 两。`); }
   const matured = S.tickets.filter(t => S.day >= t.due);
-  matured.forEach(t => { S.stock.push({ tpl:t.item.tpl, name:t.item.name, value:t.item.value, fake:t.item.fake });
+  matured.forEach(t => { S.stock.push({ tpl:t.item.tpl, name:t.item.name, value:t.item.value, fake:t.item.fake, stolen:t.item.stolen });
     msgs.push(`「${t.item.name}」当期已过，死当归铺。`); });
   S.tickets = S.tickets.filter(t => S.day < t.due);
-  // 赎当（每日 30%）
   const redeemed = S.tickets.filter(t => S.day - t.issued >= 3 && rng() < 0.30);
   redeemed.forEach(t => { const months = Math.max(1, Math.ceil((S.day - t.issued)/MONTH_DAYS));
-    const amt = t.price + Math.ceil(t.price * 0.2 * months);
-    S.cash += amt; msgs.push(`有客来赎「${t.item.name}」，收 ${amt} 两（含利）。`); });
+    const amt = Math.round(t.price * (1 + 0.2 * months) * (S.amenities.account ? 1.1 : 1));
+    S.cash += amt; S.stats.redeems++; msgs.push(`有客来赎「${t.item.name}」，收 ${amt} 两（含利）。`); });
   S.tickets = S.tickets.filter(t => !redeemed.includes(t));
-  // 查抄
-  if (S.evidence >= 100){
-    const fine = Math.min(S.cash, 50);
-    S.cash -= fine;
-    const conf = S.stock.filter(p => p.stolen).length;
-    S.stock = S.stock.filter(p => !p.stolen);
-    S.evidence = 30; S.prestige = Math.max(0, S.prestige - 2);
-    msgs.push(`⚠ 官差查铺！罚银 ${fine} 两，${conf} 件赃物充公。（罪证降至 30）`);
-  }
+  loanCheck(msgs);
+  eventCard(msgs);
+  const raid = raidCheck();
+  if (raid) msgs.push(raid);
+  S.market = Math.min(1.15, Math.max(0.85, S.market + (rng() - 0.5) * 0.1));
+  S.nextDayMod = 1.0;
   log(`· 打烊 —— ${msgs.join(' ') || '平安无事。'}`, 'event');
+  saveGame(false);
   hud();
   S.day++;
   if (S.day > TOTAL_DAYS){ endGame(); return; }
   setTimeout(() => { el('overlay-box').innerHTML =
     `<h2>打烊 · 第${S.day-1}天</h2>` + (msgs.join('<br>') || '平安无事。') +
-    `<br><br>本银 ${S.cash} 两｜罪证 ${S.evidence}/100｜死当 ${S.stock.length} 件｜当票 ${S.tickets.length} 张<br>` +
-    `<button onclick="nextDay()">睡觉，开新的一天</button>`;
-    el('overlay').style.display = 'flex'; }, 400);
+    `<br><br>本银 ${S.cash} 两｜罪证 ${S.evidence}/100｜行情 ×${S.market.toFixed(2)}｜死当 ${S.stock.length} 件｜当票 ${S.tickets.length} 张` +
+    (S.loan ? `<br><span style="color:#9D2933">⚠ 印子钱欠 ${S.loan.repay} 两（第${S.loan.due}天到期）</span>` : '') +
+    `<br><button onclick="nextDay()">睡觉，开新的一天</button><button onclick="openShop()">先去钱庄·设施</button>`;
+    el('overlay').style.display = 'flex'; }, 300);
 }
 function endGame(){
-  const stockVal = S.stock.reduce((a,p) => a + deadSale(p), 0);
+  saveGame(false);
+  const stockVal = S.stock.reduce((a,p) => a + deadSalePrice(p), 0);
   const net = S.cash + stockVal + S.tickets.reduce((a,t) => a + Math.round(t.item.value/2), 0);
   el('overlay-box').innerHTML = `<h2>三十日结算</h2>
     净身价 <b style="font-size:22px">${net} 两</b>（开局 200 两）<br>
-    现银 ${S.cash}｜死当 ${S.stock.length} 件｜当票 ${S.tickets.length} 张<br>
-    威望 ${S.prestige}｜罪证 ${S.evidence}/100<br><br>
+    现银 ${S.cash}｜死当 ${S.stock.length} 件｜当票 ${S.tickets.length} 张｜威望 ${S.prestige}｜掌眼 ${S.eyeLevel} 级<br>
+    成交 ${S.stats.deals}｜赎当 ${S.stats.redeems}｜查抄 ${S.stats.raids}｜拒客 ${S.stats.rejects}<br><br>
     ${net >= 400 ? '掌眼如炬，东家满意——续租！' : net >= 250 ? '勉强糊口，再练练眼力。' : '亏了本钱……回炉再学。'}
     <br><button onclick="startGame()">再开一局</button>`;
   el('overlay').style.display = 'flex';
 }
-// 事件绑定
+// ---------- 绑定与初始化 ----------
 el('b-eye').onclick = appraise;
 el('b-off5').onclick = () => offerPct(0.5);
 el('b-off4').onclick = () => offerPct(0.4);
 el('b-off3').onclick = () => offerPct(0.3);
 el('b-reject').onclick = reject;
 el('b-sell').onclick = sellDead;
-el('b-stock').onclick = () => hud();
+el('b-stock').onclick = hud;
+el('b-shop').onclick = openShop;
 el('b-close').onclick = endDay;
+el('b-save').onclick = () => saveGame(true);
+S = freshState();
+hud();
+showSaveInfo();
 </script>
 </body>
 </html>
