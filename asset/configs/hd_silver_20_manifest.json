@@ -1,0 +1,142 @@
+[
+  {
+    "id": "ingot_small",
+    "name": "小银锭",
+    "shape": "1x1",
+    "hd_file": "hd_64px_per_cell/ingot_small.png",
+    "native_file": "native_32px_per_cell/ingot_small.png"
+  },
+  {
+    "id": "ingot_mid",
+    "name": "中银锭",
+    "shape": "1x1",
+    "hd_file": "hd_64px_per_cell/ingot_mid.png",
+    "native_file": "native_32px_per_cell/ingot_mid.png"
+  },
+  {
+    "id": "ingot_large",
+    "name": "大银锭",
+    "shape": "1x1",
+    "hd_file": "hd_64px_per_cell/ingot_large.png",
+    "native_file": "native_32px_per_cell/ingot_large.png"
+  },
+  {
+    "id": "yuanbao",
+    "name": "官铸元宝",
+    "shape": "1x1",
+    "hd_file": "hd_64px_per_cell/yuanbao.png",
+    "native_file": "native_32px_per_cell/yuanbao.png"
+  },
+  {
+    "id": "bracelet_silver",
+    "name": "银镯",
+    "shape": "1x1",
+    "hd_file": "hd_64px_per_cell/bracelet_silver.png",
+    "native_file": "native_32px_per_cell/bracelet_silver.png"
+  },
+  {
+    "id": "hairpin_silver",
+    "name": "银簪",
+    "shape": "1x1",
+    "hd_file": "hd_64px_per_cell/hairpin_silver.png",
+    "native_file": "native_32px_per_cell/hairpin_silver.png"
+  },
+  {
+    "id": "lock_silver",
+    "name": "长命锁",
+    "shape": "1x1",
+    "hd_file": "hd_64px_per_cell/lock_silver.png",
+    "native_file": "native_32px_per_cell/lock_silver.png"
+  },
+  {
+    "id": "teapot_silver",
+    "name": "银壶",
+    "shape": "2x1",
+    "hd_file": "hd_64px_per_cell/teapot_silver.png",
+    "native_file": "native_32px_per_cell/teapot_silver.png"
+  },
+  {
+    "id": "cup_silver",
+    "name": "银盏",
+    "shape": "1x1",
+    "hd_file": "hd_64px_per_cell/cup_silver.png",
+    "native_file": "native_32px_per_cell/cup_silver.png"
+  },
+  {
+    "id": "chopsticks_silver",
+    "name": "银箸(对)",
+    "shape": "1x2",
+    "hd_file": "hd_64px_per_cell/chopsticks_silver.png",
+    "native_file": "native_32px_per_cell/chopsticks_silver.png"
+  },
+  {
+    "id": "buddha_silver",
+    "name": "小银佛",
+    "shape": "1x2",
+    "hd_file": "hd_64px_per_cell/buddha_silver.png",
+    "native_file": "native_32px_per_cell/buddha_silver.png"
+  },
+  {
+    "id": "bell_silver",
+    "name": "银铃铛",
+    "shape": "1x1",
+    "hd_file": "hd_64px_per_cell/bell_silver.png",
+    "native_file": "native_32px_per_cell/bell_silver.png"
+  },
+  {
+    "id": "mirror_silver",
+    "name": "银镜",
+    "shape": "1x1",
+    "hd_file": "hd_64px_per_cell/mirror_silver.png",
+    "native_file": "native_32px_per_cell/mirror_silver.png"
+  },
+  {
+    "id": "pipe_silver",
+    "name": "银烟袋",
+    "shape": "2x1",
+    "hd_file": "hd_64px_per_cell/pipe_silver.png",
+    "native_file": "native_32px_per_cell/pipe_silver.png"
+  },
+  {
+    "id": "knife_silver",
+    "name": "银匕首",
+    "shape": "2x1",
+    "hd_file": "hd_64px_per_cell/knife_silver.png",
+    "native_file": "native_32px_per_cell/knife_silver.png"
+  },
+  {
+    "id": "bowl_silver",
+    "name": "银碗",
+    "shape": "1x1",
+    "hd_file": "hd_64px_per_cell/bowl_silver.png",
+    "native_file": "native_32px_per_cell/bowl_silver.png"
+  },
+  {
+    "id": "earring_silver",
+    "name": "银耳坠(对)",
+    "shape": "1x1",
+    "hd_file": "hd_64px_per_cell/earring_silver.png",
+    "native_file": "native_32px_per_cell/earring_silver.png"
+  },
+  {
+    "id": "ring_silver",
+    "name": "银戒指",
+    "shape": "1x1",
+    "hd_file": "hd_64px_per_cell/ring_silver.png",
+    "native_file": "native_32px_per_cell/ring_silver.png"
+  },
+  {
+    "id": "censer_silver",
+    "name": "小银炉",
+    "shape": "1x1",
+    "hd_file": "hd_64px_per_cell/censer_silver.png",
+    "native_file": "native_32px_per_cell/censer_silver.png"
+  },
+  {
+    "id": "crown_silver",
+    "name": "银发冠",
+    "shape": "1x1",
+    "hd_file": "hd_64px_per_cell/crown_silver.png",
+    "native_file": "native_32px_per_cell/crown_silver.png"
+  }
+]
