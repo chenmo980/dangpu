@@ -1,0 +1,142 @@
+[
+  {
+    "id": "bangle_jade_white",
+    "name": "白玉镯",
+    "shape": "1x1",
+    "hd_file": "hd_64px_per_cell/bangle_jade_white.png",
+    "native_file": "native_32px_per_cell/bangle_jade_white.png"
+  },
+  {
+    "id": "pendant_jade_gu",
+    "name": "玉珏(佩)",
+    "shape": "1x1",
+    "hd_file": "hd_64px_per_cell/pendant_jade_gu.png",
+    "native_file": "native_32px_per_cell/pendant_jade_gu.png"
+  },
+  {
+    "id": "ruyi_jade",
+    "name": "玉如意",
+    "shape": "2x1",
+    "hd_file": "hd_64px_per_cell/ruyi_jade.png",
+    "native_file": "native_32px_per_cell/ruyi_jade.png"
+  },
+  {
+    "id": "archer_ring_feicui",
+    "name": "翡翠扳指",
+    "shape": "1x1",
+    "hd_file": "hd_64px_per_cell/archer_ring_feicui.png",
+    "native_file": "native_32px_per_cell/archer_ring_feicui.png"
+  },
+  {
+    "id": "boulder_jade_shanzi",
+    "name": "玉山子",
+    "shape": "2x2",
+    "hd_file": "hd_64px_per_cell/boulder_jade_shanzi.png",
+    "native_file": "native_32px_per_cell/boulder_jade_shanzi.png"
+  },
+  {
+    "id": "cicada_jade_han",
+    "name": "玉蝉(琀)",
+    "shape": "1x1",
+    "hd_file": "hd_64px_per_cell/cicada_jade_han.png",
+    "native_file": "native_32px_per_cell/cicada_jade_han.png"
+  },
+  {
+    "id": "belt_hook_jade",
+    "name": "玉带钩",
+    "shape": "1x1",
+    "hd_file": "hd_64px_per_cell/belt_hook_jade.png",
+    "native_file": "native_32px_per_cell/belt_hook_jade.png"
+  },
+  {
+    "id": "brush_washer_jade",
+    "name": "玉笔洗",
+    "shape": "1x1",
+    "hd_file": "hd_64px_per_cell/brush_washer_jade.png",
+    "native_file": "native_32px_per_cell/brush_washer_jade.png"
+  },
+  {
+    "id": "seal_jade",
+    "name": "玉印",
+    "shape": "1x1",
+    "hd_file": "hd_64px_per_cell/seal_jade.png",
+    "native_file": "native_32px_per_cell/seal_jade.png"
+  },
+  {
+    "id": "pipe_jade",
+    "name": "玉烟嘴",
+    "shape": "1x1",
+    "hd_file": "hd_64px_per_cell/pipe_jade.png",
+    "native_file": "native_32px_per_cell/pipe_jade.png"
+  },
+  {
+    "id": "bi_disc_jade",
+    "name": "玉璧",
+    "shape": "1x1",
+    "hd_file": "hd_64px_per_cell/bi_disc_jade.png",
+    "native_file": "native_32px_per_cell/bi_disc_jade.png"
+  },
+  {
+    "id": "cong_jade",
+    "name": "玉琮",
+    "shape": "1x2",
+    "hd_file": "hd_64px_per_cell/cong_jade.png",
+    "native_file": "native_32px_per_cell/cong_jade.png"
+  },
+  {
+    "id": "carving_jade_buddha",
+    "name": "玉佛坠",
+    "shape": "1x1",
+    "hd_file": "hd_64px_per_cell/carving_jade_buddha.png",
+    "native_file": "native_32px_per_cell/carving_jade_buddha.png"
+  },
+  {
+    "id": "hairpin_jade",
+    "name": "玉簪",
+    "shape": "1x2",
+    "hd_file": "hd_64px_per_cell/hairpin_jade.png",
+    "native_file": "native_32px_per_cell/hairpin_jade.png"
+  },
+  {
+    "id": "cup_jade",
+    "name": "玉杯",
+    "shape": "1x1",
+    "hd_file": "hd_64px_per_cell/cup_jade.png",
+    "native_file": "native_32px_per_cell/cup_jade.png"
+  },
+  {
+    "id": "peach_jade",
+    "name": "玉桃摆件",
+    "shape": "1x1",
+    "hd_file": "hd_64px_per_cell/peach_jade.png",
+    "native_file": "native_32px_per_cell/peach_jade.png"
+  },
+  {
+    "id": "mirror_jade_bronze_back",
+    "name": "玉背铜镜",
+    "shape": "1x1",
+    "hd_file": "hd_64px_per_cell/mirror_jade_bronze_back.png",
+    "native_file": "native_32px_per_cell/mirror_jade_bronze_back.png"
+  },
+  {
+    "id": "beads_jade_string",
+    "name": "玉珠串",
+    "shape": "2x1",
+    "hd_file": "hd_64px_per_cell/beads_jade_string.png",
+    "native_file": "native_32px_per_cell/beads_jade_string.png"
+  },
+  {
+    "id": "junk_jade_scraps",
+    "name": "玉料边角",
+    "shape": "1x1",
+    "hd_file": "hd_64px_per_cell/junk_jade_scraps.png",
+    "native_file": "native_32px_per_cell/junk_jade_scraps.png"
+  },
+  {
+    "id": "axe_jade_broken",
+    "name": "残玉斧",
+    "shape": "1x1",
+    "hd_file": "hd_64px_per_cell/axe_jade_broken.png",
+    "native_file": "native_32px_per_cell/axe_jade_broken.png"
+  }
+]
