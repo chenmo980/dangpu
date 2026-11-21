@@ -367,7 +367,7 @@ function appraise(){
   const msg = [];
   const detectFake = 0.3 + 0.15 * S.eyeLevel;
   if (item.fake && rng() < detectFake && !item.flawsKnown.includes("疑似赝品")) item.flawsKnown.push("疑似赝品");
-  const flawChance = 0.5 + 0.1 * S.eyeLevel;
+  const flawChance = 0.5 + 0.1 * S.eyeLevel + (S.apprentice ? 0.1 : 0);
   item.flawsAll.forEach(f => { if (!item.flawsKnown.includes(f) && rng() < flawChance) item.flawsKnown.push(f); });
   if (item.flawsKnown.length) msg.push("看出问题：" + item.flawsKnown.join("、"));
   else msg.push("没看出大问题。");
@@ -394,7 +394,7 @@ function offerPct(pct){
       S.cash += ask;
       log("售出「" + c.item.name + "」得 " + ask + " 两。", "good");
       if (c.item.stolen){ S.evidence = Math.min(100, S.evidence + 10); log("销赃罪证 +10", "bad"); }
-      S.stats.deals++;
+      S.stats.deals++; sndDeal();
     } else {
       if (rng() < 0.2){ S.prestige = Math.max(0, S.prestige - 1); log("嫌价太高，威望 -1", "bad"); }
       else log("客人没谈拢。", "sys");
@@ -409,7 +409,7 @@ function offerPct(pct){
     S.tickets.push({ item:c.item, price:offer, due, issued:S.day });
     log("成交！" + c.item.name + " 付当价 " + offer + " 两。", "good");
     if (c.item.stolen){ S.evidence = Math.min(100, S.evidence + 10); log("赃证 +10", "bad"); }
-    S.stats.deals++;
+    S.stats.deals++; sndDeal();
   } else {
     if (rng() < 0.3){ S.prestige = Math.max(0, S.prestige - 1); log("威望 -1", "bad"); }
     else log("客人走了。", "sys");
@@ -417,6 +417,7 @@ function offerPct(pct){
   queue.shift(); hud(); nextCustomer();
 }
 function reject(){
+  sndReject();
   if (rng() < 0.15){ S.prestige = Math.max(0, S.prestige - 1); log("威望 -1", "bad"); }
   else log("客人走了。", "sys");
   S.stats.rejects++; queue.shift(); hud(); nextCustomer();
@@ -441,6 +442,8 @@ function openShop(){
     html += "<div class='shoprow'><b>" + f[1] + "</b> <span class='desc'>" + f[2] + "</span> "
       + (S.amenities[f[0]] ? "<i>已置办</i>" : "<button onclick='buyFac(&quot;" + f[0] + "&quot;," + f[3] + ")'>置办 " + f[3] + " 两</button>") + "</div>";
   });
+  html += "<div class='shoprow'><b>掌眼徒弟</b> <span class='desc'>验煞发现率 +10%，每日工钱 5 两，发不出则辞工</span> "
+    + (S.apprentice ? "<i>已雇</i>" : "<button onclick='hireApp()'>雇请 50 两</button>") + "</div>";
   html += "<hr>";
   if (S.loan) html += "<div>印子钱：欠 <b>" + S.loan.repay + "</b> 两，须在第 " + S.loan.due + " 天前还清，逾期以死当抵债。</div>";
   else html += "<div class='shoprow'><b>印子钱</b> <span class='desc'>借 100 两，10 天内还 130，逾期没收死当抵债</span> <button onclick='takeLoan()'>借 100 两</button></div>";
@@ -455,17 +458,29 @@ function buyFac(key, cost){
   log("置办「" + ({tea:"茶水招待",account:"外包账房",secure:"保险柜",shelf:"多宝格"})[key] + "」。", "good");
   hud(); openShop();
 }
+function hireApp(){
+  if (S.apprentice) return;
+  if (S.cash < 50){ log("本银不够。", "bad"); return; }
+  S.cash -= 50; S.apprentice = true;
+  log("雇了位掌眼徒弟，验煞更有把握。", "good");
+  hud(); openShop();
+}
 function takeLoan(){
   if (S.loan) return;
   S.loan = { principal:100, repay:130, due:S.day + 10 };
   S.cash += 100; log("借印子钱 100 两，第 " + S.loan.due + " 天前须还 130。", "sys");
   hud(); openShop();
 }
-function sndChime(){ try{ audioCtx = audioCtx || new (window.AudioContext||window.webkitAudioContext)();
-  const o = audioCtx.createOscillator(), g = audioCtx.createGain(); o.type = "triangle"; o.frequency.value = 660;
-  o.connect(g); g.connect(audioCtx.destination); g.gain.setValueAtTime(0.1, audioCtx.currentTime);
-  g.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.12);
-  o.start(audioCtx.currentTime); o.stop(audioCtx.currentTime + 0.12); }catch(e){} }
+function sndTone(freq, dur, type, vol){ try{ audioCtx = audioCtx || new (window.AudioContext||window.webkitAudioContext)();
+  const o = audioCtx.createOscillator(), g = audioCtx.createGain(); o.type = type || "triangle"; o.frequency.value = freq;
+  o.connect(g); g.connect(audioCtx.destination); g.gain.setValueAtTime(vol || 0.1, audioCtx.currentTime);
+  g.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + dur);
+  o.start(audioCtx.currentTime); o.stop(audioCtx.currentTime + dur); }catch(e){} }
+function sndChime(){ sndTone(660, 0.12); }
+function sndDeal(){ sndTone(880, 0.09); setTimeout(() => sndTone(1320, 0.12), 70); }
+function sndReject(){ sndTone(180, 0.18, "sawtooth", 0.08); }
+function sndGong(){ sndTone(140, 0.7, "sine", 0.2); }
+function sndKnock(){ sndTone(320, 0.06, "square", 0.1); setTimeout(() => sndTone(260, 0.08, "square", 0.1), 90); }
 let audioCtx = null;
 
 function setNight(on){
@@ -481,6 +496,10 @@ function endDay(){
     else { S.tempRent += S.rentValue; msgs.push("⚠ 欠缴累积 " + S.tempRent + "。"); }
     S.rentValue = Math.round(S.rentValue * 1.05); S.dayUntilRent = S.day + 7;
   }
+  if (S.apprentice){
+    if (S.cash >= 5){ S.cash -= 5; msgs.push("徒弟工钱 -5 两。"); }
+    else { S.apprentice = false; msgs.push("⚠ 发不出工钱，掌眼徒弟辞工走了。"); }
+  }
   const matured = S.tickets.filter(t => S.day >= t.due);
   matured.forEach(t => { S.stock.push({ tpl:t.item.tpl, name:t.item.name, value:t.item.value,
     fake:t.item.fake, stolen:t.item.stolen, id:t.item.tpl.id, icon:t.item.icon }); });
@@ -493,7 +512,7 @@ function endDay(){
   const raid = raidCheck(); if (raid) msgs.push(raid);
   S.market = Math.min(1.15, Math.max(0.85, S.market + (rng()-0.5)*0.1));
   S.market = Math.min(1.35, Math.max(0.65, S.market * (S.nextDayMod || 1))); S.nextDayMod = 1;
-  log("· 打烊 —— " + (msgs.join(" ") || "平安无事。"), "event");
+  log("· 打烊 —— " + (msgs.join(" ") || "平安无事。"), "event"); sndKnock();
   setNight(true);
   saveGame(false); hud(); S.day++;
   if (S.day > TOTAL_DAYS){ endGame(); return; }
@@ -509,7 +528,7 @@ function raidCheck(){
   S.cash -= fine;
   const conf = S.stock.filter(p => p.stolen).length;
   S.stock = S.stock.filter(p => !p.stolen);
-  S.evidence = 30; S.prestige = Math.max(0,S.prestige-2);
+  S.evidence = 30; S.prestige = Math.max(0,S.prestige-2); sndGong();
   return "⚠ 官差查铺！罚银 " + fine + " 两，" + conf + " 件充公。";
 }
 function loanCheck(msgs){ if (!S.loan || S.day <= S.loan.due) return;
