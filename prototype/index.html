@@ -168,6 +168,16 @@ const GIVEN = ["二","三","四","老蔫","瘸子","秀才","娘子","老刀","�
 const FLAW_OVERLAY = {"裂纹":"flaw_crack_fine","重裂":"flaw_crack_heavy","锈斑":"flaw_rust_verdigris",
   "铜绿":"flaw_rust_verdigris","虫蛀":"flaw_moth_holes","水渍":"flaw_water_stain","血渍":"flaw_blood_stain",
   "火烧痕":"flaw_acid_burn","釉补":"flaw_glaze_patch","假戳记":"flaw_fake_stamp","疑似赝品":"flaw_fake_stamp"};
+let HD64 = {};
+function loadHD64(){
+  [["../asset/configs/hd_silver_20_manifest.json", "../asset/items_hd_silver_20/hd_64px_per_cell/"],
+   ["../asset/configs/hd_20_manifest.json", "../asset/items_hd_20/hd_64px_per_cell/"]].forEach(pair => {
+    try { const req = new XMLHttpRequest(); req.open("GET", pair[0], false); req.send(null);
+      if (req.status === 200) JSON.parse(req.responseText).forEach(e => { HD64[e.id] = pair[1] + e.id + ".png"; });
+    } catch(err) {}
+  });
+}
+loadHD64();
 const PORTRAIT = {"街坊小民":"npc_commoner_256.png","败家子弟":"npc_prodigal_256.png","绿林朋友":"npc_outlaw_256.png","官面衙门":"npc_yamen_256.png","古玩行家":"npc_connoisseur_256.png","洋行买办":"npc_comprador_256.png","当行同行":"npc_rival_256.png","女眷":"npc_lady_256.png","行脚商":"npc_commoner_256.png"};
 const SAVE_KEY = "dangpu_m09_save";
 const TOTAL_DAYS = 28, MONTH_DAYS = 10;
@@ -329,7 +339,8 @@ function nextCustomer(){
   el("item-cat").textContent = c.item.tpl.cat + "｜要价 " + c.ask + " 两";
   el("item-eye").textContent = "";
   el("appraise-result").textContent = "";
-  el("presented-item").innerHTML = c.item.icon ? '<img src="' + c.item.icon + '">' : "";
+  const pIcon = HD64[c.item.tpl.id] || c.item.icon;
+  el("presented-item").innerHTML = pIcon ? '<img src="' + pIcon + '">' : "";
   el("presented-flaws").innerHTML = "";
   el("bargain-panel").innerHTML = "";
   setButtons(false);
