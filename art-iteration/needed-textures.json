@@ -1,0 +1,118 @@
+{
+ "items_food": {
+  "file": "resources.assets",
+  "path_id": 59
+ },
+ "items_backpack2": {
+  "file": "resources.assets",
+  "path_id": 28
+ },
+ "items_winemaking": {
+  "file": "resources.assets",
+  "path_id": 24
+ },
+ "items_material": {
+  "file": "resources.assets",
+  "path_id": 58
+ },
+ "items_amenities": {
+  "file": "resources.assets",
+  "path_id": 30
+ },
+ "items_husbandry": {
+  "file": "resources.assets",
+  "path_id": 73
+ },
+ "items_weapons_melee": {
+  "file": "resources.assets",
+  "path_id": 47
+ },
+ "dossier": {
+  "file": "resources.assets",
+  "path_id": 68
+ },
+ "water_container3": {
+  "file": "resources.assets",
+  "path_id": 29
+ },
+ "items_furniture": {
+  "file": "resources.assets",
+  "path_id": 43
+ },
+ "items_mod": {
+  "file": "resources.assets",
+  "path_id": 25
+ },
+ "beer_case": {
+  "file": "resources.assets",
+  "path_id": 56
+ },
+ "items_tool": {
+  "file": "sharedassets0.assets",
+  "path_id": 243
+ },
+ "water_container4": {
+  "file": "resources.assets",
+  "path_id": 80
+ },
+ "items_weapons_ranged_energy": {
+  "file": "resources.assets",
+  "path_id": 55
+ },
+ "items_misc": {
+  "file": "resources.assets",
+  "path_id": 65
+ },
+ "items_weapons_ranged_antique": {
+  "file": "resources.assets",
+  "path_id": 46
+ },
+ "items_tool2": {
+  "file": "resources.assets",
+  "path_id": 54
+ },
+ "itematlas": {
+  "file": "resources.assets",
+  "path_id": 57
+ },
+ "items_sign": {
+  "file": "resources.assets",
+  "path_id": 34
+ },
+ "items_sec": {
+  "file": "resources.assets",
+  "path_id": 76
+ },
+ "items_inspectable": {
+  "file": "resources.assets",
+  "path_id": 81
+ },
+ "items_construction": {
+  "file": "resources.assets",
+  "path_id": 42
+ },
+ "items_hydroponic_plant": {
+  "file": "resources.assets",
+  "path_id": 44
+ },
+ "items_ship": {
+  "file": "resources.assets",
+  "path_id": 50
+ },
+ "items_medical": {
+  "file": "resources.assets",
+  "path_id": 23
+ },
+ "items_armor": {
+  "file": "resources.assets",
+  "path_id": 67
+ },
+ "items_container": {
+  "file": "resources.assets",
+  "path_id": 82
+ },
+ "items_module": {
+  "file": "resources.assets",
+  "path_id": 74
+ }
+}
