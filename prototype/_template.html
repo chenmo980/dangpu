@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>掌眼·当铺 M1</title>
+<style>
+:root{--ink:#292234;--zitan:#4C2A20;--zhihuang:#E8D7B0;--jingao:#FFB61E;
+  --yanzhi:#9D2933;--dailv:#2B4A3D;--hutao:#8C5B3F}
+*{margin:0;padding:0;box-sizing:border-box;user-select:none}
+body{background:#0E1013;color:var(--zhihuang);font-family:"Microsoft YaHei",sans-serif;
+  display:flex;justify-content:center;min-height:100vh}
+#game{width:1000px;position:relative}
+#hud{display:flex;gap:8px;padding:8px 14px;background:#0E1013;
+  border-bottom:2px solid var(--zitan);font-size:13px;align-items:center;flex-wrap:wrap}
+#hud .tag{background:var(--zitan);padding:3px 9px;border-radius:3px;border:1px solid #6a5a48}
+#hud .warn{color:#ff9a8a}
+#evidence-bar{flex:1;min-width:130px;height:12px;background:#241f2e;
+  border:1px solid var(--zitan);position:relative}
+#evidence-fill{height:100%;background:linear-gradient(90deg,var(--yanzhi),var(--zhusa));width:0%}
+#evidence-text{position:absolute;right:4px;top:-1px;font-size:11px;color:#f0d0c0}
+#scene-wrap{width:1000px;height:558px;overflow:hidden;position:relative;background:#0E1013}
+#scene{width:1376px;height:768px;transform:scale(0.7267);transform-origin:top left;
+  position:absolute;top:0;left:0}
+#scene img.layer{position:absolute;top:0;left:0;width:1376px;height:768px}
+#customer-portrait{position:absolute;width:256px;height:256px;top:154px;left:881px;
+  transition:left 1.1s ease-in,opacity .5s;opacity:0}
+#scene-text-rent{position:absolute;left:104px;top:96px;width:200px;text-align:center;
+  font-size:22px;color:var(--jingao);text-shadow:1px 1px 0 #000;font-weight:bold}
+#scene-text-rent .sub{font-size:13px;color:#e8c078;font-weight:normal}
+#scene-text-wanted{position:absolute;left:52px;top:200px;width:116px;text-align:center;
+  font-size:13px;color:#e0c8a0;text-shadow:1px 1px 0 #000;line-height:1.9}
+#scene-text-wanted .ev{color:#ff9a8a;font-weight:bold}
+#presented-item{position:absolute;left:470px;top:462px;width:96px;height:96px;
+  display:flex;justify-content:center;align-items:center}
+#presented-item img{max-width:96px;max-height:96px;image-rendering:pixelated;
+  filter:drop-shadow(0 3px 5px rgba(0,0,0,.5))}
+#presented-flaws{position:absolute;left:470px;top:462px;width:96px;height:96px}
+#presented-flaws img{position:absolute;image-rendering:pixelated;opacity:.9}
+#bargain-panel{position:absolute;left:590px;top:470px;width:360px;font-size:14px;
+  color:#e8d7b0;text-shadow:1px 1px 0 #000;line-height:1.7}
+#dead-grid{position:absolute;left:446px;top:582px;display:grid;
+  grid-template-columns:repeat(14,34px);grid-auto-rows:34px}
+#dead-grid div{width:34px;height:34px;background:rgba(0,0,0,.35);
+  display:flex;justify-content:center;align-items:center;overflow:hidden}
+#dead-grid img{width:30px;height:30px;image-rendering:pixelated}
+#bogu-shelf{position:absolute;left:190px;top:196px;width:200px;height:210px}
+#bogu-shelf .slot{position:absolute;width:64px;height:64px;display:flex;
+  justify-content:center;align-items:center}
+#bogu-shelf .slot img{max-width:60px;max-height:60px;image-rendering:pixelated;
+  filter:drop-shadow(0 2px 3px rgba(0,0,0,.4))}
+#wanted-photo{position:absolute;left:40px;top:250px;width:80px;height:80px;
+  background:#e0c8a0;border:2px solid var(--ink);display:flex;flex-direction:column;
+  justify-content:center;align-items:center;overflow:hidden}
+#wanted-photo span{color:#9D2933;font-size:11px;font-weight:bold}
+#wanted-photo img{width:72px;height:72px;image-rendering:pixelated}
+#stash-badge{position:absolute;left:30px;top:590px;font-size:15px;color:#c8b890;
+  text-shadow:1px 1px 0 #000;background:rgba(0,0,0,.35);padding:4px 10px;border-radius:3px}
+#toolboard-buttons{position:absolute;left:1008px;top:140px;width:354px;display:flex;
+  flex-wrap:wrap;gap:6px;align-content:flex-start}
+#toolboard-buttons button{font-family:inherit;font-size:15px;padding:8px 16px;
+  cursor:pointer;background:linear-gradient(180deg,#8C5B3F,#5C3A21);color:var(--zhihuang);
+  border:2px solid var(--ink);border-radius:3px;box-shadow:0 2px 4px rgba(0,0,0,.6);
+  text-shadow:1px 1px 0 #000}
+#toolboard-buttons button:hover{filter:brightness(1.15)}
+#toolboard-buttons button:disabled{opacity:.35;cursor:not-allowed}
+#toolboard-buttons button.bargain{background:linear-gradient(180deg,#2B4A3D,#1E3328)}
+#toolboard-buttons button.reject{background:linear-gradient(180deg,#9D2933,#6E1B22)}
+#scene-misc{position:absolute;left:1008px;top:300px;width:354px;display:flex;gap:6px;flex-wrap:wrap}
+#scene-misc button{font-size:13px;padding:6px 12px;background:var(--dailan);color:var(--zhihuang);
+  border:1px solid var(--hutao)}
+#log{height:118px;overflow:auto;background:#0E1013;padding:8px 14px;font-size:13px;
+  line-height:1.55;border-top:2px solid var(--zitan)}
+#log .sys{color:#9fb4c9}#log .good{color:#a8d8a0}#log .bad{color:#ff9a8a}#log .event{color:var(--jingao)}
+.overlay{position:fixed;inset:0;background:rgba(0,0,0,.78);display:none;
+  justify-content:center;align-items:center;z-index:99}
+.overlay .box{background:var(--zhihuang);color:#3a2a1a;padding:28px 42px;
+  border:3px solid var(--ink);max-width:560px;line-height:1.9;font-size:15px}
+.box h2{color:var(--yanzhi);margin-bottom:10px}
+.box button{margin-top:10px;font-size:15px;margin-right:8px}
+.box table{width:100%;border-collapse:collapse;margin:8px 0}
+.box td{padding:6px 8px;border-bottom:1px solid #c8b890}
+#intro{position:fixed;inset:0;background:rgba(0,0,0,.85);display:flex;
+  justify-content:center;align-items:center;z-index:100}
+#intro .box{max-width:600px}
+#intro h2{color:var(--yanzhi);margin-bottom:8px}
+#intro li{margin-left:20px}
+</style>
+</head>
+<body>
+<div id="game">
+<div id="hud">
+<span class="tag" id="hud-day"></span>
+<span class="tag" id="hud-cash"></span>
+<div id="evidence-bar"><div id="evidence-fill"></div><span id="evidence-text"></span></div>
+<span class="tag">威望 <span id="hud-prestige"></span></span>
+<span class="tag">掌眼 <span id="hud-eye"></span></span>
+<span class="tag" id="hud-market"></span>
+<span class="tag" id="hud-cat"></span>
+<span class="tag" id="hud-loan" style="display:none"></span>
+<button id="b-save" style="font-size:12px;padding:3px 10px">存档</button>
+</div>
+<div id="scene-wrap"><div id="scene">
+<img class="layer" id="bg-layer" src="../asset/scenes/bg_alley_hd_day.png">
+<img id="customer-portrait" src="">
+<img class="layer" id="fg-layer" src="../asset/scenes/fg_interior_hd_day.png">
+<div id="scene-text-rent"></div>
+<div id="scene-text-wanted"></div>
+<div id="bogu-shelf"></div>
+<div id="wanted-photo"></div>
+<div id="presented-item"></div>
+<div id="presented-flaws"></div>
+<div id="bargain-panel"></div>
+<div id="dead-grid"></div>
+<div id="stash-badge"></div>
+<div id="toolboard-buttons">
+<button class="appraise" id="b-eye">🔎 验煞灯·掌眼</button>
+<button class="bargain" id="b-off5">算盘·出五成</button>
+<button class="bargain" id="b-off4">出四成</button>
+<button class="bargain" id="b-off3">出三成</button>
+<button class="reject" id="b-reject">拒客</button>
+<button id="b-sell">卖死当</button>
+</div>
+<div id="scene-misc">
+<button id="b-shop">钱庄·设施</button>
+<button id="b-close">打烊</button>
+<button id="b-cat">切换目录</button>
+</div>
+</div></div>
+<div id="log"></div>
+</div>
+<div class="overlay" id="overlay"><div class="box" id="overlay-box"></div></div>
+<div class="overlay" id="shop-overlay"><div class="box" id="shop-box"></div></div>
+<div id="intro"><div class="box">
+<h2>掌眼 · 当铺 —— 子时开市，卯时打烊（M1 场景竖切）</h2>
+<p>晚清北方州城。你是新顶班的少掌柜：收当、掌眼、磨价、放利，在阴债与官差夹缝里把库房变成真金白银。</p>
+<ul>
+<li><b>掌眼</b>：瑕疵/赝品/来路；可升级（5 级）</li>
+<li><b>当票</b>：月息二分，到期不赎→死当上柜</li>
+<li><b>行情</b>：每日浮动，影响死当售价</li>
+<li><b>设施</b>：茶炉/账房/镖柜/库架</li>
+<li><b>印子钱</b>：10 天还 1.25 倍</li>
+<li><b>租金</b>：200 两起步，每 7 天 ×1.05</li>
+</ul>
+<button onclick="loadOrNew(true)">继续经营</button>
+<button onclick="loadOrNew(false,'own')">新开一局（140 件）</button>
+<button onclick="loadOrNew(false,'original')">新开一局（原作 400 件）</button>
+<div id="save-info" style="margin-top:8px;font-size:13px;color:#8a6a3a"></div>
+</div></div>
+<script>
+const ITEMS = __ITEMS140__;
+const ORIGINAL_ITEMS = __ITEMSORIG__;
+const FACTIONS = ["街坊小民","败家子弟","绿林朋友","官面衙门","古玩行家","洋行买办","当行同行","女眷","行脚商"];
+const PORTRAIT = {"街坊小民":"npc_commoner_256.png","败家子弟":"npc_prodigal_256.png","绿林朋友":"npc_outlaw_256.png","官面衙门":"npc_yamen_256.png","古玩行家":"npc_connoisseur_256.png","洋行买办":"npc_comprador_256.png","当行同行":"npc_rival_256.png","女眷":"npc_lady_256.png","行脚商":"npc_commoner_256.png"};
+const SAVE_KEY = "dangpu_m09_save";
+const TOTAL_DAYS = 28, MONTH_DAYS = 10;
+let S, rngState = Date.now() % 2147483647;
+function rng(){ rngState = rngState * 48271 % 2147483647; return (rngState - 1) / 2147483646; }
+const ri = (a,b) => a + Math.floor(rng() * (b - a + 1));
+const pick = a => a[Math.floor(rng() * a.length)];
+const el = id => document.getElementById(id);
+function makeItem(faction){
+  const useOriginal = S.catalog === "original";
+  const cat = useOriginal ? ORIGINAL_ITEMS : ITEMS;
+  let roll = rng() * cat.length, t = cat[0];
+  for (let i = 0; i < cat.length; i++){ roll -= 1; if (roll < 0){ t = cat[i]; break; } }
+  const stolen = faction === "绿林朋友" ? true : faction === "官面衙门" || faction === "女眷" ? false : rng() < 0.30;
+  const value = useOriginal ? t.value : ri(t.lo, t.hi);
+  const fake = rng() < 0.15;
+  const flaws = [];
+  if (t.flaws.length && rng() < 0.30){ const n = ri(1, Math.min(2, t.flaws.length) + 1);
+    while (flaws.length < n) { const f = pick(t.flaws); if (!flaws.includes(f)) flaws.push(f); } }
+  if (fake && !flaws.includes("疑似赝品")) flaws.push("疑似赝品");
+  return { tpl:t, name:t.name, value, fake, stolen, flawsAll:flaws, flawsKnown:[],
+    appraised:false, ask:Math.max(1,Math.round(value*(0.8+rng()*0.4))),
+    icon: useOriginal ? ("assets-original/items/" + t.icon) : t.icon };
+}
+function makeCustomer(){
+  const faction = pick(FACTIONS);
+  const item = makeItem(faction);
+  return { name: pick(SURNAMES)+pick(GIVEN), faction, ask:item.ask, item, stolen:item.stolen };
+}
+function acceptChance(c, offer){
+  const ratio = offer / Math.max(1, c.ask);
+  let s = ratio >= 0.55 ? 25 : ratio >= 0.45 ? 10 : ratio >= 0.35 ? -5 : -40;
+  let ch = 60 + Math.floor(S.prestige/4) + (c.item.appraised && c.item.flawsKnown.length > 0 ? 20 : 0) + s
+    - (c.faction === "绿林朋友" ? 15 : 0) + (c.faction === "败家子弟" ? 10 : 0);
+  return Math.max(5, Math.min(95, ch));
+}
+function deadSalePrice(p){
+  const base = p.fake ? Math.max(1, Math.round(p.value * 0.35)) : p.value;
+  let f = (0.6 + rng() * 0.3) * S.market * (S.amenities.shelf ? 1.1 : 1);
+  return Math.max(1, Math.round(base * f));
+}
+function freshState(catalog){ return { day:1, cash:200, evidence:0, prestige:10, eyeLevel:1,
+  catalog: catalog || "own", rentValue:200, dayUntilRent:6, tempRent:0,
+  amenities:{tea:false,account:false,secure:false,shelf:false},
+  tickets:[], stock:[], loan:null, market:1.0, nextDayMod:1.0,
+  stats:{deals:0,redeems:0,raids:0,rejects:0} }; }
+function saveGame(m){ try{ localStorage.setItem(SAVE_KEY, JSON.stringify({ state:S, rngState, savedAtDay:S.day }));
+  if (m) log("账本封存完毕。", "sys"); }catch(e){ if(m) log("存档失败", "bad"); } }
+function loadGame(){ const raw = localStorage.getItem(SAVE_KEY); if (!raw) return false;
+  const d = JSON.parse(raw); S = d.state; rngState = d.rngState || 7; return true; }
+function log(msg, cls){ const d = document.createElement("div"); d.className = cls||"";
+  d.innerHTML = msg; el("log").appendChild(d); el("log").scrollTop = el("log").scrollHeight; }
+function hud(){
+  el("hud-day").textContent = "第" + S.day + "天/" + TOTAL_DAYS;
+  el("hud-cash").textContent = "本银 " + S.cash + " 两";
+  el("evidence-fill").style.width = S.evidence + "%";
+  el("evidence-text").textContent = "罪证 " + S.evidence + "/100";
+  el("hud-prestige").textContent = S.prestige;
+  el("hud-eye").textContent = S.eyeLevel + " 级";
+  el("hud-market").textContent = "行情 ×" + S.market.toFixed(2);
+  el("hud-cat").textContent = S.catalog === "original" ? "原作目录" : "140 件目录";
+  const loan = el("hud-loan");
+  if (S.loan){ loan.style.display = ""; loan.textContent = "印子钱：欠 " + S.loan.repay + " 两"; loan.className = "tag warn"; }
+  else loan.style.display = "none";
+}
+function setButtons(on){
+  ["b-eye","b-off5","b-off4","b-off3","b-reject","b-close"].forEach(id => el(id).disabled = !on);
+  el("b-sell").disabled = S.stock.length === 0 || !on;
+}
+let queue = [];
+function loadOrNew(cont, catalog){
+  el("intro").style.display = "none"; el("overlay").style.display = "none"; el("log").innerHTML = "";
+  if (cont && loadGame()){ log("读档完成。", "event"); nextDay(); }
+  else startGame(catalog);
+}
+function startGame(catalog){
+  S = freshState(catalog); rngState = (Date.now() % 2147483647) || 7; saveGame(false);
+  el("intro").style.display = "none"; el("overlay").style.display = "none"; el("log").innerHTML = "";
+  log("铺子开张。本银 200 两。", "sys"); nextDay();
+}
+function nextDay(){
+  hud(); if (S.day > TOTAL_DAYS){ endGame(); return; }
+  el("overlay").style.display = "none";
+  queue = [];
+  const n = ri(4, 6) + (S.amenities.tea ? 1 : 0) + (S.display.length ? 1 : 0);
+  for (let i = 0; i < n; i++) queue.push(makeCustomer());
+  log("── 第" + S.day + "天 ── 今日上门 " + n + " 位客人。", "event");
+  nextCustomer();
+}
+function nextCustomer(){
+  hud(); if (!queue.length){ endDay(); return; }
+  const c = queue[0];
+  const pid = PORTRAIT[c.faction] || PORTRAIT["街坊小民"];
+  const port = el("customer-portrait");
+  port.src = "asset/characters/portraits_256/" + pid;
+  port.style.transition = "none"; port.style.left = "881px"; port.style.opacity = "0";
+  void port.offsetWidth;
+  port.style.transition = "left 1.1s ease-in, opacity .6s";
+  el("item-name").textContent = c.item.name;
+  el("item-cat").textContent = c.item.tpl.cat + "｜要价 " + c.ask + " 两";
+  el("item-eye").textContent = "";
+  el("appraise-result").textContent = "";
+  el("presented-item").innerHTML = c.item.icon ? '<img src="' + c.item.icon + '">' : "";
+  el("presented-flaws").innerHTML = "";
+  el("bargain-panel").innerHTML = "";
+  setButtons(false);
+  setTimeout(() => { port.classList.add("walk"); setButtons(true); }, 60);
+}
+function appraise(){
+  const c = queue[0]; const item = c.item; item.appraised = true;
+  const msg = [];
+  const detectFake = 0.3 + 0.15 * S.eyeLevel;
+  if (item.fake && rng() < detectFake && !item.flawsKnown.includes("疑似赝品")) item.flawsKnown.push("疑似赝品");
+  const flawChance = 0.5 + 0.1 * S.eyeLevel;
+  item.flawsAll.forEach(f => { if (!item.flawsKnown.includes(f) && rng() < flawChance) item.flawsKnown.push(f); });
+  if (item.flawsKnown.length) msg.push("看出问题：" + item.flawsKnown.join("、"));
+  else msg.push("没看出大问题。");
+  if (item.stolen && rng() < 0.5 + S.prestige/40) msg.push("⚠ 来路含糊。");
+  el("item-eye").textContent = msg.join(" ");
+  el("appraise-result").textContent = item.flawsKnown.includes("疑似赝品") ? "❗ 假的！" : "";
+  if (item.flawsKnown.length) sndChime();
+  log("掌眼「" + item.name + "」：" + msg.join("；"), item.flawsKnown.length ? "bad" : "sys");
+}
+function offerPct(pct){
+  const c = queue[0];
+  const offer = Math.max(1, Math.round(c.item.value * pct));
+  if (S.cash < offer){ log("本银不够。", "bad"); return; }
+  if (rng() * 100 < acceptChance(c, offer)){
+    S.cash -= offer;
+    const due = S.day + ri(10, 24);
+    S.tickets.push({ item:c.item, price:offer, due, issued:S.day });
+    log("成交！" + c.item.name + " 付当价 " + offer + " 两。", "good");
+    if (c.item.stolen){ S.evidence = Math.min(100, S.evidence + 10); log("赃证 +10", "bad"); }
+    S.stats.deals++;
+  } else {
+    if (rng() < 0.3){ S.prestige = Math.max(0, S.prestige - 1); log("威望 -1", "bad"); }
+    else log("客人走了。", "sys");
+  }
+  queue.shift(); hud(); nextCustomer();
+}
+function reject(){
+  if (rng() < 0.15){ S.prestige = Math.max(0, S.prestige - 1); log("威望 -1", "bad"); }
+  else log("客人走了。", "sys");
+  S.stats.rejects++; queue.shift(); hud(); nextCustomer();
+}
+function sellDead(){
+  if (!S.stock.length){ log("库房空。", "sys"); return; }
+  const p = S.stock.shift(); const price = deadSalePrice(p);
+  S.cash += price; log("死当「" + p.name + "」得 " + price + " 两。", "good");
+  hud(); setButtons(true);
+}
+function sndChime(){ if (typeof audioCtx === 'undefined' || !audioCtx) try{ audioCtx = new (window.AudioContext||window.webkitAudioContext)(); }catch(e){ return; }
+  try{ const o = audioCtx.createOscillator(), g = audioCtx.createGain(); o.type = "triangle"; o.frequency.value = 660;
+    o.connect(g); g.connect(audioCtx.destination); g.gain.setValueAtTime(0.1, audioCtx.currentTime);
+    g.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.12);
+    o.start(audioCtx.currentTime); o.stop(audioCtx.currentTime + 0.12); }catch(e){} }
+function endDay(){
+  const msgs = [];
+  S.evidence = Math.max(0, S.evidence - 1);
+  if (S.day >= S.dayUntilRent){
+    if (S.cash >= S.rentValue + S.tempRent){ S.cash -= S.rentValue + S.tempRent;
+      msgs.push("交租金 " + S.rentValue + " 两。"); }
+    else { S.tempRent += S.rentValue; msgs.push("⚠ 欠缴累积 " + S.tempRent + "。"); }
+    S.rentValue = Math.round(S.rentValue * 1.05); S.dayUntilRent = S.day + 7;
+  }
+  const matured = S.tickets.filter(t => S.day >= t.due);
+  matured.forEach(t => { S.stock.push({ tpl:t.item.tpl, name:t.item.name, value:t.item.value,
+    fake:t.item.fake, stolen:t.item.stolen, id:t.item.tpl.id, icon:t.item.icon }); });
+  S.tickets = S.tickets.filter(t => S.day < t.due);
+  const redeemed = S.tickets.filter(t => S.day - t.issued >= 3 && rng() < 0.30);
+  redeemed.forEach(t => { const amt = Math.round(t.price * 1.2 * (S.amenities.account ? 1.1 : 1));
+    S.cash += amt; msgs.push("赎当 +" + amt + " 两。"); });
+  S.tickets = S.tickets.filter(t => !redeemed.includes(t));
+  loanCheck(msgs); eventCard(msgs);
+  const raid = raidCheck(); if (raid) msgs.push(raid);
+  S.market = Math.min(1.15, Math.max(0.85, S.market + (rng()-0.5)*0.1));
+  log("· 打烊 —— " + (msgs.join(" ") || "平安无事。"), "event");
+  saveGame(false); hud(); S.day++;
+  if (S.day > TOTAL_DAYS){ endGame(); return; }
+  setTimeout(() => { el("overlay-box").innerHTML = "<h2>打烊 · 第" + (S.day-1) + "天</h2>"
+    + (msgs.join("<br>") || "平安。") + "<br>本银 " + S.cash + " 两"
+    + "<br><button onclick='nextDay()'>睡觉</button><button onclick='openShop()'>钱庄</button>";
+    el("overlay").style.display = "flex"; }, 300);
+}
+function raidCheck(){
+  if (S.evidence < 100) return null;
+  S.stats.raids++;
+  let fine = Math.min(Math.max(S.cash,0), S.amenities.secure ? 25 : 50);
+  S.cash -= fine;
+  const conf = S.stock.filter(p => p.stolen).length;
+  S.stock = S.stock.filter(p => !p.stolen);
+  S.evidence = 30; S.prestige = Math.max(0,S.prestige-2);
+  return "⚠ 官差查铺！罚银 " + fine + " 两，" + conf + " 件充公。";
+}
+function loanCheck(msgs){ if (!S.loan || S.day <= S.loan.due) return;
+  if (S.cash >= S.loan.repay){ S.cash -= S.loan.repay; msgs.push("还印子钱 " + S.loan.repay + " 两。"); }
+  else { let gap = S.loan.repay - Math.max(0,S.cash); S.cash = Math.max(0,S.cash-S.loan.repay);
+    let taken = []; while (gap > 0 && S.stock.length){ const p = S.stock.shift(); gap -= p.value; taken.push(p.name); }
+    S.prestige = Math.max(0,S.prestige-2); msgs.push("⚠ 没收死当抵债。"); }
+  S.loan = null;
+}
+function eventCard(msgs){
+  if (rng() > 0.45) return;
+  const roll = pick(["price","gang","order","rumor","doctor","church"]);
+  if (roll === "price"){ S.nextDayMod = 0.8; msgs.push("📰 同行压价。"); }
+  else if (roll === "gang"){
+    const st = S.stock.filter(p => p.stolen);
+    if (st.length){ const p = st[0]; S.stock.splice(S.stock.indexOf(p),1); S.cash += Math.round(p.value*0.5);
+      msgs.push("🗡 绿林强买「" + p.name + "」。"); }
+    else { S.prestige = Math.max(0,S.prestige-1); msgs.push("🗡 绿林路过。"); }
+  }
+  else if (roll === "order"){
+    const nice = S.stock.filter(p => !p.fake && p.value >= 50);
+    if (nice.length){ const p = pick(nice); const pr = deadSalePrice(p); S.stock.splice(S.stock.indexOf(p),1);
+      S.cash += pr + Math.round(pr*0.3); msgs.push("📜 洋行收「" + p.name + "」，+" + (pr+Math.round(pr*0.3)) + " 两。"); }
+    else { S.cash += 10; msgs.push("📜 洋行空手。"); }
+  }
+  else if (roll === "rumor"){ S.evidence = Math.min(100,S.evidence+10); msgs.push("👁 风闻。（罪证+10）"); }
+  else if (roll === "doctor"){ S.prestige += 2; msgs.push("🌿 义诊。（威望+2）"); }
+  else { S.evidence = Math.max(0,S.evidence-5); msgs.push("⛪ 募捐。（罪证-5）"); }
+}
+function endGame(){
+  saveGame(false);
+  const stockVal = S.stock.reduce((a,p) => a + deadSalePrice(p), 0);
+  const net = S.cash + stockVal;
+  el("overlay-box").innerHTML = "<h2>结算</h2>净身价 <b>" + net + " 两</b>（开局 200）"
+    + "<br>成交 " + S.stats.deals + " | 查抄 " + S.stats.raids
+    + "<br><button onclick='startGame(S.catalog)'>再开一局</button>";
+  el("overlay").style.display = "flex";
+}
+// ---------- 绑定 ----------
+el("b-eye").onclick = appraise;
+el("b-off5").onclick = () => offerPct(0.5);
+el("b-off4").onclick = () => offerPct(0.4);
+el("b-off3").onclick = () => offerPct(0.3);
+el("b-reject").onclick = reject;
+el("b-sell").onclick = sellDead;
+el("b-shop").onclick = openShop;
+el("b-close").onclick = endDay;
+el("b-save").onclick = () => saveGame(true);
+var audioCtx = null, muted = false;
+var queue = [];
+S = freshState(); hud(); showSaveInfo();
+</script>
+</body>
+</html>
