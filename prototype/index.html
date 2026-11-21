@@ -203,9 +203,17 @@ function makeItem(faction){
     icon: useOriginal ? ("assets-original/items/" + t.icon) : t.icon };
 }
 function makeCustomer(){
+  const name = pick(SURNAMES)+pick(GIVEN);
+  const have = S.stock.concat(S.display);
+  if (have.length && rng() < 0.25){
+    const src = (S.display.length && rng() < 0.6) ? S.display : have;
+    const item = pick(src);
+    const bid = Math.max(1, Math.round(item.value * (0.55 + rng() * 0.35) * S.market));
+    return { name, faction: pick(FACTIONS), intent:"buy", item, bid, ask:0 };
+  }
   const faction = pick(FACTIONS);
   const item = makeItem(faction);
-  return { name: pick(SURNAMES)+pick(GIVEN), faction, ask:item.ask, item, stolen:item.stolen };
+  return { name, faction, intent:"pawn", ask:item.ask, item, stolen:item.stolen };
 }
 function acceptChance(c, offer){
   const ratio = offer / Math.max(1, c.ask);
@@ -335,8 +343,14 @@ function nextCustomer(){
   port.style.transition = "none"; port.style.left = "881px"; port.style.opacity = "0";
   void port.offsetWidth;
   port.style.transition = "left 1.1s ease-in, opacity .6s";
-  el("item-name").textContent = c.item.name;
-  el("item-cat").textContent = c.item.tpl.cat + "｜要价 " + c.ask + " 两";
+  const isBuy = c.intent === "buy";
+  el("item-name").textContent = (isBuy ? "【求购】" : "【典当】") + c.item.name;
+  el("item-cat").textContent = isBuy
+    ? c.item.tpl.cat + "｜开价 " + c.bid + " 两"
+    : c.item.tpl.cat + "｜要价 " + c.ask + " 两";
+  el("b-eye").style.display = isBuy ? "none" : "";
+  const labels = isBuy ? ["算盘·要价150%", "要价120%", "要价90%"] : ["算盘·出五成", "出四成", "出三成"];
+  ["b-off5", "b-off4", "b-off3"].forEach((id, i) => el(id).textContent = labels[i]);
   el("item-eye").textContent = "";
   el("appraise-result").textContent = "";
   const pIcon = HD64[c.item.tpl.id] || c.item.icon;
@@ -366,6 +380,25 @@ function appraise(){
 }
 function offerPct(pct){
   const c = queue[0];
+  if (c.intent === "buy"){
+    const ask = Math.max(1, Math.round(c.item.value * pct * 3 * S.market));
+    let ch = 50 + Math.floor(S.prestige / 5)
+      + Math.round((c.bid - ask) / Math.max(1, c.item.value) * 140)
+      + (S.display.includes(c.item) ? 12 : 0) + (S.amenities.shelf ? 5 : 0);
+    ch = Math.max(5, Math.min(92, ch));
+    if (rng() * 100 < ch){
+      const idx = S.stock.indexOf(c.item); if (idx >= 0) S.stock.splice(idx, 1);
+      const di = S.display.indexOf(c.item); if (di >= 0) S.display.splice(di, 1);
+      S.cash += ask;
+      log("售出「" + c.item.name + "」得 " + ask + " 两。", "good");
+      if (c.item.stolen){ S.evidence = Math.min(100, S.evidence + 10); log("销赃罪证 +10", "bad"); }
+      S.stats.deals++;
+    } else {
+      if (rng() < 0.2){ S.prestige = Math.max(0, S.prestige - 1); log("嫌价太高，威望 -1", "bad"); }
+      else log("客人没谈拢。", "sys");
+    }
+    queue.shift(); hud(); nextCustomer(); return;
+  }
   const offer = Math.max(1, Math.round(c.item.value * pct));
   if (S.cash < offer){ log("本银不够。", "bad"); return; }
   if (rng() * 100 < acceptChance(c, offer)){
