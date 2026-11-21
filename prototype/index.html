@@ -80,6 +80,8 @@ body{background:#0E1013;color:var(--zhihuang);font-family:"Microsoft YaHei",sans
 #log .sys{color:#9fb4c9}#log .good{color:#a8d8a0}#log .bad{color:#ff9a8a}#log .event{color:var(--jingao)}
 .overlay{position:fixed;inset:0;background:rgba(0,0,0,.78);display:none;
   justify-content:center;align-items:center;z-index:99}
+#shop-box .shoprow{margin:8px 0;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+#shop-box .desc{color:#7a6a55;font-size:13px}
 .overlay .box{background:var(--zhihuang);color:#3a2a1a;padding:28px 42px;
   border:3px solid var(--ink);max-width:560px;line-height:1.9;font-size:15px}
 .box h2{color:var(--yanzhi);margin-bottom:10px}
@@ -327,7 +329,7 @@ function startGame(catalog){
 }
 function nextDay(){
   hud(); if (S.day > TOTAL_DAYS){ endGame(); return; }
-  el("overlay").style.display = "none";
+  el("overlay").style.display = "none"; setNight(false);
   queue = [];
   const n = ri(4, 6) + (S.amenities.tea ? 1 : 0) + (S.display.length ? 1 : 0);
   for (let i = 0; i < n; i++) queue.push(makeCustomer());
@@ -425,12 +427,51 @@ function sellDead(){
   S.cash += price; log("死当「" + p.name + "」得 " + price + " 两。", "good");
   hud(); setButtons(true);
 }
+
+function openShop(){
+  const F = [
+    ["tea","茶水招待","每日客流 +1", 20],
+    ["account","外包账房","赎当利钱 +10%", 30],
+    ["secure","保险柜","搜查罚银减半", 40],
+    ["shelf","多宝格","死当售价 +10%，买家 +5%", 35]
+  ];
+  const NAMES = {tea:"茶水招待", account:"外包账房", secure:"保险柜", shelf:"多宝格"};
+  let html = "<h2>钱庄 · 恒升号</h2>";
+  F.forEach(f => {
+    html += "<div class='shoprow'><b>" + f[1] + "</b> <span class='desc'>" + f[2] + "</span> "
+      + (S.amenities[f[0]] ? "<i>已置办</i>" : "<button onclick='buyFac(&quot;" + f[0] + "&quot;," + f[3] + ")'>置办 " + f[3] + " 两</button>") + "</div>";
+  });
+  html += "<hr>";
+  if (S.loan) html += "<div>印子钱：欠 <b>" + S.loan.repay + "</b> 两，须在第 " + S.loan.due + " 天前还清，逾期以死当抵债。</div>";
+  else html += "<div class='shoprow'><b>印子钱</b> <span class='desc'>借 100 两，10 天内还 130，逾期没收死当抵债</span> <button onclick='takeLoan()'>借 100 两</button></div>";
+  html += "<hr><button onclick='el(&quot;shop-overlay&quot;).style.display=&quot;none&quot;'>离铺</button>";
+  el("shop-box").innerHTML = html;
+  el("shop-overlay").style.display = "flex";
+}
+function buyFac(key, cost){
+  if (S.amenities[key]) return;
+  if (S.cash < cost){ log("本银不够。", "bad"); return; }
+  S.cash -= cost; S.amenities[key] = true;
+  log("置办「" + ({tea:"茶水招待",account:"外包账房",secure:"保险柜",shelf:"多宝格"})[key] + "」。", "good");
+  hud(); openShop();
+}
+function takeLoan(){
+  if (S.loan) return;
+  S.loan = { principal:100, repay:130, due:S.day + 10 };
+  S.cash += 100; log("借印子钱 100 两，第 " + S.loan.due + " 天前须还 130。", "sys");
+  hud(); openShop();
+}
 function sndChime(){ try{ audioCtx = audioCtx || new (window.AudioContext||window.webkitAudioContext)();
   const o = audioCtx.createOscillator(), g = audioCtx.createGain(); o.type = "triangle"; o.frequency.value = 660;
   o.connect(g); g.connect(audioCtx.destination); g.gain.setValueAtTime(0.1, audioCtx.currentTime);
   g.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.12);
   o.start(audioCtx.currentTime); o.stop(audioCtx.currentTime + 0.12); }catch(e){} }
 let audioCtx = null;
+
+function setNight(on){
+  el("bg-layer").src = "../asset/scenes/" + (on ? "bg_alley_flat_night_hd.png" : "bg_alley_hd_day.png");
+  el("fg-layer").src = "../asset/scenes/" + (on ? "fg_interior_flat_night_hd.png" : "fg_interior_hd_day.png");
+}
 function endDay(){
   const msgs = [];
   S.evidence = Math.max(0,S.evidence-1);
@@ -451,7 +492,9 @@ function endDay(){
   loanCheck(msgs); eventCard(msgs);
   const raid = raidCheck(); if (raid) msgs.push(raid);
   S.market = Math.min(1.15, Math.max(0.85, S.market + (rng()-0.5)*0.1));
+  S.market = Math.min(1.35, Math.max(0.65, S.market * (S.nextDayMod || 1))); S.nextDayMod = 1;
   log("· 打烊 —— " + (msgs.join(" ") || "平安无事。"), "event");
+  setNight(true);
   saveGame(false); hud(); S.day++;
   if (S.day > TOTAL_DAYS){ endGame(); return; }
   setTimeout(() => { el("overlay-box").innerHTML = "<h2>打烊 · 第" + (S.day-1) + "天</h2>"
@@ -477,25 +520,37 @@ function loanCheck(msgs){ if (!S.loan || S.day <= S.loan.due) return;
   S.loan = null;
 }
 function eventCard(msgs){
-  if (rng() > 0.45) return;
-  const roll = pick(["price","gang","order","rumor","doctor","church"]);
-  if (roll === "price"){ S.nextDayMod = 0.8; msgs.push("📰 同行压价。"); }
+  if (rng() > 0.55) return;
+  const roll = pick(["price","boom","gang","order","rumor","yamen","rat","oldfriend","doctor","charity"]);
+  if (roll === "price"){ S.nextDayMod = 0.8; msgs.push("📰 同行压价，明日行情大跌。"); }
+  else if (roll === "boom"){ S.nextDayMod = 1.2; msgs.push("📰 大户散货，明日行情见涨。"); }
   else if (roll === "gang"){
     const st = S.stock.filter(p => p.stolen);
     if (st.length){ const p = st[0]; S.stock.splice(S.stock.indexOf(p),1); S.cash += Math.round(p.value*0.5);
       msgs.push("🗡 绿林强买「" + p.name + "」。"); }
-    else { S.prestige = Math.max(0,S.prestige-1); msgs.push("🗡 绿林路过。"); }
+    else { S.prestige = Math.max(0,S.prestige-1); msgs.push("🗡 绿林路过，没敢动手。"); }
   }
   else if (roll === "order"){
     const nice = S.stock.filter(p => !p.fake && p.value >= 50);
     if (nice.length){ const p = pick(nice); const pr = deadSalePrice(p); S.stock.splice(S.stock.indexOf(p),1);
-      S.cash += pr + Math.round(pr*0.3); msgs.push("📜 洋行收「" + p.name + "」。"); }
-    else { S.cash += 10; msgs.push("📜 洋行空手。"); }
+      S.cash += pr + Math.round(pr*0.3); msgs.push("📜 洋行采买「" + p.name + "」，加价三成。"); }
+    else { S.cash += 10; msgs.push("📜 洋行买办空手而回，赏茶钱 10 两。"); }
   }
-  else if (roll === "rumor"){ S.evidence = Math.min(100,S.evidence+10); msgs.push("👁 风闻。（罪证+10）"); }
-  else if (roll === "doctor"){ S.prestige += 2; msgs.push("🌿 义诊。（威望+2）"); }
-  else { S.evidence = Math.max(0,S.evidence-5); msgs.push("⛪ 募捐。（罪证-5）"); }
+  else if (roll === "rumor"){ S.evidence = Math.min(100,S.evidence+10); msgs.push("👁 江湖风闻铺里收过黑货。（罪证+10）"); }
+  else if (roll === "yamen"){ const cost = Math.min(S.cash, 10); S.cash -= cost;
+    S.evidence = Math.max(0,S.evidence-15); msgs.push("🏮 官差盘查，塞了 " + cost + " 两打包票。（罪证-15）"); }
+  else if (roll === "rat"){
+    const hides = S.stock.filter(p => p.tpl && p.tpl.cat === "皮货");
+    if (hides.length){ const p = hides[0]; p.value = Math.max(1, Math.round(p.value/2));
+      msgs.push("🐀 鼠患损库，「" + p.name + "」折价一半。"); }
+    else msgs.push("🐀 鼠患掠过，幸无损失。");
+  }
+  else if (roll === "oldfriend"){ const amt = ri(10,30); S.cash += amt;
+    msgs.push("🤝 老主顾赎清旧账，付了 " + amt + " 两利钱。"); }
+  else if (roll === "doctor"){ S.prestige += 2; msgs.push("🌿 铺里施药，街坊称颂。（威望+2）"); }
+  else { S.evidence = Math.max(0,S.evidence-5); msgs.push("🕯 城隍庙布施，积德消灾。（罪证-5）"); }
 }
+
 function endGame(){
   saveGame(false);
   const stockVal = S.stock.reduce((a,p) => a + deadSalePrice(p), 0);
