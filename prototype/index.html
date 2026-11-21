@@ -574,9 +574,21 @@ function endGame(){
   saveGame(false);
   const stockVal = S.stock.reduce((a,p) => a + deadSalePrice(p), 0);
   const net = S.cash + stockVal;
-  el("overlay-box").innerHTML = "<h2>结算</h2>净身价 <b>" + net + " 两</b>（开局 200）"
-    + "<br>成交 " + S.stats.deals + " | 查抄 " + S.stats.raids
-    + "<br><button onclick='startGame(S.catalog)'>再开一局</button>";
+  const debt = S.tempRent + (S.loan ? S.loan.repay : 0);
+  const profit = net - 200;
+  let grade, verdict;
+  if (debt >= net || net <= 0){ grade = "丁"; verdict = "铺底亏空，官债缠身——卷了铺盖连夜出城。"; }
+  else if (profit < 100){ grade = "丙"; verdict = "勉强糊口。掌柜的，明年还得更勤快些。"; }
+  else if (profit < 400){ grade = "乙"; verdict = "街面上有了名号，恒升钱庄愿再赊你一年。"; }
+  else { grade = "甲"; verdict = "州城里头一份的当铺，连官老爷都来典凑银钱。"; }
+  const setd = S.stats.deals, ra = S.stats.raids, pr = S.prestige;
+  el("overlay-box").innerHTML = "<h2>打烊结业 · 第28天</h2>"
+    + "<div style='font-size:34px;text-align:center;color:var(--zhusa)'>【" + grade + "】</div>"
+    + "<div style='text-align:center;margin:4px 0 10px'>" + verdict + "</div>"
+    + "<hr><div>净身价 <b>" + net + "</b> 两（现金 " + S.cash + " + 库存估值 " + stockVal + "）</div>"
+    + "<div>利润 <b>" + profit + "</b> 两 | 欠债 " + debt + " 两</div>"
+    + "<div>成交 " + setd + " 笔 | 查抄 " + ra + " 次 | 威望 " + pr + " | 眼力 " + S.eyeLevel + " 级</div>"
+    + "<hr><button onclick='startGame(S.catalog)'>再开一局</button>";
   el("overlay").style.display = "flex";
 }
 // ---------- 绑定 ----------
