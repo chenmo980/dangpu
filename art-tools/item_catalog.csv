@@ -39,7 +39,7 @@ saddle_leather,皮马鞍,皮货,25,60,鞍架裂/皮磨亮,fur_item gear_item,2x2
 pack_leather,皮行囊,皮货,5,15,带断/底磨穿,fur_item gear_item,2x1
 waterskin,皮水袋,皮货,2,7,渗漏/塞丢,fur_item gear_item,1x1
 pads_leather,皮护膝(对),皮货,2,8,失配/絮露,fur_item gear_item,1x1
-scroll_landscape,山水立轴,字画,60,150,虫蛀/水渍/揭裱/painting_item precious_item,1x3
+scroll_landscape,山水立轴,字画,60,150,虫蛀/水渍/揭裱,painting_item precious_item,1x3
 scroll_flowers,花鸟立轴,字画,40,100,虫蛀/褪色/断轴,painting_item precious_item,1x3
 handscroll,山水手卷,字画,80,200,引首缺/拖尾断/水渍,painting_item precious_item,3x1
 album_leaf,名人册页,字画,50,120,缺页/污损/虫蛀,painting_item precious_item,2x2
@@ -101,7 +101,7 @@ orrery_planet,行星仪,钟表,150,380,齿轮卡/球缺,clock_item rare_item,2x2
 watch_chain_gold,金表链,钟表,40,110,断节/扣松,clock_item jewelry_item,1x2
 bangle_jade_white,白玉镯,玉器,80,200,绺裂/棉斑,jade_item precious_item,1x1
 pendant_jade_gu,玉珏(佩),玉器,60,160,缺角/沁色,jade_item precious_item,1x1
-ruyi_jade,玉如意,玉器,150,380,断首/裂绺/jade_item rare_item placeholder,2x2
+ruyi_jade,玉如意,玉器,150,380,断首/裂绺,jade_item rare_item,2x2
 archer_ring_feicui,翡翠扳指,玉器,120,300,绺裂/沁色,jade_item rare_item,1x1
 boulder_jade_shanzi,玉山子,玉器,200,500,裂绺/雕工损,jade_item rare_item,2x2
 cicada_jade_han,玉蝉(琀),玉器,90,220,断翅/沁色,jade_item precious_item,1x1

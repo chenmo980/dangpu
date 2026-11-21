@@ -5,6 +5,13 @@ analysis/
 art-iteration/ref-study/
 study.cany/
 
+# Unity 自动生成（任何层级）
+Library/
+Temp/
+Logs/
+UserSettings/
+Artifacts/
+
 # 构建产物
 bin/
 obj/
