@@ -1,0 +1,27 @@
+{
+  "base_resolution": [
+    1376,
+    768
+  ],
+  "cell_px_native": 32,
+  "cell_px_on_hd_canvas": 34,
+  "desktop_grid": {
+    "x": 32,
+    "y": 444,
+    "cols": 28,
+    "rows": 3,
+    "capacity": 84
+  },
+  "under_desk_storage_grid": {
+    "x": 446,
+    "y": 582,
+    "cols": 14,
+    "rows": 5,
+    "capacity": 70
+  },
+  "total_adapted_items": 140,
+  "csv_fixes": {
+    "scroll_landscape": "1x3",
+    "ruyi_jade": "2x1"
+  }
+}

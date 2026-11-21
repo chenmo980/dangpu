@@ -1,0 +1,66 @@
+[
+  {
+    "id": "npc_commoner",
+    "name": "街坊小民",
+    "role": "急当低值品",
+    "sprite_128": "npc_commoner_128.png",
+    "sprite_256": "npc_commoner_256.png",
+    "headshot_64": "npc_commoner_head64.png"
+  },
+  {
+    "id": "npc_prodigal",
+    "name": "败家子弟",
+    "role": "高价货急当",
+    "sprite_128": "npc_prodigal_128.png",
+    "sprite_256": "npc_prodigal_256.png",
+    "headshot_64": "npc_prodigal_head64.png"
+  },
+  {
+    "id": "npc_outlaw",
+    "name": "绿林朋友",
+    "role": "夜间销赃",
+    "sprite_128": "npc_outlaw_128.png",
+    "sprite_256": "npc_outlaw_256.png",
+    "headshot_64": "npc_outlaw_head64.png"
+  },
+  {
+    "id": "npc_yamen",
+    "name": "官面衙门",
+    "role": "查抄/收例银",
+    "sprite_128": "npc_yamen_128.png",
+    "sprite_256": "npc_yamen_256.png",
+    "headshot_64": "npc_yamen_head64.png"
+  },
+  {
+    "id": "npc_connoisseur",
+    "name": "古玩行家",
+    "role": "收死当/识赝品",
+    "sprite_128": "npc_connoisseur_128.png",
+    "sprite_256": "npc_connoisseur_256.png",
+    "headshot_64": "npc_connoisseur_head64.png"
+  },
+  {
+    "id": "npc_comprador",
+    "name": "洋行买办",
+    "role": "钟表银器大宗",
+    "sprite_128": "npc_comprador_128.png",
+    "sprite_256": "npc_comprador_256.png",
+    "headshot_64": "npc_comprador_head64.png"
+  },
+  {
+    "id": "npc_rival",
+    "name": "当行同行",
+    "role": "抬杠压价/联号",
+    "sprite_128": "npc_rival_128.png",
+    "sprite_256": "npc_rival_256.png",
+    "headshot_64": "npc_rival_head64.png"
+  },
+  {
+    "id": "npc_lady",
+    "name": "内眷女眷",
+    "role": "闺阁首饰私当",
+    "sprite_128": "npc_lady_128.png",
+    "sprite_256": "npc_lady_256.png",
+    "headshot_64": "npc_lady_head64.png"
+  }
+]

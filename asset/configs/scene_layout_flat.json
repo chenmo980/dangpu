@@ -1,0 +1,69 @@
+{
+  "base_resolution": [
+    1376,
+    768
+  ],
+  "projection": "flat_orthographic_front_on",
+  "layers_order": [
+    "0: bg_alley_flat_{day|night}",
+    "1: npc_customer_sprite (walks behind window frame & shutters)",
+    "2: fg_interior_flat_{day|night} (transparent central window cutout)",
+    "3: interactive_props (display_shelf, workbench, under_desk_grid, wanted_board, rent_plaque)"
+  ],
+  "zones_px": {
+    "window_open_rect": [
+      505,
+      134,
+      881,
+      410
+    ],
+    "left_rent_plaque_rect": [
+      84,
+      58,
+      326,
+      144
+    ],
+    "left_wanted_board_rect": [
+      24,
+      182,
+      168,
+      396
+    ],
+    "left_display_shelf_rect": [
+      186,
+      182,
+      404,
+      412
+    ],
+    "right_tool_board_rect": [
+      1002,
+      134,
+      1368,
+      326
+    ],
+    "center_workbench_rect": [
+      20,
+      462,
+      980,
+      548
+    ],
+    "under_desk_left_stash_rect": [
+      16,
+      580,
+      398,
+      760
+    ],
+    "under_desk_center_grid_rect": [
+      420,
+      580,
+      948,
+      756
+    ],
+    "under_desk_right_safe_and_sleep_rect": [
+      976,
+      580,
+      1360,
+      760
+    ]
+  }
+}

@@ -1,0 +1,142 @@
+[
+  {
+    "id": "weapon_yanling_dao",
+    "name": "雁翎腰刀",
+    "shape": "3x1",
+    "hd_file": "hd_64px_per_cell/weapon_yanling_dao.png",
+    "native_file": "native_32px_per_cell/weapon_yanling_dao.png"
+  },
+  {
+    "id": "weapon_iron_flute",
+    "name": "铁笛暗器",
+    "shape": "2x1",
+    "hd_file": "hd_64px_per_cell/weapon_iron_flute.png",
+    "native_file": "native_32px_per_cell/weapon_iron_flute.png"
+  },
+  {
+    "id": "weapon_bronze_dagger",
+    "name": "青铜短匕",
+    "shape": "2x1",
+    "hd_file": "hd_64px_per_cell/weapon_bronze_dagger.png",
+    "native_file": "native_32px_per_cell/weapon_bronze_dagger.png"
+  },
+  {
+    "id": "weapon_flintlock",
+    "name": "洋造燧发枪",
+    "shape": "2x1",
+    "hd_file": "hd_64px_per_cell/weapon_flintlock.png",
+    "native_file": "native_32px_per_cell/weapon_flintlock.png"
+  },
+  {
+    "id": "weapon_revolver",
+    "name": "洋行转轮枪",
+    "shape": "2x1",
+    "hd_file": "hd_64px_per_cell/weapon_revolver.png",
+    "native_file": "native_32px_per_cell/weapon_revolver.png"
+  },
+  {
+    "id": "weapon_flying_knife",
+    "name": "柳叶飞刀",
+    "shape": "1x2",
+    "hd_file": "hd_64px_per_cell/weapon_flying_knife.png",
+    "native_file": "native_32px_per_cell/weapon_flying_knife.png"
+  },
+  {
+    "id": "weapon_brass_knuckle",
+    "name": "铁莲花指虎",
+    "shape": "1x1",
+    "hd_file": "hd_64px_per_cell/weapon_brass_knuckle.png",
+    "native_file": "native_32px_per_cell/weapon_brass_knuckle.png"
+  },
+  {
+    "id": "weapon_iron_whip",
+    "name": "九节铁鞭",
+    "shape": "2x2",
+    "hd_file": "hd_64px_per_cell/weapon_iron_whip.png",
+    "native_file": "native_32px_per_cell/weapon_iron_whip.png"
+  },
+  {
+    "id": "weapon_crossbow_mini",
+    "name": "袖箭机弩",
+    "shape": "2x2",
+    "hd_file": "hd_64px_per_cell/weapon_crossbow_mini.png",
+    "native_file": "native_32px_per_cell/weapon_crossbow_mini.png"
+  },
+  {
+    "id": "weapon_military_token",
+    "name": "官造兵符",
+    "shape": "1x1",
+    "hd_file": "hd_64px_per_cell/weapon_military_token.png",
+    "native_file": "native_32px_per_cell/weapon_military_token.png"
+  },
+  {
+    "id": "contra_opium_pipe",
+    "name": "象牙烟枪",
+    "shape": "3x1",
+    "hd_file": "hd_64px_per_cell/contra_opium_pipe.png",
+    "native_file": "native_32px_per_cell/contra_opium_pipe.png"
+  },
+  {
+    "id": "contra_opium_lamp",
+    "name": "玻璃烟灯",
+    "shape": "1x2",
+    "hd_file": "hd_64px_per_cell/contra_opium_lamp.png",
+    "native_file": "native_32px_per_cell/contra_opium_lamp.png"
+  },
+  {
+    "id": "contra_opium_paste",
+    "name": "土膏烟盒",
+    "shape": "1x1",
+    "hd_file": "hd_64px_per_cell/contra_opium_paste.png",
+    "native_file": "native_32px_per_cell/contra_opium_paste.png"
+  },
+  {
+    "id": "contra_salt_bag",
+    "name": "私盐麻袋",
+    "shape": "2x2",
+    "hd_file": "hd_64px_per_cell/contra_salt_bag.png",
+    "native_file": "native_32px_per_cell/contra_salt_bag.png"
+  },
+  {
+    "id": "contra_fake_banknote",
+    "name": "假官银票",
+    "shape": "2x1",
+    "hd_file": "hd_64px_per_cell/contra_fake_banknote.png",
+    "native_file": "native_32px_per_cell/contra_fake_banknote.png"
+  },
+  {
+    "id": "contra_fake_seal",
+    "name": "私刻官印",
+    "shape": "1x1",
+    "hd_file": "hd_64px_per_cell/contra_fake_seal.png",
+    "native_file": "native_32px_per_cell/contra_fake_seal.png"
+  },
+  {
+    "id": "contra_tomb_figurine",
+    "name": "盗墓彩陶俑",
+    "shape": "1x2",
+    "hd_file": "hd_64px_per_cell/contra_tomb_figurine.png",
+    "native_file": "native_32px_per_cell/contra_tomb_figurine.png"
+  },
+  {
+    "id": "contra_coin_sword",
+    "name": "镇煞古钱剑",
+    "shape": "2x1",
+    "hd_file": "hd_64px_per_cell/contra_coin_sword.png",
+    "native_file": "native_32px_per_cell/contra_coin_sword.png"
+  },
+  {
+    "id": "contra_cinnabar_bottle",
+    "name": "黑市鹤顶红",
+    "shape": "1x1",
+    "hd_file": "hd_64px_per_cell/contra_cinnabar_bottle.png",
+    "native_file": "native_32px_per_cell/contra_cinnabar_bottle.png"
+  },
+  {
+    "id": "contra_gunpowder_jar",
+    "name": "走私火药坛",
+    "shape": "2x2",
+    "hd_file": "hd_64px_per_cell/contra_gunpowder_jar.png",
+    "native_file": "native_32px_per_cell/contra_gunpowder_jar.png"
+  }
+]
