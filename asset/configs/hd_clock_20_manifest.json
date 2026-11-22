@@ -1,0 +1,142 @@
+[
+  {
+    "id": "clock_tallcase",
+    "name": "红木座钟",
+    "shape": "1x3",
+    "hd_file": "hd_64px_per_cell/clock_tallcase.png",
+    "native_file": "native_32px_per_cell/clock_tallcase.png"
+  },
+  {
+    "id": "watch_pocket_gold",
+    "name": "金怀表",
+    "shape": "1x1",
+    "hd_file": "hd_64px_per_cell/watch_pocket_gold.png",
+    "native_file": "native_32px_per_cell/watch_pocket_gold.png"
+  },
+  {
+    "id": "watch_pocket_silver",
+    "name": "银怀表",
+    "shape": "1x1",
+    "hd_file": "hd_64px_per_cell/watch_pocket_silver.png",
+    "native_file": "native_32px_per_cell/watch_pocket_silver.png"
+  },
+  {
+    "id": "clock_wall_round",
+    "name": "圆形挂钟",
+    "shape": "1x2",
+    "hd_file": "hd_64px_per_cell/clock_wall_round.png",
+    "native_file": "native_32px_per_cell/clock_wall_round.png"
+  },
+  {
+    "id": "clock_mantel",
+    "name": "座钟(西洋)",
+    "shape": "1x2",
+    "hd_file": "hd_64px_per_cell/clock_mantel.png",
+    "native_file": "native_32px_per_cell/clock_mantel.png"
+  },
+  {
+    "id": "compass_marine",
+    "name": "航海罗盘",
+    "shape": "1x1",
+    "hd_file": "hd_64px_per_cell/compass_marine.png",
+    "native_file": "native_32px_per_cell/compass_marine.png"
+  },
+  {
+    "id": "astrolabe",
+    "name": "星盘仪",
+    "shape": "1x2",
+    "hd_file": "hd_64px_per_cell/astrolabe.png",
+    "native_file": "native_32px_per_cell/astrolabe.png"
+  },
+  {
+    "id": "sundial_desk",
+    "name": "日晷(案头)",
+    "shape": "1x1",
+    "hd_file": "hd_64px_per_cell/sundial_desk.png",
+    "native_file": "native_32px_per_cell/sundial_desk.png"
+  },
+  {
+    "id": "hourglass",
+    "name": "沙漏",
+    "shape": "1x1",
+    "hd_file": "hd_64px_per_cell/hourglass.png",
+    "native_file": "native_32px_per_cell/hourglass.png"
+  },
+  {
+    "id": "clock_carriage",
+    "name": "旅行钟",
+    "shape": "1x1",
+    "hd_file": "hd_64px_per_cell/clock_carriage.png",
+    "native_file": "native_32px_per_cell/clock_carriage.png"
+  },
+  {
+    "id": "watch_wrist_leather",
+    "name": "皮表带腕表",
+    "shape": "1x1",
+    "hd_file": "hd_64px_per_cell/watch_wrist_leather.png",
+    "native_file": "native_32px_per_cell/watch_wrist_leather.png"
+  },
+  {
+    "id": "metronome",
+    "name": "节拍器",
+    "shape": "1x2",
+    "hd_file": "hd_64px_per_cell/metronome.png",
+    "native_file": "native_32px_per_cell/metronome.png"
+  },
+  {
+    "id": "barometer",
+    "name": "晴雨表",
+    "shape": "1x1",
+    "hd_file": "hd_64px_per_cell/barometer.png",
+    "native_file": "native_32px_per_cell/barometer.png"
+  },
+  {
+    "id": "clock_grandfather_knock",
+    "name": "磕角落地钟",
+    "shape": "1x3",
+    "hd_file": "hd_64px_per_cell/clock_grandfather_knock.png",
+    "native_file": "native_32px_per_cell/clock_grandfather_knock.png"
+  },
+  {
+    "id": "watch_pocket_broken",
+    "name": "摔坏怀表",
+    "shape": "1x1",
+    "hd_file": "hd_64px_per_cell/watch_pocket_broken.png",
+    "native_file": "native_32px_per_cell/watch_pocket_broken.png"
+  },
+  {
+    "id": "clock_cuckoo",
+    "name": "布谷鸟钟",
+    "shape": "1x2",
+    "hd_file": "hd_64px_per_cell/clock_cuckoo.png",
+    "native_file": "native_32px_per_cell/clock_cuckoo.png"
+  },
+  {
+    "id": "sextant",
+    "name": "六分仪",
+    "shape": "1x2",
+    "hd_file": "hd_64px_per_cell/sextant.png",
+    "native_file": "native_32px_per_cell/sextant.png"
+  },
+  {
+    "id": "clock_turret",
+    "name": "塔楼钟模型",
+    "shape": "1x2",
+    "hd_file": "hd_64px_per_cell/clock_turret.png",
+    "native_file": "native_32px_per_cell/clock_turret.png"
+  },
+  {
+    "id": "orrery_planet",
+    "name": "行星仪",
+    "shape": "2x2",
+    "hd_file": "hd_64px_per_cell/orrery_planet.png",
+    "native_file": "native_32px_per_cell/orrery_planet.png"
+  },
+  {
+    "id": "watch_chain_gold",
+    "name": "金表链",
+    "shape": "1x2",
+    "hd_file": "hd_64px_per_cell/watch_chain_gold.png",
+    "native_file": "native_32px_per_cell/watch_chain_gold.png"
+  }
+]

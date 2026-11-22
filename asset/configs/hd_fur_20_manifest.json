@@ -1,0 +1,142 @@
+[
+  {
+    "id": "fox_pelt",
+    "name": "狐皮(整张)",
+    "shape": "2x2",
+    "hd_file": "hd_64px_per_cell/fox_pelt.png",
+    "native_file": "native_32px_per_cell/fox_pelt.png"
+  },
+  {
+    "id": "sable_pelt",
+    "name": "貂皮",
+    "shape": "2x1",
+    "hd_file": "hd_64px_per_cell/sable_pelt.png",
+    "native_file": "native_32px_per_cell/sable_pelt.png"
+  },
+  {
+    "id": "sheep_pelt",
+    "name": "羊皮",
+    "shape": "2x2",
+    "hd_file": "hd_64px_per_cell/sheep_pelt.png",
+    "native_file": "native_32px_per_cell/sheep_pelt.png"
+  },
+  {
+    "id": "wolf_pelt",
+    "name": "狼皮(整张)",
+    "shape": "2x2",
+    "hd_file": "hd_64px_per_cell/wolf_pelt.png",
+    "native_file": "native_32px_per_cell/wolf_pelt.png"
+  },
+  {
+    "id": "tiger_pelt",
+    "name": "虎皮",
+    "shape": "2x2",
+    "hd_file": "hd_64px_per_cell/tiger_pelt.png",
+    "native_file": "native_32px_per_cell/tiger_pelt.png"
+  },
+  {
+    "id": "deer_pelt",
+    "name": "鹿皮",
+    "shape": "2x2",
+    "hd_file": "hd_64px_per_cell/deer_pelt.png",
+    "native_file": "native_32px_per_cell/deer_pelt.png"
+  },
+  {
+    "id": "fox_collar",
+    "name": "狐皮领子",
+    "shape": "1x2",
+    "hd_file": "hd_64px_per_cell/fox_collar.png",
+    "native_file": "native_32px_per_cell/fox_collar.png"
+  },
+  {
+    "id": "fur_coat",
+    "name": "旧皮袄",
+    "shape": "2x2",
+    "hd_file": "hd_64px_per_cell/fur_coat.png",
+    "native_file": "native_32px_per_cell/fur_coat.png"
+  },
+  {
+    "id": "fur_gloves",
+    "name": "皮手套(对)",
+    "shape": "1x1",
+    "hd_file": "hd_64px_per_cell/fur_gloves.png",
+    "native_file": "native_32px_per_cell/fur_gloves.png"
+  },
+  {
+    "id": "fur_hat",
+    "name": "皮帽",
+    "shape": "1x1",
+    "hd_file": "hd_64px_per_cell/fur_hat.png",
+    "native_file": "native_32px_per_cell/fur_hat.png"
+  },
+  {
+    "id": "horse_hide",
+    "name": "马皮",
+    "shape": "2x2",
+    "hd_file": "hd_64px_per_cell/horse_hide.png",
+    "native_file": "native_32px_per_cell/horse_hide.png"
+  },
+  {
+    "id": "cow_hide",
+    "name": "牛皮(整张)",
+    "shape": "2x2",
+    "hd_file": "hd_64px_per_cell/cow_hide.png",
+    "native_file": "native_32px_per_cell/cow_hide.png"
+  },
+  {
+    "id": "rabbit_bundle",
+    "name": "兔皮(一捆)",
+    "shape": "1x1",
+    "hd_file": "hd_64px_per_cell/rabbit_bundle.png",
+    "native_file": "native_32px_per_cell/rabbit_bundle.png"
+  },
+  {
+    "id": "otter_pelt",
+    "name": "水獭皮",
+    "shape": "2x1",
+    "hd_file": "hd_64px_per_cell/otter_pelt.png",
+    "native_file": "native_32px_per_cell/otter_pelt.png"
+  },
+  {
+    "id": "sable_stole",
+    "name": "貂皮围脖",
+    "shape": "2x1",
+    "hd_file": "hd_64px_per_cell/sable_stole.png",
+    "native_file": "native_32px_per_cell/sable_stole.png"
+  },
+  {
+    "id": "bracer_leather",
+    "name": "皮护腕",
+    "shape": "1x1",
+    "hd_file": "hd_64px_per_cell/bracer_leather.png",
+    "native_file": "native_32px_per_cell/bracer_leather.png"
+  },
+  {
+    "id": "saddle_leather",
+    "name": "皮马鞍",
+    "shape": "2x2",
+    "hd_file": "hd_64px_per_cell/saddle_leather.png",
+    "native_file": "native_32px_per_cell/saddle_leather.png"
+  },
+  {
+    "id": "pack_leather",
+    "name": "皮行囊",
+    "shape": "2x1",
+    "hd_file": "hd_64px_per_cell/pack_leather.png",
+    "native_file": "native_32px_per_cell/pack_leather.png"
+  },
+  {
+    "id": "waterskin",
+    "name": "皮水袋",
+    "shape": "1x1",
+    "hd_file": "hd_64px_per_cell/waterskin.png",
+    "native_file": "native_32px_per_cell/waterskin.png"
+  },
+  {
+    "id": "pads_leather",
+    "name": "皮护膝(对)",
+    "shape": "1x1",
+    "hd_file": "hd_64px_per_cell/pads_leather.png",
+    "native_file": "native_32px_per_cell/pads_leather.png"
+  }
+]

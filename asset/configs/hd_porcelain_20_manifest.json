@@ -1,0 +1,142 @@
+[
+  {
+    "id": "vase_bq_meiping",
+    "name": "青花梅瓶",
+    "shape": "1x2",
+    "hd_file": "hd_64px_per_cell/vase_bq_meiping.png",
+    "native_file": "native_32px_per_cell/vase_bq_meiping.png"
+  },
+  {
+    "id": "vase_bq_guan",
+    "name": "青花贯耳瓶",
+    "shape": "1x2",
+    "hd_file": "hd_64px_per_cell/vase_bq_guan.png",
+    "native_file": "native_32px_per_cell/vase_bq_guan.png"
+  },
+  {
+    "id": "vase_bq_yuhuchun",
+    "name": "青花玉壶春瓶",
+    "shape": "1x2",
+    "hd_file": "hd_64px_per_cell/vase_bq_yuhuchun.png",
+    "native_file": "native_32px_per_cell/vase_bq_yuhuchun.png"
+  },
+  {
+    "id": "bowl_bq_longkou",
+    "name": "青花龙纹碗",
+    "shape": "1x1",
+    "hd_file": "hd_64px_per_cell/bowl_bq_longkou.png",
+    "native_file": "native_32px_per_cell/bowl_bq_longkou.png"
+  },
+  {
+    "id": "plate_bq_fish",
+    "name": "青花鱼纹盘",
+    "shape": "2x1",
+    "hd_file": "hd_64px_per_cell/plate_bq_fish.png",
+    "native_file": "native_32px_per_cell/plate_bq_fish.png"
+  },
+  {
+    "id": "jar_bq_guang",
+    "name": "青花罐",
+    "shape": "1x1",
+    "hd_file": "hd_64px_per_cell/jar_bq_guang.png",
+    "native_file": "native_32px_per_cell/jar_bq_guang.png"
+  },
+  {
+    "id": "zun_tang_sancai",
+    "name": "唐三彩尊",
+    "shape": "1x2",
+    "hd_file": "hd_64px_per_cell/zun_tang_sancai.png",
+    "native_file": "native_32px_per_cell/zun_tang_sancai.png"
+  },
+  {
+    "id": "vase_ruyao_tianqing",
+    "name": "汝窑天青洗",
+    "shape": "1x1",
+    "hd_file": "hd_64px_per_cell/vase_ruyao_tianqing.png",
+    "native_file": "native_32px_per_cell/vase_ruyao_tianqing.png"
+  },
+  {
+    "id": "bowl_doucai_chicken",
+    "name": "斗彩鸡缸杯",
+    "shape": "1x1",
+    "hd_file": "hd_64px_per_cell/bowl_doucai_chicken.png",
+    "native_file": "native_32px_per_cell/bowl_doucai_chicken.png"
+  },
+  {
+    "id": "vase_guan_ge_kai",
+    "name": "哥窑开片瓶",
+    "shape": "1x2",
+    "hd_file": "hd_64px_per_cell/vase_guan_ge_kai.png",
+    "native_file": "native_32px_per_cell/vase_guan_ge_kai.png"
+  },
+  {
+    "id": "pot_zisha",
+    "name": "紫砂小壶",
+    "shape": "1x1",
+    "hd_file": "hd_64px_per_cell/pot_zisha.png",
+    "native_file": "native_32px_per_cell/pot_zisha.png"
+  },
+  {
+    "id": "censer_jun_purple",
+    "name": "钧窑紫红斑炉",
+    "shape": "1x1",
+    "hd_file": "hd_64px_per_cell/censer_jun_purple.png",
+    "native_file": "native_32px_per_cell/censer_jun_purple.png"
+  },
+  {
+    "id": "plate_ru_celadon",
+    "name": "青瓷盘",
+    "shape": "2x1",
+    "hd_file": "hd_64px_per_cell/plate_ru_celadon.png",
+    "native_file": "native_32px_per_cell/plate_ru_celadon.png"
+  },
+  {
+    "id": "bowl_celadon_lotus",
+    "name": "青瓷莲瓣碗",
+    "shape": "1x1",
+    "hd_file": "hd_64px_per_cell/bowl_celadon_lotus.png",
+    "native_file": "native_32px_per_cell/bowl_celadon_lotus.png"
+  },
+  {
+    "id": "vase_fencai",
+    "name": "粉彩瓶",
+    "shape": "1x2",
+    "hd_file": "hd_64px_per_cell/vase_fencai.png",
+    "native_file": "native_32px_per_cell/vase_fencai.png"
+  },
+  {
+    "id": "jar_celadon_buried",
+    "name": "出土青瓷罐",
+    "shape": "1x1",
+    "hd_file": "hd_64px_per_cell/jar_celadon_buried.png",
+    "native_file": "native_32px_per_cell/jar_celadon_buried.png"
+  },
+  {
+    "id": "bowl_wucai",
+    "name": "五彩碗",
+    "shape": "1x1",
+    "hd_file": "hd_64px_per_cell/bowl_wucai.png",
+    "native_file": "native_32px_per_cell/bowl_wucai.png"
+  },
+  {
+    "id": "cup_celadon_pair",
+    "name": "青瓷盏(对)",
+    "shape": "1x1",
+    "hd_file": "hd_64px_per_cell/cup_celadon_pair.png",
+    "native_file": "native_32px_per_cell/cup_celadon_pair.png"
+  },
+  {
+    "id": "vase_langhong",
+    "name": "郎红釉瓶",
+    "shape": "1x2",
+    "hd_file": "hd_64px_per_cell/vase_langhong.png",
+    "native_file": "native_32px_per_cell/vase_langhong.png"
+  },
+  {
+    "id": "bowl_cracked_junk",
+    "name": "豁口粗碗",
+    "shape": "1x1",
+    "hd_file": "hd_64px_per_cell/bowl_cracked_junk.png",
+    "native_file": "native_32px_per_cell/bowl_cracked_junk.png"
+  }
+]

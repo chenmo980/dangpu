@@ -60,6 +60,18 @@ body{background:#0E1013;color:var(--zhihuang);font-family:"Microsoft YaHei",sans
   justify-content:center;align-items:center;overflow:hidden}
 #wanted-photo span{color:#9D2933;font-size:11px;font-weight:bold}
 #wanted-photo img{width:72px;height:72px;image-rendering:pixelated}
+#lamp-flame-f1,#lamp-flame-f2{position:absolute;left:1266px;top:400px;width:50px;height:52px;
+  pointer-events:none;image-rendering:auto}
+#lamp-flame-f1{animation:lampblink 1.1s steps(1) infinite}
+#lamp-flame-f2{animation:lampblink2 1.1s steps(1) infinite}
+@keyframes lampblink{0%,49%{opacity:1}50%,100%{opacity:0}}
+@keyframes lampblink2{0%,49%{opacity:0}50%,100%{opacity:1}}
+#hud-cash{background:url("../asset/ui_kit/ui_coin_pile.png") left center/18px 15px no-repeat;padding-left:22px}
+#stamp-seal{position:absolute;right:6%;bottom:16%;width:96px;transform:rotate(-14deg);
+  animation:stampin .35s cubic-bezier(.2,1.6,.4,1) .25s both}
+@keyframes stampin{from{transform:rotate(-14deg) scale(2.4);opacity:0}to{transform:rotate(-14deg) scale(1);opacity:.92}}
+.overlay .box{position:relative;border:34px solid transparent;
+  border-image:url("../asset/ui_kit/ui_panel_frame_9slice.png") 40 fill round}
 #stash-badge{position:absolute;left:30px;top:590px;font-size:15px;color:#c8b890;
   text-shadow:1px 1px 0 #000;background:rgba(0,0,0,.35);padding:4px 10px;border-radius:3px}
 #toolboard-buttons{position:absolute;left:1008px;top:140px;width:354px;display:flex;
@@ -135,6 +147,8 @@ body{background:#0E1013;color:var(--zhihuang);font-family:"Microsoft YaHei",sans
 <button class="reject" id="b-reject">拒客</button>
 <button id="b-sell">卖死当</button>
 </div>
+<img id="lamp-flame-f1" class="lampflame" src="../asset/ui_kit/ui_lamp_flame_f1.png">
+<img id="lamp-flame-f2" class="lampflame" src="../asset/ui_kit/ui_lamp_flame_f2.png">
 <div id="scene-misc">
 <button id="b-shop">钱庄·设施</button>
 <button id="b-close">打烊</button>
@@ -172,12 +186,9 @@ const FLAW_OVERLAY = {"裂纹":"flaw_crack_fine","重裂":"flaw_crack_heavy","�
   "火烧痕":"flaw_acid_burn","釉补":"flaw_glaze_patch","假戳记":"flaw_fake_stamp","疑似赝品":"flaw_fake_stamp"};
 let HD64 = {};
 function loadHD64(){
-  [["../asset/configs/hd_silver_20_manifest.json", "../asset/items_hd_silver_20/hd_64px_per_cell/"],
-   ["../asset/configs/hd_20_manifest.json", "../asset/items_hd_20/hd_64px_per_cell/"]].forEach(pair => {
-    try { const req = new XMLHttpRequest(); req.open("GET", pair[0], false); req.send(null);
-      if (req.status === 200) JSON.parse(req.responseText).forEach(e => { HD64[e.id] = pair[1] + e.id + ".png"; });
-    } catch(err) {}
-  });
+  try { const req = new XMLHttpRequest(); req.open("GET", "../asset/configs/all_140_hd_manifest.json", false); req.send(null);
+    if (req.status === 200) JSON.parse(req.responseText).items.forEach(e => { HD64[e.id] = "../asset/" + e.hd_path; });
+  } catch(err) {}
 }
 loadHD64();
 const PORTRAIT = {"街坊小民":"npc_commoner_256.png","败家子弟":"npc_prodigal_256.png","绿林朋友":"npc_outlaw_256.png","官面衙门":"npc_yamen_256.png","古玩行家":"npc_connoisseur_256.png","洋行买办":"npc_comprador_256.png","当行同行":"npc_rival_256.png","女眷":"npc_lady_256.png","行脚商":"npc_commoner_256.png"};
@@ -185,6 +196,11 @@ const SAVE_KEY = "dangpu_m09_save";
 const TOTAL_DAYS = 28, MONTH_DAYS = 10;
 let S, rngState = Date.now() % 2147483647;
 function rng(){ rngState = rngState * 48271 % 2147483647; return (rngState - 1) / 2147483646; }
+function angerCustomer(){
+  const c = queue[0]; if (!c) return;
+  const pid = PORTRAIT[c.faction] || PORTRAIT["街坊小民"];
+  el("customer-portrait").src = "../asset/characters/portraits_angry_256/" + pid.replace("_256.png", "_angry_256.png");
+}
 const ri = (a,b) => a + Math.floor(rng() * (b - a + 1));
 const pick = a => a[Math.floor(rng() * a.length)];
 const el = id => document.getElementById(id);
@@ -398,6 +414,9 @@ function offerPct(pct){
     } else {
       if (rng() < 0.2){ S.prestige = Math.max(0, S.prestige - 1); log("嫌价太高，威望 -1", "bad"); }
       else log("客人没谈拢。", "sys");
+      angerCustomer();
+      setTimeout(() => { queue.shift(); hud(); nextCustomer(); }, 750);
+      return;
     }
     queue.shift(); hud(); nextCustomer(); return;
   }
@@ -413,6 +432,9 @@ function offerPct(pct){
   } else {
     if (rng() < 0.3){ S.prestige = Math.max(0, S.prestige - 1); log("威望 -1", "bad"); }
     else log("客人走了。", "sys");
+    angerCustomer();
+    setTimeout(() => { queue.shift(); hud(); nextCustomer(); }, 750);
+    return;
   }
   queue.shift(); hud(); nextCustomer();
 }
@@ -420,7 +442,9 @@ function reject(){
   sndReject();
   if (rng() < 0.15){ S.prestige = Math.max(0, S.prestige - 1); log("威望 -1", "bad"); }
   else log("客人走了。", "sys");
-  S.stats.rejects++; queue.shift(); hud(); nextCustomer();
+  angerCustomer();
+  S.stats.rejects++;
+  setTimeout(() => { queue.shift(); hud(); nextCustomer(); }, 750);
 }
 function sellDead(){
   if (!S.stock.length){ log("库房空。", "sys"); return; }
@@ -588,7 +612,8 @@ function endGame(){
     + "<hr><div>净身价 <b>" + net + "</b> 两（现金 " + S.cash + " + 库存估值 " + stockVal + "）</div>"
     + "<div>利润 <b>" + profit + "</b> 两 | 欠债 " + debt + " 两</div>"
     + "<div>成交 " + setd + " 笔 | 查抄 " + ra + " 次 | 威望 " + pr + " | 眼力 " + S.eyeLevel + " 级</div>"
-    + "<hr><button onclick='startGame(S.catalog)'>再开一局</button>";
+    + "<hr><img id='stamp-seal' src='../asset/ui_kit/ui_stamp_round_seal.png'>"
+    + "<button onclick='startGame(S.catalog)'>再开一局</button>";
   el("overlay").style.display = "flex";
 }
 // ---------- 绑定 ----------

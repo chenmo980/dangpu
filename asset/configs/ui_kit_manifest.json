@@ -1,0 +1,74 @@
+[
+  {
+    "id": "ui_pawn_ticket_paper",
+    "name": "当票宣纸底纹",
+    "file": "ui_kit/ui_pawn_ticket_paper.png",
+    "width": 203,
+    "height": 256,
+    "usage": "当票弹窗背景与票据底纸"
+  },
+  {
+    "id": "ui_panel_frame_9slice",
+    "name": "紫檀铜角九宫格木框",
+    "file": "ui_kit/ui_panel_frame_9slice.png",
+    "width": 251,
+    "height": 256,
+    "usage": "对话/账本/鉴宝详情 9-Slice 面板框"
+  },
+  {
+    "id": "ui_button_wood_banner",
+    "name": "胡桃木匾额按钮底",
+    "file": "ui_kit/ui_button_wood_banner.png",
+    "width": 256,
+    "height": 98,
+    "usage": "成交/压价/拒收/下一位 通用按钮底"
+  },
+  {
+    "id": "ui_cursor_magnifier",
+    "name": "黄铜放大镜光标",
+    "file": "ui_kit/ui_cursor_magnifier.png",
+    "width": 128,
+    "height": 128,
+    "usage": "掌眼鉴宝模式鼠标指针/工具图标"
+  },
+  {
+    "id": "ui_stamp_square_frame",
+    "name": "朱砂方形印章框",
+    "file": "ui_kit/ui_stamp_square_frame.png",
+    "width": 186,
+    "height": 192,
+    "usage": "叠加‘活当/死当/绝当/赝品’字样的印章外框"
+  },
+  {
+    "id": "ui_stamp_round_seal",
+    "name": "朱砂圆形当铺官印",
+    "file": "ui_kit/ui_stamp_round_seal.png",
+    "width": 192,
+    "height": 192,
+    "usage": "当票落款/每日结账盖章动效"
+  },
+  {
+    "id": "ui_coin_pile",
+    "name": "红绳铜钱串/银钱图标",
+    "file": "ui_kit/ui_coin_pile.png",
+    "width": 160,
+    "height": 133,
+    "usage": "顶部资金栏、出价滑块、每日房租扣除图标"
+  },
+  {
+    "id": "ui_lamp_flame_f1",
+    "name": "油灯火苗帧1（常亮）",
+    "file": "ui_kit/ui_lamp_flame_f1.png",
+    "width": 123,
+    "height": 128,
+    "usage": "右侧铜油灯动态火苗第1帧（含柔化暖光晕）"
+  },
+  {
+    "id": "ui_lamp_flame_f2",
+    "name": "油灯火苗帧2（微摇）",
+    "file": "ui_kit/ui_lamp_flame_f2.png",
+    "width": 123,
+    "height": 128,
+    "usage": "右侧铜油灯动态火苗第2帧（与 f1 交替 4-6 FPS 闪烁）"
+  }
+]

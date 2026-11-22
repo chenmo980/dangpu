@@ -1,0 +1,142 @@
+[
+  {
+    "id": "scroll_landscape",
+    "name": "山水立轴",
+    "shape": "1x3",
+    "hd_file": "hd_64px_per_cell/scroll_landscape.png",
+    "native_file": "native_32px_per_cell/scroll_landscape.png"
+  },
+  {
+    "id": "scroll_flowers",
+    "name": "花鸟立轴",
+    "shape": "1x3",
+    "hd_file": "hd_64px_per_cell/scroll_flowers.png",
+    "native_file": "native_32px_per_cell/scroll_flowers.png"
+  },
+  {
+    "id": "handscroll",
+    "name": "山水手卷",
+    "shape": "3x1",
+    "hd_file": "hd_64px_per_cell/handscroll.png",
+    "native_file": "native_32px_per_cell/handscroll.png"
+  },
+  {
+    "id": "album_leaf",
+    "name": "名人册页",
+    "shape": "2x2",
+    "hd_file": "hd_64px_per_cell/album_leaf.png",
+    "native_file": "native_32px_per_cell/album_leaf.png"
+  },
+  {
+    "id": "fan_folded",
+    "name": "名家折扇",
+    "shape": "1x2",
+    "hd_file": "hd_64px_per_cell/fan_folded.png",
+    "native_file": "native_32px_per_cell/fan_folded.png"
+  },
+  {
+    "id": "fan_round",
+    "name": "绢面团扇",
+    "shape": "1x2",
+    "hd_file": "hd_64px_per_cell/fan_round.png",
+    "native_file": "native_32px_per_cell/fan_round.png"
+  },
+  {
+    "id": "couplet_pair",
+    "name": "楹联一对",
+    "shape": "1x3",
+    "hd_file": "hd_64px_per_cell/couplet_pair.png",
+    "native_file": "native_32px_per_cell/couplet_pair.png"
+  },
+  {
+    "id": "rubbing",
+    "name": "碑帖拓片",
+    "shape": "2x2",
+    "hd_file": "hd_64px_per_cell/rubbing.png",
+    "native_file": "native_32px_per_cell/rubbing.png"
+  },
+  {
+    "id": "calligraphy_verse",
+    "name": "书法条幅",
+    "shape": "1x3",
+    "hd_file": "hd_64px_per_cell/calligraphy_verse.png",
+    "native_file": "native_32px_per_cell/calligraphy_verse.png"
+  },
+  {
+    "id": "portrait_ancestor",
+    "name": "祖先画像轴",
+    "shape": "1x3",
+    "hd_file": "hd_64px_per_cell/portrait_ancestor.png",
+    "native_file": "native_32px_per_cell/portrait_ancestor.png"
+  },
+  {
+    "id": "painting_bamboo",
+    "name": "墨竹小品",
+    "shape": "1x2",
+    "hd_file": "hd_64px_per_cell/painting_bamboo.png",
+    "native_file": "native_32px_per_cell/painting_bamboo.png"
+  },
+  {
+    "id": "painting_fish",
+    "name": "鱼藻图",
+    "shape": "2x1",
+    "hd_file": "hd_64px_per_cell/painting_fish.png",
+    "native_file": "native_32px_per_cell/painting_fish.png"
+  },
+  {
+    "id": "scroll_broken",
+    "name": "残卷断轴",
+    "shape": "1x2",
+    "hd_file": "hd_64px_per_cell/scroll_broken.png",
+    "native_file": "native_32px_per_cell/scroll_broken.png"
+  },
+  {
+    "id": "scroll_spring",
+    "name": "春景横披",
+    "shape": "3x1",
+    "hd_file": "hd_64px_per_cell/scroll_spring.png",
+    "native_file": "native_32px_per_cell/scroll_spring.png"
+  },
+  {
+    "id": "album_thumbed",
+    "name": "油渍册页",
+    "shape": "2x1",
+    "hd_file": "hd_64px_per_cell/album_thumbed.png",
+    "native_file": "native_32px_per_cell/album_thumbed.png"
+  },
+  {
+    "id": "fan_broken",
+    "name": "残破折扇",
+    "shape": "1x1",
+    "hd_file": "hd_64px_per_cell/fan_broken.png",
+    "native_file": "native_32px_per_cell/fan_broken.png"
+  },
+  {
+    "id": "painting_horses",
+    "name": "百马图卷",
+    "shape": "3x2",
+    "hd_file": "hd_64px_per_cell/painting_horses.png",
+    "native_file": "native_32px_per_cell/painting_horses.png"
+  },
+  {
+    "id": "calligraphy_seal",
+    "name": "名家印谱",
+    "shape": "2x2",
+    "hd_file": "hd_64px_per_cell/calligraphy_seal.png",
+    "native_file": "native_32px_per_cell/calligraphy_seal.png"
+  },
+  {
+    "id": "scroll_imperial",
+    "name": "御题诗轴",
+    "shape": "1x3",
+    "hd_file": "hd_64px_per_cell/scroll_imperial.png",
+    "native_file": "native_32px_per_cell/scroll_imperial.png"
+  },
+  {
+    "id": "painting_orchid",
+    "name": "兰谱四条",
+    "shape": "2x2",
+    "hd_file": "hd_64px_per_cell/painting_orchid.png",
+    "native_file": "native_32px_per_cell/painting_orchid.png"
+  }
+]
