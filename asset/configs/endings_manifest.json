@@ -34,5 +34,23 @@
     "file": "endings/ending_grade_d.png",
     "width": 647,
     "height": 347
+  },
+  {
+    "id": "ending_yishi",
+    "grade": "YISHI",
+    "title": "义士·青史留名",
+    "desc": "公之于世、护送维新、留名青史",
+    "file": "endings/ending_yishi.png",
+    "width": 603,
+    "height": 649
+  },
+  {
+    "id": "ending_heishi",
+    "grade": "HEISHI",
+    "title": "黑市枭雄·南市霸主",
+    "desc": "掌控地下夜当与军火洋货渠道",
+    "file": "endings/ending_heishi.png",
+    "width": 603,
+    "height": 649
   }
 ]

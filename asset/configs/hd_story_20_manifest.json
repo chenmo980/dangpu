@@ -1,0 +1,142 @@
+[
+  {
+    "id": "story_wooden_box_locked",
+    "name": "内字上锁木匣",
+    "shape": "2x2",
+    "hd_file": "hd_64px_per_cell/story_wooden_box_locked.png",
+    "native_file": "native_32px_per_cell/story_wooden_box_locked.png"
+  },
+  {
+    "id": "story_missing_ledger_pages",
+    "name": "缺失三页账页",
+    "shape": "2x1",
+    "hd_file": "hd_64px_per_cell/story_missing_ledger_pages.png",
+    "native_file": "native_32px_per_cell/story_missing_ledger_pages.png"
+  },
+  {
+    "id": "story_forged_iou_addendum",
+    "name": "伪造借据补页",
+    "shape": "2x1",
+    "hd_file": "hd_64px_per_cell/story_forged_iou_addendum.png",
+    "native_file": "native_32px_per_cell/story_forged_iou_addendum.png"
+  },
+  {
+    "id": "story_master_letter",
+    "name": "师父遗信",
+    "shape": "1x1",
+    "hd_file": "hd_64px_per_cell/story_master_letter.png",
+    "native_file": "native_32px_per_cell/story_master_letter.png"
+  },
+  {
+    "id": "story_palace_inventory",
+    "name": "广储司失物清单",
+    "shape": "2x2",
+    "hd_file": "hd_64px_per_cell/story_palace_inventory.png",
+    "native_file": "native_32px_per_cell/story_palace_inventory.png"
+  },
+  {
+    "id": "story_reform_secret_letter",
+    "name": "维新密信",
+    "shape": "1x1",
+    "hd_file": "hd_64px_per_cell/story_reform_secret_letter.png",
+    "native_file": "native_32px_per_cell/story_reform_secret_letter.png"
+  },
+  {
+    "id": "story_kco_bill_of_lading",
+    "name": "洋行提货单",
+    "shape": "2x1",
+    "hd_file": "hd_64px_per_cell/story_kco_bill_of_lading.png",
+    "native_file": "native_32px_per_cell/story_kco_bill_of_lading.png"
+  },
+  {
+    "id": "story_bank_draft_yongchang",
+    "name": "永昌钱庄庄票",
+    "shape": "2x1",
+    "hd_file": "hd_64px_per_cell/story_bank_draft_yongchang.png",
+    "native_file": "native_32px_per_cell/story_bank_draft_yongchang.png"
+  },
+  {
+    "id": "story_fake_seal_stamp",
+    "name": "白三伪刻印章",
+    "shape": "1x1",
+    "hd_file": "hd_64px_per_cell/story_fake_seal_stamp.png",
+    "native_file": "native_32px_per_cell/story_fake_seal_stamp.png"
+  },
+  {
+    "id": "story_consulate_card",
+    "name": "领事馆引荐名片",
+    "shape": "1x1",
+    "hd_file": "hd_64px_per_cell/story_consulate_card.png",
+    "native_file": "native_32px_per_cell/story_consulate_card.png"
+  },
+  {
+    "id": "story_cotton_robe",
+    "name": "王婆粗布棉袍",
+    "shape": "2x2",
+    "hd_file": "hd_64px_per_cell/story_cotton_robe.png",
+    "native_file": "native_32px_per_cell/story_cotton_robe.png"
+  },
+  {
+    "id": "story_copper_basin",
+    "name": "铜脸盆",
+    "shape": "2x1",
+    "hd_file": "hd_64px_per_cell/story_copper_basin.png",
+    "native_file": "native_32px_per_cell/story_copper_basin.png"
+  },
+  {
+    "id": "story_silver_longevity_lock",
+    "name": "长命银锁",
+    "shape": "1x1",
+    "hd_file": "hd_64px_per_cell/story_silver_longevity_lock.png",
+    "native_file": "native_32px_per_cell/story_silver_longevity_lock.png"
+  },
+  {
+    "id": "story_wild_ginseng",
+    "name": "老山人参",
+    "shape": "2x1",
+    "hd_file": "hd_64px_per_cell/story_wild_ginseng.png",
+    "native_file": "native_32px_per_cell/story_wild_ginseng.png"
+  },
+  {
+    "id": "story_opera_headdress",
+    "name": "点翠戏班头面",
+    "shape": "2x2",
+    "hd_file": "hd_64px_per_cell/story_opera_headdress.png",
+    "native_file": "native_32px_per_cell/story_opera_headdress.png"
+  },
+  {
+    "id": "story_spyglass_jiawu",
+    "name": "甲午千里镜",
+    "shape": "2x1",
+    "hd_file": "hd_64px_per_cell/story_spyglass_jiawu.png",
+    "native_file": "native_32px_per_cell/story_spyglass_jiawu.png"
+  },
+  {
+    "id": "story_ming_bronze_buddha",
+    "name": "明代铜佛",
+    "shape": "1x2",
+    "hd_file": "hd_64px_per_cell/story_ming_bronze_buddha.png",
+    "native_file": "native_32px_per_cell/story_ming_bronze_buddha.png"
+  },
+  {
+    "id": "story_steelyard_dengzi",
+    "name": "戥子小秤",
+    "shape": "2x1",
+    "hd_file": "hd_64px_per_cell/story_steelyard_dengzi.png",
+    "native_file": "native_32px_per_cell/story_steelyard_dengzi.png"
+  },
+  {
+    "id": "story_appraisal_manual",
+    "name": "古玩辨伪图谱",
+    "shape": "2x2",
+    "hd_file": "hd_64px_per_cell/story_appraisal_manual.png",
+    "native_file": "native_32px_per_cell/story_appraisal_manual.png"
+  },
+  {
+    "id": "story_british_notice",
+    "name": "英商保护告示",
+    "shape": "1x2",
+    "hd_file": "hd_64px_per_cell/story_british_notice.png",
+    "native_file": "native_32px_per_cell/story_british_notice.png"
+  }
+]

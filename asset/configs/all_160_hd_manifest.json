@@ -1,0 +1,1456 @@
+{
+  "total_items": 160,
+  "hd_coverage": "160/160 (100%)",
+  "categories": {
+    "weapons_contraband": 20,
+    "silver": 20,
+    "jade": 20,
+    "porcelain": 20,
+    "fur": 20,
+    "painting": 20,
+    "clock": 20,
+    "story_diandang": 20
+  },
+  "items": [
+    {
+      "id": "weapon_yanling_dao",
+      "name": "雁翎腰刀",
+      "category": "weapons_contraband",
+      "category_cn": "兵器与违禁品",
+      "shape": "3x1",
+      "hd_path": "items_hd_20/hd_64px_per_cell/weapon_yanling_dao.png",
+      "native_path": "items_hd_20/native_32px_per_cell/weapon_yanling_dao.png"
+    },
+    {
+      "id": "weapon_iron_flute",
+      "name": "铁笛暗器",
+      "category": "weapons_contraband",
+      "category_cn": "兵器与违禁品",
+      "shape": "2x1",
+      "hd_path": "items_hd_20/hd_64px_per_cell/weapon_iron_flute.png",
+      "native_path": "items_hd_20/native_32px_per_cell/weapon_iron_flute.png"
+    },
+    {
+      "id": "weapon_bronze_dagger",
+      "name": "青铜短匕",
+      "category": "weapons_contraband",
+      "category_cn": "兵器与违禁品",
+      "shape": "2x1",
+      "hd_path": "items_hd_20/hd_64px_per_cell/weapon_bronze_dagger.png",
+      "native_path": "items_hd_20/native_32px_per_cell/weapon_bronze_dagger.png"
+    },
+    {
+      "id": "weapon_flintlock",
+      "name": "洋造燧发枪",
+      "category": "weapons_contraband",
+      "category_cn": "兵器与违禁品",
+      "shape": "2x1",
+      "hd_path": "items_hd_20/hd_64px_per_cell/weapon_flintlock.png",
+      "native_path": "items_hd_20/native_32px_per_cell/weapon_flintlock.png"
+    },
+    {
+      "id": "weapon_revolver",
+      "name": "洋行转轮枪",
+      "category": "weapons_contraband",
+      "category_cn": "兵器与违禁品",
+      "shape": "2x1",
+      "hd_path": "items_hd_20/hd_64px_per_cell/weapon_revolver.png",
+      "native_path": "items_hd_20/native_32px_per_cell/weapon_revolver.png"
+    },
+    {
+      "id": "weapon_flying_knife",
+      "name": "柳叶飞刀",
+      "category": "weapons_contraband",
+      "category_cn": "兵器与违禁品",
+      "shape": "1x2",
+      "hd_path": "items_hd_20/hd_64px_per_cell/weapon_flying_knife.png",
+      "native_path": "items_hd_20/native_32px_per_cell/weapon_flying_knife.png"
+    },
+    {
+      "id": "weapon_brass_knuckle",
+      "name": "铁莲花指虎",
+      "category": "weapons_contraband",
+      "category_cn": "兵器与违禁品",
+      "shape": "1x1",
+      "hd_path": "items_hd_20/hd_64px_per_cell/weapon_brass_knuckle.png",
+      "native_path": "items_hd_20/native_32px_per_cell/weapon_brass_knuckle.png"
+    },
+    {
+      "id": "weapon_iron_whip",
+      "name": "九节铁鞭",
+      "category": "weapons_contraband",
+      "category_cn": "兵器与违禁品",
+      "shape": "2x2",
+      "hd_path": "items_hd_20/hd_64px_per_cell/weapon_iron_whip.png",
+      "native_path": "items_hd_20/native_32px_per_cell/weapon_iron_whip.png"
+    },
+    {
+      "id": "weapon_crossbow_mini",
+      "name": "袖箭机弩",
+      "category": "weapons_contraband",
+      "category_cn": "兵器与违禁品",
+      "shape": "2x2",
+      "hd_path": "items_hd_20/hd_64px_per_cell/weapon_crossbow_mini.png",
+      "native_path": "items_hd_20/native_32px_per_cell/weapon_crossbow_mini.png"
+    },
+    {
+      "id": "weapon_military_token",
+      "name": "官造兵符",
+      "category": "weapons_contraband",
+      "category_cn": "兵器与违禁品",
+      "shape": "1x1",
+      "hd_path": "items_hd_20/hd_64px_per_cell/weapon_military_token.png",
+      "native_path": "items_hd_20/native_32px_per_cell/weapon_military_token.png"
+    },
+    {
+      "id": "contra_opium_pipe",
+      "name": "象牙烟枪",
+      "category": "weapons_contraband",
+      "category_cn": "兵器与违禁品",
+      "shape": "3x1",
+      "hd_path": "items_hd_20/hd_64px_per_cell/contra_opium_pipe.png",
+      "native_path": "items_hd_20/native_32px_per_cell/contra_opium_pipe.png"
+    },
+    {
+      "id": "contra_opium_lamp",
+      "name": "玻璃烟灯",
+      "category": "weapons_contraband",
+      "category_cn": "兵器与违禁品",
+      "shape": "1x2",
+      "hd_path": "items_hd_20/hd_64px_per_cell/contra_opium_lamp.png",
+      "native_path": "items_hd_20/native_32px_per_cell/contra_opium_lamp.png"
+    },
+    {
+      "id": "contra_opium_paste",
+      "name": "土膏烟盒",
+      "category": "weapons_contraband",
+      "category_cn": "兵器与违禁品",
+      "shape": "1x1",
+      "hd_path": "items_hd_20/hd_64px_per_cell/contra_opium_paste.png",
+      "native_path": "items_hd_20/native_32px_per_cell/contra_opium_paste.png"
+    },
+    {
+      "id": "contra_salt_bag",
+      "name": "私盐麻袋",
+      "category": "weapons_contraband",
+      "category_cn": "兵器与违禁品",
+      "shape": "2x2",
+      "hd_path": "items_hd_20/hd_64px_per_cell/contra_salt_bag.png",
+      "native_path": "items_hd_20/native_32px_per_cell/contra_salt_bag.png"
+    },
+    {
+      "id": "contra_fake_banknote",
+      "name": "假官银票",
+      "category": "weapons_contraband",
+      "category_cn": "兵器与违禁品",
+      "shape": "2x1",
+      "hd_path": "items_hd_20/hd_64px_per_cell/contra_fake_banknote.png",
+      "native_path": "items_hd_20/native_32px_per_cell/contra_fake_banknote.png"
+    },
+    {
+      "id": "contra_fake_seal",
+      "name": "私刻官印",
+      "category": "weapons_contraband",
+      "category_cn": "兵器与违禁品",
+      "shape": "1x1",
+      "hd_path": "items_hd_20/hd_64px_per_cell/contra_fake_seal.png",
+      "native_path": "items_hd_20/native_32px_per_cell/contra_fake_seal.png"
+    },
+    {
+      "id": "contra_tomb_figurine",
+      "name": "盗墓彩陶俑",
+      "category": "weapons_contraband",
+      "category_cn": "兵器与违禁品",
+      "shape": "1x2",
+      "hd_path": "items_hd_20/hd_64px_per_cell/contra_tomb_figurine.png",
+      "native_path": "items_hd_20/native_32px_per_cell/contra_tomb_figurine.png"
+    },
+    {
+      "id": "contra_coin_sword",
+      "name": "镇煞古钱剑",
+      "category": "weapons_contraband",
+      "category_cn": "兵器与违禁品",
+      "shape": "2x1",
+      "hd_path": "items_hd_20/hd_64px_per_cell/contra_coin_sword.png",
+      "native_path": "items_hd_20/native_32px_per_cell/contra_coin_sword.png"
+    },
+    {
+      "id": "contra_cinnabar_bottle",
+      "name": "黑市鹤顶红",
+      "category": "weapons_contraband",
+      "category_cn": "兵器与违禁品",
+      "shape": "1x1",
+      "hd_path": "items_hd_20/hd_64px_per_cell/contra_cinnabar_bottle.png",
+      "native_path": "items_hd_20/native_32px_per_cell/contra_cinnabar_bottle.png"
+    },
+    {
+      "id": "contra_gunpowder_jar",
+      "name": "走私火药坛",
+      "category": "weapons_contraband",
+      "category_cn": "兵器与违禁品",
+      "shape": "2x2",
+      "hd_path": "items_hd_20/hd_64px_per_cell/contra_gunpowder_jar.png",
+      "native_path": "items_hd_20/native_32px_per_cell/contra_gunpowder_jar.png"
+    },
+    {
+      "id": "ingot_small",
+      "name": "小银锭",
+      "category": "silver",
+      "category_cn": "银器",
+      "shape": "1x1",
+      "hd_path": "items_hd_silver_20/hd_64px_per_cell/ingot_small.png",
+      "native_path": "items_hd_silver_20/native_32px_per_cell/ingot_small.png"
+    },
+    {
+      "id": "ingot_mid",
+      "name": "中银锭",
+      "category": "silver",
+      "category_cn": "银器",
+      "shape": "1x1",
+      "hd_path": "items_hd_silver_20/hd_64px_per_cell/ingot_mid.png",
+      "native_path": "items_hd_silver_20/native_32px_per_cell/ingot_mid.png"
+    },
+    {
+      "id": "ingot_large",
+      "name": "大银锭",
+      "category": "silver",
+      "category_cn": "银器",
+      "shape": "1x1",
+      "hd_path": "items_hd_silver_20/hd_64px_per_cell/ingot_large.png",
+      "native_path": "items_hd_silver_20/native_32px_per_cell/ingot_large.png"
+    },
+    {
+      "id": "yuanbao",
+      "name": "官铸元宝",
+      "category": "silver",
+      "category_cn": "银器",
+      "shape": "1x1",
+      "hd_path": "items_hd_silver_20/hd_64px_per_cell/yuanbao.png",
+      "native_path": "items_hd_silver_20/native_32px_per_cell/yuanbao.png"
+    },
+    {
+      "id": "bracelet_silver",
+      "name": "银镯",
+      "category": "silver",
+      "category_cn": "银器",
+      "shape": "1x1",
+      "hd_path": "items_hd_silver_20/hd_64px_per_cell/bracelet_silver.png",
+      "native_path": "items_hd_silver_20/native_32px_per_cell/bracelet_silver.png"
+    },
+    {
+      "id": "hairpin_silver",
+      "name": "银簪",
+      "category": "silver",
+      "category_cn": "银器",
+      "shape": "1x1",
+      "hd_path": "items_hd_silver_20/hd_64px_per_cell/hairpin_silver.png",
+      "native_path": "items_hd_silver_20/native_32px_per_cell/hairpin_silver.png"
+    },
+    {
+      "id": "lock_silver",
+      "name": "长命锁",
+      "category": "silver",
+      "category_cn": "银器",
+      "shape": "1x1",
+      "hd_path": "items_hd_silver_20/hd_64px_per_cell/lock_silver.png",
+      "native_path": "items_hd_silver_20/native_32px_per_cell/lock_silver.png"
+    },
+    {
+      "id": "teapot_silver",
+      "name": "银壶",
+      "category": "silver",
+      "category_cn": "银器",
+      "shape": "2x1",
+      "hd_path": "items_hd_silver_20/hd_64px_per_cell/teapot_silver.png",
+      "native_path": "items_hd_silver_20/native_32px_per_cell/teapot_silver.png"
+    },
+    {
+      "id": "cup_silver",
+      "name": "银盏",
+      "category": "silver",
+      "category_cn": "银器",
+      "shape": "1x1",
+      "hd_path": "items_hd_silver_20/hd_64px_per_cell/cup_silver.png",
+      "native_path": "items_hd_silver_20/native_32px_per_cell/cup_silver.png"
+    },
+    {
+      "id": "chopsticks_silver",
+      "name": "银箸(对)",
+      "category": "silver",
+      "category_cn": "银器",
+      "shape": "1x2",
+      "hd_path": "items_hd_silver_20/hd_64px_per_cell/chopsticks_silver.png",
+      "native_path": "items_hd_silver_20/native_32px_per_cell/chopsticks_silver.png"
+    },
+    {
+      "id": "buddha_silver",
+      "name": "小银佛",
+      "category": "silver",
+      "category_cn": "银器",
+      "shape": "1x2",
+      "hd_path": "items_hd_silver_20/hd_64px_per_cell/buddha_silver.png",
+      "native_path": "items_hd_silver_20/native_32px_per_cell/buddha_silver.png"
+    },
+    {
+      "id": "bell_silver",
+      "name": "银铃铛",
+      "category": "silver",
+      "category_cn": "银器",
+      "shape": "1x1",
+      "hd_path": "items_hd_silver_20/hd_64px_per_cell/bell_silver.png",
+      "native_path": "items_hd_silver_20/native_32px_per_cell/bell_silver.png"
+    },
+    {
+      "id": "mirror_silver",
+      "name": "银镜",
+      "category": "silver",
+      "category_cn": "银器",
+      "shape": "1x1",
+      "hd_path": "items_hd_silver_20/hd_64px_per_cell/mirror_silver.png",
+      "native_path": "items_hd_silver_20/native_32px_per_cell/mirror_silver.png"
+    },
+    {
+      "id": "pipe_silver",
+      "name": "银烟袋",
+      "category": "silver",
+      "category_cn": "银器",
+      "shape": "2x1",
+      "hd_path": "items_hd_silver_20/hd_64px_per_cell/pipe_silver.png",
+      "native_path": "items_hd_silver_20/native_32px_per_cell/pipe_silver.png"
+    },
+    {
+      "id": "knife_silver",
+      "name": "银匕首",
+      "category": "silver",
+      "category_cn": "银器",
+      "shape": "2x1",
+      "hd_path": "items_hd_silver_20/hd_64px_per_cell/knife_silver.png",
+      "native_path": "items_hd_silver_20/native_32px_per_cell/knife_silver.png"
+    },
+    {
+      "id": "bowl_silver",
+      "name": "银碗",
+      "category": "silver",
+      "category_cn": "银器",
+      "shape": "1x1",
+      "hd_path": "items_hd_silver_20/hd_64px_per_cell/bowl_silver.png",
+      "native_path": "items_hd_silver_20/native_32px_per_cell/bowl_silver.png"
+    },
+    {
+      "id": "earring_silver",
+      "name": "银耳坠(对)",
+      "category": "silver",
+      "category_cn": "银器",
+      "shape": "1x1",
+      "hd_path": "items_hd_silver_20/hd_64px_per_cell/earring_silver.png",
+      "native_path": "items_hd_silver_20/native_32px_per_cell/earring_silver.png"
+    },
+    {
+      "id": "ring_silver",
+      "name": "银戒指",
+      "category": "silver",
+      "category_cn": "银器",
+      "shape": "1x1",
+      "hd_path": "items_hd_silver_20/hd_64px_per_cell/ring_silver.png",
+      "native_path": "items_hd_silver_20/native_32px_per_cell/ring_silver.png"
+    },
+    {
+      "id": "censer_silver",
+      "name": "小银炉",
+      "category": "silver",
+      "category_cn": "银器",
+      "shape": "1x1",
+      "hd_path": "items_hd_silver_20/hd_64px_per_cell/censer_silver.png",
+      "native_path": "items_hd_silver_20/native_32px_per_cell/censer_silver.png"
+    },
+    {
+      "id": "crown_silver",
+      "name": "银发冠",
+      "category": "silver",
+      "category_cn": "银器",
+      "shape": "1x1",
+      "hd_path": "items_hd_silver_20/hd_64px_per_cell/crown_silver.png",
+      "native_path": "items_hd_silver_20/native_32px_per_cell/crown_silver.png"
+    },
+    {
+      "id": "bangle_jade_white",
+      "name": "白玉镯",
+      "category": "jade",
+      "category_cn": "玉器",
+      "shape": "1x1",
+      "hd_path": "items_hd_jade_20/hd_64px_per_cell/bangle_jade_white.png",
+      "native_path": "items_hd_jade_20/native_32px_per_cell/bangle_jade_white.png"
+    },
+    {
+      "id": "pendant_jade_gu",
+      "name": "玉珏(佩)",
+      "category": "jade",
+      "category_cn": "玉器",
+      "shape": "1x1",
+      "hd_path": "items_hd_jade_20/hd_64px_per_cell/pendant_jade_gu.png",
+      "native_path": "items_hd_jade_20/native_32px_per_cell/pendant_jade_gu.png"
+    },
+    {
+      "id": "ruyi_jade",
+      "name": "玉如意",
+      "category": "jade",
+      "category_cn": "玉器",
+      "shape": "2x1",
+      "hd_path": "items_hd_jade_20/hd_64px_per_cell/ruyi_jade.png",
+      "native_path": "items_hd_jade_20/native_32px_per_cell/ruyi_jade.png"
+    },
+    {
+      "id": "archer_ring_feicui",
+      "name": "翡翠扳指",
+      "category": "jade",
+      "category_cn": "玉器",
+      "shape": "1x1",
+      "hd_path": "items_hd_jade_20/hd_64px_per_cell/archer_ring_feicui.png",
+      "native_path": "items_hd_jade_20/native_32px_per_cell/archer_ring_feicui.png"
+    },
+    {
+      "id": "boulder_jade_shanzi",
+      "name": "玉山子",
+      "category": "jade",
+      "category_cn": "玉器",
+      "shape": "2x2",
+      "hd_path": "items_hd_jade_20/hd_64px_per_cell/boulder_jade_shanzi.png",
+      "native_path": "items_hd_jade_20/native_32px_per_cell/boulder_jade_shanzi.png"
+    },
+    {
+      "id": "cicada_jade_han",
+      "name": "玉蝉(琀)",
+      "category": "jade",
+      "category_cn": "玉器",
+      "shape": "1x1",
+      "hd_path": "items_hd_jade_20/hd_64px_per_cell/cicada_jade_han.png",
+      "native_path": "items_hd_jade_20/native_32px_per_cell/cicada_jade_han.png"
+    },
+    {
+      "id": "belt_hook_jade",
+      "name": "玉带钩",
+      "category": "jade",
+      "category_cn": "玉器",
+      "shape": "1x1",
+      "hd_path": "items_hd_jade_20/hd_64px_per_cell/belt_hook_jade.png",
+      "native_path": "items_hd_jade_20/native_32px_per_cell/belt_hook_jade.png"
+    },
+    {
+      "id": "brush_washer_jade",
+      "name": "玉笔洗",
+      "category": "jade",
+      "category_cn": "玉器",
+      "shape": "1x1",
+      "hd_path": "items_hd_jade_20/hd_64px_per_cell/brush_washer_jade.png",
+      "native_path": "items_hd_jade_20/native_32px_per_cell/brush_washer_jade.png"
+    },
+    {
+      "id": "seal_jade",
+      "name": "玉印",
+      "category": "jade",
+      "category_cn": "玉器",
+      "shape": "1x1",
+      "hd_path": "items_hd_jade_20/hd_64px_per_cell/seal_jade.png",
+      "native_path": "items_hd_jade_20/native_32px_per_cell/seal_jade.png"
+    },
+    {
+      "id": "pipe_jade",
+      "name": "玉烟嘴",
+      "category": "jade",
+      "category_cn": "玉器",
+      "shape": "1x1",
+      "hd_path": "items_hd_jade_20/hd_64px_per_cell/pipe_jade.png",
+      "native_path": "items_hd_jade_20/native_32px_per_cell/pipe_jade.png"
+    },
+    {
+      "id": "bi_disc_jade",
+      "name": "玉璧",
+      "category": "jade",
+      "category_cn": "玉器",
+      "shape": "1x1",
+      "hd_path": "items_hd_jade_20/hd_64px_per_cell/bi_disc_jade.png",
+      "native_path": "items_hd_jade_20/native_32px_per_cell/bi_disc_jade.png"
+    },
+    {
+      "id": "cong_jade",
+      "name": "玉琮",
+      "category": "jade",
+      "category_cn": "玉器",
+      "shape": "1x2",
+      "hd_path": "items_hd_jade_20/hd_64px_per_cell/cong_jade.png",
+      "native_path": "items_hd_jade_20/native_32px_per_cell/cong_jade.png"
+    },
+    {
+      "id": "carving_jade_buddha",
+      "name": "玉佛坠",
+      "category": "jade",
+      "category_cn": "玉器",
+      "shape": "1x1",
+      "hd_path": "items_hd_jade_20/hd_64px_per_cell/carving_jade_buddha.png",
+      "native_path": "items_hd_jade_20/native_32px_per_cell/carving_jade_buddha.png"
+    },
+    {
+      "id": "hairpin_jade",
+      "name": "玉簪",
+      "category": "jade",
+      "category_cn": "玉器",
+      "shape": "1x2",
+      "hd_path": "items_hd_jade_20/hd_64px_per_cell/hairpin_jade.png",
+      "native_path": "items_hd_jade_20/native_32px_per_cell/hairpin_jade.png"
+    },
+    {
+      "id": "cup_jade",
+      "name": "玉杯",
+      "category": "jade",
+      "category_cn": "玉器",
+      "shape": "1x1",
+      "hd_path": "items_hd_jade_20/hd_64px_per_cell/cup_jade.png",
+      "native_path": "items_hd_jade_20/native_32px_per_cell/cup_jade.png"
+    },
+    {
+      "id": "peach_jade",
+      "name": "玉桃摆件",
+      "category": "jade",
+      "category_cn": "玉器",
+      "shape": "1x1",
+      "hd_path": "items_hd_jade_20/hd_64px_per_cell/peach_jade.png",
+      "native_path": "items_hd_jade_20/native_32px_per_cell/peach_jade.png"
+    },
+    {
+      "id": "mirror_jade_bronze_back",
+      "name": "玉背铜镜",
+      "category": "jade",
+      "category_cn": "玉器",
+      "shape": "1x1",
+      "hd_path": "items_hd_jade_20/hd_64px_per_cell/mirror_jade_bronze_back.png",
+      "native_path": "items_hd_jade_20/native_32px_per_cell/mirror_jade_bronze_back.png"
+    },
+    {
+      "id": "beads_jade_string",
+      "name": "玉珠串",
+      "category": "jade",
+      "category_cn": "玉器",
+      "shape": "2x1",
+      "hd_path": "items_hd_jade_20/hd_64px_per_cell/beads_jade_string.png",
+      "native_path": "items_hd_jade_20/native_32px_per_cell/beads_jade_string.png"
+    },
+    {
+      "id": "junk_jade_scraps",
+      "name": "玉料边角",
+      "category": "jade",
+      "category_cn": "玉器",
+      "shape": "1x1",
+      "hd_path": "items_hd_jade_20/hd_64px_per_cell/junk_jade_scraps.png",
+      "native_path": "items_hd_jade_20/native_32px_per_cell/junk_jade_scraps.png"
+    },
+    {
+      "id": "axe_jade_broken",
+      "name": "残玉斧",
+      "category": "jade",
+      "category_cn": "玉器",
+      "shape": "1x1",
+      "hd_path": "items_hd_jade_20/hd_64px_per_cell/axe_jade_broken.png",
+      "native_path": "items_hd_jade_20/native_32px_per_cell/axe_jade_broken.png"
+    },
+    {
+      "id": "vase_bq_meiping",
+      "name": "青花梅瓶",
+      "category": "porcelain",
+      "category_cn": "瓷器",
+      "shape": "1x2",
+      "hd_path": "items_hd_porcelain_20/hd_64px_per_cell/vase_bq_meiping.png",
+      "native_path": "items_hd_porcelain_20/native_32px_per_cell/vase_bq_meiping.png"
+    },
+    {
+      "id": "vase_bq_guan",
+      "name": "青花贯耳瓶",
+      "category": "porcelain",
+      "category_cn": "瓷器",
+      "shape": "1x2",
+      "hd_path": "items_hd_porcelain_20/hd_64px_per_cell/vase_bq_guan.png",
+      "native_path": "items_hd_porcelain_20/native_32px_per_cell/vase_bq_guan.png"
+    },
+    {
+      "id": "vase_bq_yuhuchun",
+      "name": "青花玉壶春瓶",
+      "category": "porcelain",
+      "category_cn": "瓷器",
+      "shape": "1x2",
+      "hd_path": "items_hd_porcelain_20/hd_64px_per_cell/vase_bq_yuhuchun.png",
+      "native_path": "items_hd_porcelain_20/native_32px_per_cell/vase_bq_yuhuchun.png"
+    },
+    {
+      "id": "bowl_bq_longkou",
+      "name": "青花龙纹碗",
+      "category": "porcelain",
+      "category_cn": "瓷器",
+      "shape": "1x1",
+      "hd_path": "items_hd_porcelain_20/hd_64px_per_cell/bowl_bq_longkou.png",
+      "native_path": "items_hd_porcelain_20/native_32px_per_cell/bowl_bq_longkou.png"
+    },
+    {
+      "id": "plate_bq_fish",
+      "name": "青花鱼纹盘",
+      "category": "porcelain",
+      "category_cn": "瓷器",
+      "shape": "2x1",
+      "hd_path": "items_hd_porcelain_20/hd_64px_per_cell/plate_bq_fish.png",
+      "native_path": "items_hd_porcelain_20/native_32px_per_cell/plate_bq_fish.png"
+    },
+    {
+      "id": "jar_bq_guang",
+      "name": "青花罐",
+      "category": "porcelain",
+      "category_cn": "瓷器",
+      "shape": "1x1",
+      "hd_path": "items_hd_porcelain_20/hd_64px_per_cell/jar_bq_guang.png",
+      "native_path": "items_hd_porcelain_20/native_32px_per_cell/jar_bq_guang.png"
+    },
+    {
+      "id": "zun_tang_sancai",
+      "name": "唐三彩尊",
+      "category": "porcelain",
+      "category_cn": "瓷器",
+      "shape": "1x2",
+      "hd_path": "items_hd_porcelain_20/hd_64px_per_cell/zun_tang_sancai.png",
+      "native_path": "items_hd_porcelain_20/native_32px_per_cell/zun_tang_sancai.png"
+    },
+    {
+      "id": "vase_ruyao_tianqing",
+      "name": "汝窑天青洗",
+      "category": "porcelain",
+      "category_cn": "瓷器",
+      "shape": "1x1",
+      "hd_path": "items_hd_porcelain_20/hd_64px_per_cell/vase_ruyao_tianqing.png",
+      "native_path": "items_hd_porcelain_20/native_32px_per_cell/vase_ruyao_tianqing.png"
+    },
+    {
+      "id": "bowl_doucai_chicken",
+      "name": "斗彩鸡缸杯",
+      "category": "porcelain",
+      "category_cn": "瓷器",
+      "shape": "1x1",
+      "hd_path": "items_hd_porcelain_20/hd_64px_per_cell/bowl_doucai_chicken.png",
+      "native_path": "items_hd_porcelain_20/native_32px_per_cell/bowl_doucai_chicken.png"
+    },
+    {
+      "id": "vase_guan_ge_kai",
+      "name": "哥窑开片瓶",
+      "category": "porcelain",
+      "category_cn": "瓷器",
+      "shape": "1x2",
+      "hd_path": "items_hd_porcelain_20/hd_64px_per_cell/vase_guan_ge_kai.png",
+      "native_path": "items_hd_porcelain_20/native_32px_per_cell/vase_guan_ge_kai.png"
+    },
+    {
+      "id": "pot_zisha",
+      "name": "紫砂小壶",
+      "category": "porcelain",
+      "category_cn": "瓷器",
+      "shape": "1x1",
+      "hd_path": "items_hd_porcelain_20/hd_64px_per_cell/pot_zisha.png",
+      "native_path": "items_hd_porcelain_20/native_32px_per_cell/pot_zisha.png"
+    },
+    {
+      "id": "censer_jun_purple",
+      "name": "钧窑紫红斑炉",
+      "category": "porcelain",
+      "category_cn": "瓷器",
+      "shape": "1x1",
+      "hd_path": "items_hd_porcelain_20/hd_64px_per_cell/censer_jun_purple.png",
+      "native_path": "items_hd_porcelain_20/native_32px_per_cell/censer_jun_purple.png"
+    },
+    {
+      "id": "plate_ru_celadon",
+      "name": "青瓷盘",
+      "category": "porcelain",
+      "category_cn": "瓷器",
+      "shape": "2x1",
+      "hd_path": "items_hd_porcelain_20/hd_64px_per_cell/plate_ru_celadon.png",
+      "native_path": "items_hd_porcelain_20/native_32px_per_cell/plate_ru_celadon.png"
+    },
+    {
+      "id": "bowl_celadon_lotus",
+      "name": "青瓷莲瓣碗",
+      "category": "porcelain",
+      "category_cn": "瓷器",
+      "shape": "1x1",
+      "hd_path": "items_hd_porcelain_20/hd_64px_per_cell/bowl_celadon_lotus.png",
+      "native_path": "items_hd_porcelain_20/native_32px_per_cell/bowl_celadon_lotus.png"
+    },
+    {
+      "id": "vase_fencai",
+      "name": "粉彩瓶",
+      "category": "porcelain",
+      "category_cn": "瓷器",
+      "shape": "1x2",
+      "hd_path": "items_hd_porcelain_20/hd_64px_per_cell/vase_fencai.png",
+      "native_path": "items_hd_porcelain_20/native_32px_per_cell/vase_fencai.png"
+    },
+    {
+      "id": "jar_celadon_buried",
+      "name": "出土青瓷罐",
+      "category": "porcelain",
+      "category_cn": "瓷器",
+      "shape": "1x1",
+      "hd_path": "items_hd_porcelain_20/hd_64px_per_cell/jar_celadon_buried.png",
+      "native_path": "items_hd_porcelain_20/native_32px_per_cell/jar_celadon_buried.png"
+    },
+    {
+      "id": "bowl_wucai",
+      "name": "五彩碗",
+      "category": "porcelain",
+      "category_cn": "瓷器",
+      "shape": "1x1",
+      "hd_path": "items_hd_porcelain_20/hd_64px_per_cell/bowl_wucai.png",
+      "native_path": "items_hd_porcelain_20/native_32px_per_cell/bowl_wucai.png"
+    },
+    {
+      "id": "cup_celadon_pair",
+      "name": "青瓷盏(对)",
+      "category": "porcelain",
+      "category_cn": "瓷器",
+      "shape": "1x1",
+      "hd_path": "items_hd_porcelain_20/hd_64px_per_cell/cup_celadon_pair.png",
+      "native_path": "items_hd_porcelain_20/native_32px_per_cell/cup_celadon_pair.png"
+    },
+    {
+      "id": "vase_langhong",
+      "name": "郎红釉瓶",
+      "category": "porcelain",
+      "category_cn": "瓷器",
+      "shape": "1x2",
+      "hd_path": "items_hd_porcelain_20/hd_64px_per_cell/vase_langhong.png",
+      "native_path": "items_hd_porcelain_20/native_32px_per_cell/vase_langhong.png"
+    },
+    {
+      "id": "bowl_cracked_junk",
+      "name": "豁口粗碗",
+      "category": "porcelain",
+      "category_cn": "瓷器",
+      "shape": "1x1",
+      "hd_path": "items_hd_porcelain_20/hd_64px_per_cell/bowl_cracked_junk.png",
+      "native_path": "items_hd_porcelain_20/native_32px_per_cell/bowl_cracked_junk.png"
+    },
+    {
+      "id": "fox_pelt",
+      "name": "狐皮(整张)",
+      "category": "fur",
+      "category_cn": "皮货",
+      "shape": "2x2",
+      "hd_path": "items_hd_fur_20/hd_64px_per_cell/fox_pelt.png",
+      "native_path": "items_hd_fur_20/native_32px_per_cell/fox_pelt.png"
+    },
+    {
+      "id": "sable_pelt",
+      "name": "貂皮",
+      "category": "fur",
+      "category_cn": "皮货",
+      "shape": "2x1",
+      "hd_path": "items_hd_fur_20/hd_64px_per_cell/sable_pelt.png",
+      "native_path": "items_hd_fur_20/native_32px_per_cell/sable_pelt.png"
+    },
+    {
+      "id": "sheep_pelt",
+      "name": "羊皮",
+      "category": "fur",
+      "category_cn": "皮货",
+      "shape": "2x2",
+      "hd_path": "items_hd_fur_20/hd_64px_per_cell/sheep_pelt.png",
+      "native_path": "items_hd_fur_20/native_32px_per_cell/sheep_pelt.png"
+    },
+    {
+      "id": "wolf_pelt",
+      "name": "狼皮(整张)",
+      "category": "fur",
+      "category_cn": "皮货",
+      "shape": "2x2",
+      "hd_path": "items_hd_fur_20/hd_64px_per_cell/wolf_pelt.png",
+      "native_path": "items_hd_fur_20/native_32px_per_cell/wolf_pelt.png"
+    },
+    {
+      "id": "tiger_pelt",
+      "name": "虎皮",
+      "category": "fur",
+      "category_cn": "皮货",
+      "shape": "2x2",
+      "hd_path": "items_hd_fur_20/hd_64px_per_cell/tiger_pelt.png",
+      "native_path": "items_hd_fur_20/native_32px_per_cell/tiger_pelt.png"
+    },
+    {
+      "id": "deer_pelt",
+      "name": "鹿皮",
+      "category": "fur",
+      "category_cn": "皮货",
+      "shape": "2x2",
+      "hd_path": "items_hd_fur_20/hd_64px_per_cell/deer_pelt.png",
+      "native_path": "items_hd_fur_20/native_32px_per_cell/deer_pelt.png"
+    },
+    {
+      "id": "fox_collar",
+      "name": "狐皮领子",
+      "category": "fur",
+      "category_cn": "皮货",
+      "shape": "1x2",
+      "hd_path": "items_hd_fur_20/hd_64px_per_cell/fox_collar.png",
+      "native_path": "items_hd_fur_20/native_32px_per_cell/fox_collar.png"
+    },
+    {
+      "id": "fur_coat",
+      "name": "旧皮袄",
+      "category": "fur",
+      "category_cn": "皮货",
+      "shape": "2x2",
+      "hd_path": "items_hd_fur_20/hd_64px_per_cell/fur_coat.png",
+      "native_path": "items_hd_fur_20/native_32px_per_cell/fur_coat.png"
+    },
+    {
+      "id": "fur_gloves",
+      "name": "皮手套(对)",
+      "category": "fur",
+      "category_cn": "皮货",
+      "shape": "1x1",
+      "hd_path": "items_hd_fur_20/hd_64px_per_cell/fur_gloves.png",
+      "native_path": "items_hd_fur_20/native_32px_per_cell/fur_gloves.png"
+    },
+    {
+      "id": "fur_hat",
+      "name": "皮帽",
+      "category": "fur",
+      "category_cn": "皮货",
+      "shape": "1x1",
+      "hd_path": "items_hd_fur_20/hd_64px_per_cell/fur_hat.png",
+      "native_path": "items_hd_fur_20/native_32px_per_cell/fur_hat.png"
+    },
+    {
+      "id": "horse_hide",
+      "name": "马皮",
+      "category": "fur",
+      "category_cn": "皮货",
+      "shape": "2x2",
+      "hd_path": "items_hd_fur_20/hd_64px_per_cell/horse_hide.png",
+      "native_path": "items_hd_fur_20/native_32px_per_cell/horse_hide.png"
+    },
+    {
+      "id": "cow_hide",
+      "name": "牛皮(整张)",
+      "category": "fur",
+      "category_cn": "皮货",
+      "shape": "2x2",
+      "hd_path": "items_hd_fur_20/hd_64px_per_cell/cow_hide.png",
+      "native_path": "items_hd_fur_20/native_32px_per_cell/cow_hide.png"
+    },
+    {
+      "id": "rabbit_bundle",
+      "name": "兔皮(一捆)",
+      "category": "fur",
+      "category_cn": "皮货",
+      "shape": "1x1",
+      "hd_path": "items_hd_fur_20/hd_64px_per_cell/rabbit_bundle.png",
+      "native_path": "items_hd_fur_20/native_32px_per_cell/rabbit_bundle.png"
+    },
+    {
+      "id": "otter_pelt",
+      "name": "水獭皮",
+      "category": "fur",
+      "category_cn": "皮货",
+      "shape": "2x1",
+      "hd_path": "items_hd_fur_20/hd_64px_per_cell/otter_pelt.png",
+      "native_path": "items_hd_fur_20/native_32px_per_cell/otter_pelt.png"
+    },
+    {
+      "id": "sable_stole",
+      "name": "貂皮围脖",
+      "category": "fur",
+      "category_cn": "皮货",
+      "shape": "2x1",
+      "hd_path": "items_hd_fur_20/hd_64px_per_cell/sable_stole.png",
+      "native_path": "items_hd_fur_20/native_32px_per_cell/sable_stole.png"
+    },
+    {
+      "id": "bracer_leather",
+      "name": "皮护腕",
+      "category": "fur",
+      "category_cn": "皮货",
+      "shape": "1x1",
+      "hd_path": "items_hd_fur_20/hd_64px_per_cell/bracer_leather.png",
+      "native_path": "items_hd_fur_20/native_32px_per_cell/bracer_leather.png"
+    },
+    {
+      "id": "saddle_leather",
+      "name": "皮马鞍",
+      "category": "fur",
+      "category_cn": "皮货",
+      "shape": "2x2",
+      "hd_path": "items_hd_fur_20/hd_64px_per_cell/saddle_leather.png",
+      "native_path": "items_hd_fur_20/native_32px_per_cell/saddle_leather.png"
+    },
+    {
+      "id": "pack_leather",
+      "name": "皮行囊",
+      "category": "fur",
+      "category_cn": "皮货",
+      "shape": "2x1",
+      "hd_path": "items_hd_fur_20/hd_64px_per_cell/pack_leather.png",
+      "native_path": "items_hd_fur_20/native_32px_per_cell/pack_leather.png"
+    },
+    {
+      "id": "waterskin",
+      "name": "皮水袋",
+      "category": "fur",
+      "category_cn": "皮货",
+      "shape": "1x1",
+      "hd_path": "items_hd_fur_20/hd_64px_per_cell/waterskin.png",
+      "native_path": "items_hd_fur_20/native_32px_per_cell/waterskin.png"
+    },
+    {
+      "id": "pads_leather",
+      "name": "皮护膝(对)",
+      "category": "fur",
+      "category_cn": "皮货",
+      "shape": "1x1",
+      "hd_path": "items_hd_fur_20/hd_64px_per_cell/pads_leather.png",
+      "native_path": "items_hd_fur_20/native_32px_per_cell/pads_leather.png"
+    },
+    {
+      "id": "scroll_landscape",
+      "name": "山水立轴",
+      "category": "painting",
+      "category_cn": "字画",
+      "shape": "1x3",
+      "hd_path": "items_hd_painting_20/hd_64px_per_cell/scroll_landscape.png",
+      "native_path": "items_hd_painting_20/native_32px_per_cell/scroll_landscape.png"
+    },
+    {
+      "id": "scroll_flowers",
+      "name": "花鸟立轴",
+      "category": "painting",
+      "category_cn": "字画",
+      "shape": "1x3",
+      "hd_path": "items_hd_painting_20/hd_64px_per_cell/scroll_flowers.png",
+      "native_path": "items_hd_painting_20/native_32px_per_cell/scroll_flowers.png"
+    },
+    {
+      "id": "handscroll",
+      "name": "山水手卷",
+      "category": "painting",
+      "category_cn": "字画",
+      "shape": "3x1",
+      "hd_path": "items_hd_painting_20/hd_64px_per_cell/handscroll.png",
+      "native_path": "items_hd_painting_20/native_32px_per_cell/handscroll.png"
+    },
+    {
+      "id": "album_leaf",
+      "name": "名人册页",
+      "category": "painting",
+      "category_cn": "字画",
+      "shape": "2x2",
+      "hd_path": "items_hd_painting_20/hd_64px_per_cell/album_leaf.png",
+      "native_path": "items_hd_painting_20/native_32px_per_cell/album_leaf.png"
+    },
+    {
+      "id": "fan_folded",
+      "name": "名家折扇",
+      "category": "painting",
+      "category_cn": "字画",
+      "shape": "1x2",
+      "hd_path": "items_hd_painting_20/hd_64px_per_cell/fan_folded.png",
+      "native_path": "items_hd_painting_20/native_32px_per_cell/fan_folded.png"
+    },
+    {
+      "id": "fan_round",
+      "name": "绢面团扇",
+      "category": "painting",
+      "category_cn": "字画",
+      "shape": "1x2",
+      "hd_path": "items_hd_painting_20/hd_64px_per_cell/fan_round.png",
+      "native_path": "items_hd_painting_20/native_32px_per_cell/fan_round.png"
+    },
+    {
+      "id": "couplet_pair",
+      "name": "楹联一对",
+      "category": "painting",
+      "category_cn": "字画",
+      "shape": "1x3",
+      "hd_path": "items_hd_painting_20/hd_64px_per_cell/couplet_pair.png",
+      "native_path": "items_hd_painting_20/native_32px_per_cell/couplet_pair.png"
+    },
+    {
+      "id": "rubbing",
+      "name": "碑帖拓片",
+      "category": "painting",
+      "category_cn": "字画",
+      "shape": "2x2",
+      "hd_path": "items_hd_painting_20/hd_64px_per_cell/rubbing.png",
+      "native_path": "items_hd_painting_20/native_32px_per_cell/rubbing.png"
+    },
+    {
+      "id": "calligraphy_verse",
+      "name": "书法条幅",
+      "category": "painting",
+      "category_cn": "字画",
+      "shape": "1x3",
+      "hd_path": "items_hd_painting_20/hd_64px_per_cell/calligraphy_verse.png",
+      "native_path": "items_hd_painting_20/native_32px_per_cell/calligraphy_verse.png"
+    },
+    {
+      "id": "portrait_ancestor",
+      "name": "祖先画像轴",
+      "category": "painting",
+      "category_cn": "字画",
+      "shape": "1x3",
+      "hd_path": "items_hd_painting_20/hd_64px_per_cell/portrait_ancestor.png",
+      "native_path": "items_hd_painting_20/native_32px_per_cell/portrait_ancestor.png"
+    },
+    {
+      "id": "painting_bamboo",
+      "name": "墨竹小品",
+      "category": "painting",
+      "category_cn": "字画",
+      "shape": "1x2",
+      "hd_path": "items_hd_painting_20/hd_64px_per_cell/painting_bamboo.png",
+      "native_path": "items_hd_painting_20/native_32px_per_cell/painting_bamboo.png"
+    },
+    {
+      "id": "painting_fish",
+      "name": "鱼藻图",
+      "category": "painting",
+      "category_cn": "字画",
+      "shape": "2x1",
+      "hd_path": "items_hd_painting_20/hd_64px_per_cell/painting_fish.png",
+      "native_path": "items_hd_painting_20/native_32px_per_cell/painting_fish.png"
+    },
+    {
+      "id": "scroll_broken",
+      "name": "残卷断轴",
+      "category": "painting",
+      "category_cn": "字画",
+      "shape": "1x2",
+      "hd_path": "items_hd_painting_20/hd_64px_per_cell/scroll_broken.png",
+      "native_path": "items_hd_painting_20/native_32px_per_cell/scroll_broken.png"
+    },
+    {
+      "id": "scroll_spring",
+      "name": "春景横披",
+      "category": "painting",
+      "category_cn": "字画",
+      "shape": "3x1",
+      "hd_path": "items_hd_painting_20/hd_64px_per_cell/scroll_spring.png",
+      "native_path": "items_hd_painting_20/native_32px_per_cell/scroll_spring.png"
+    },
+    {
+      "id": "album_thumbed",
+      "name": "油渍册页",
+      "category": "painting",
+      "category_cn": "字画",
+      "shape": "2x1",
+      "hd_path": "items_hd_painting_20/hd_64px_per_cell/album_thumbed.png",
+      "native_path": "items_hd_painting_20/native_32px_per_cell/album_thumbed.png"
+    },
+    {
+      "id": "fan_broken",
+      "name": "残破折扇",
+      "category": "painting",
+      "category_cn": "字画",
+      "shape": "1x1",
+      "hd_path": "items_hd_painting_20/hd_64px_per_cell/fan_broken.png",
+      "native_path": "items_hd_painting_20/native_32px_per_cell/fan_broken.png"
+    },
+    {
+      "id": "painting_horses",
+      "name": "百马图卷",
+      "category": "painting",
+      "category_cn": "字画",
+      "shape": "3x2",
+      "hd_path": "items_hd_painting_20/hd_64px_per_cell/painting_horses.png",
+      "native_path": "items_hd_painting_20/native_32px_per_cell/painting_horses.png"
+    },
+    {
+      "id": "calligraphy_seal",
+      "name": "名家印谱",
+      "category": "painting",
+      "category_cn": "字画",
+      "shape": "2x2",
+      "hd_path": "items_hd_painting_20/hd_64px_per_cell/calligraphy_seal.png",
+      "native_path": "items_hd_painting_20/native_32px_per_cell/calligraphy_seal.png"
+    },
+    {
+      "id": "scroll_imperial",
+      "name": "御题诗轴",
+      "category": "painting",
+      "category_cn": "字画",
+      "shape": "1x3",
+      "hd_path": "items_hd_painting_20/hd_64px_per_cell/scroll_imperial.png",
+      "native_path": "items_hd_painting_20/native_32px_per_cell/scroll_imperial.png"
+    },
+    {
+      "id": "painting_orchid",
+      "name": "兰谱四条",
+      "category": "painting",
+      "category_cn": "字画",
+      "shape": "2x2",
+      "hd_path": "items_hd_painting_20/hd_64px_per_cell/painting_orchid.png",
+      "native_path": "items_hd_painting_20/native_32px_per_cell/painting_orchid.png"
+    },
+    {
+      "id": "clock_tallcase",
+      "name": "红木座钟",
+      "category": "clock",
+      "category_cn": "钟表与西洋仪器",
+      "shape": "1x3",
+      "hd_path": "items_hd_clock_20/hd_64px_per_cell/clock_tallcase.png",
+      "native_path": "items_hd_clock_20/native_32px_per_cell/clock_tallcase.png"
+    },
+    {
+      "id": "watch_pocket_gold",
+      "name": "金怀表",
+      "category": "clock",
+      "category_cn": "钟表与西洋仪器",
+      "shape": "1x1",
+      "hd_path": "items_hd_clock_20/hd_64px_per_cell/watch_pocket_gold.png",
+      "native_path": "items_hd_clock_20/native_32px_per_cell/watch_pocket_gold.png"
+    },
+    {
+      "id": "watch_pocket_silver",
+      "name": "银怀表",
+      "category": "clock",
+      "category_cn": "钟表与西洋仪器",
+      "shape": "1x1",
+      "hd_path": "items_hd_clock_20/hd_64px_per_cell/watch_pocket_silver.png",
+      "native_path": "items_hd_clock_20/native_32px_per_cell/watch_pocket_silver.png"
+    },
+    {
+      "id": "clock_wall_round",
+      "name": "圆形挂钟",
+      "category": "clock",
+      "category_cn": "钟表与西洋仪器",
+      "shape": "1x2",
+      "hd_path": "items_hd_clock_20/hd_64px_per_cell/clock_wall_round.png",
+      "native_path": "items_hd_clock_20/native_32px_per_cell/clock_wall_round.png"
+    },
+    {
+      "id": "clock_mantel",
+      "name": "座钟(西洋)",
+      "category": "clock",
+      "category_cn": "钟表与西洋仪器",
+      "shape": "1x2",
+      "hd_path": "items_hd_clock_20/hd_64px_per_cell/clock_mantel.png",
+      "native_path": "items_hd_clock_20/native_32px_per_cell/clock_mantel.png"
+    },
+    {
+      "id": "compass_marine",
+      "name": "航海罗盘",
+      "category": "clock",
+      "category_cn": "钟表与西洋仪器",
+      "shape": "1x1",
+      "hd_path": "items_hd_clock_20/hd_64px_per_cell/compass_marine.png",
+      "native_path": "items_hd_clock_20/native_32px_per_cell/compass_marine.png"
+    },
+    {
+      "id": "astrolabe",
+      "name": "星盘仪",
+      "category": "clock",
+      "category_cn": "钟表与西洋仪器",
+      "shape": "1x2",
+      "hd_path": "items_hd_clock_20/hd_64px_per_cell/astrolabe.png",
+      "native_path": "items_hd_clock_20/native_32px_per_cell/astrolabe.png"
+    },
+    {
+      "id": "sundial_desk",
+      "name": "日晷(案头)",
+      "category": "clock",
+      "category_cn": "钟表与西洋仪器",
+      "shape": "1x1",
+      "hd_path": "items_hd_clock_20/hd_64px_per_cell/sundial_desk.png",
+      "native_path": "items_hd_clock_20/native_32px_per_cell/sundial_desk.png"
+    },
+    {
+      "id": "hourglass",
+      "name": "沙漏",
+      "category": "clock",
+      "category_cn": "钟表与西洋仪器",
+      "shape": "1x1",
+      "hd_path": "items_hd_clock_20/hd_64px_per_cell/hourglass.png",
+      "native_path": "items_hd_clock_20/native_32px_per_cell/hourglass.png"
+    },
+    {
+      "id": "clock_carriage",
+      "name": "旅行钟",
+      "category": "clock",
+      "category_cn": "钟表与西洋仪器",
+      "shape": "1x1",
+      "hd_path": "items_hd_clock_20/hd_64px_per_cell/clock_carriage.png",
+      "native_path": "items_hd_clock_20/native_32px_per_cell/clock_carriage.png"
+    },
+    {
+      "id": "watch_wrist_leather",
+      "name": "皮表带腕表",
+      "category": "clock",
+      "category_cn": "钟表与西洋仪器",
+      "shape": "1x1",
+      "hd_path": "items_hd_clock_20/hd_64px_per_cell/watch_wrist_leather.png",
+      "native_path": "items_hd_clock_20/native_32px_per_cell/watch_wrist_leather.png"
+    },
+    {
+      "id": "metronome",
+      "name": "节拍器",
+      "category": "clock",
+      "category_cn": "钟表与西洋仪器",
+      "shape": "1x2",
+      "hd_path": "items_hd_clock_20/hd_64px_per_cell/metronome.png",
+      "native_path": "items_hd_clock_20/native_32px_per_cell/metronome.png"
+    },
+    {
+      "id": "barometer",
+      "name": "晴雨表",
+      "category": "clock",
+      "category_cn": "钟表与西洋仪器",
+      "shape": "1x1",
+      "hd_path": "items_hd_clock_20/hd_64px_per_cell/barometer.png",
+      "native_path": "items_hd_clock_20/native_32px_per_cell/barometer.png"
+    },
+    {
+      "id": "clock_grandfather_knock",
+      "name": "磕角落地钟",
+      "category": "clock",
+      "category_cn": "钟表与西洋仪器",
+      "shape": "1x3",
+      "hd_path": "items_hd_clock_20/hd_64px_per_cell/clock_grandfather_knock.png",
+      "native_path": "items_hd_clock_20/native_32px_per_cell/clock_grandfather_knock.png"
+    },
+    {
+      "id": "watch_pocket_broken",
+      "name": "摔坏怀表",
+      "category": "clock",
+      "category_cn": "钟表与西洋仪器",
+      "shape": "1x1",
+      "hd_path": "items_hd_clock_20/hd_64px_per_cell/watch_pocket_broken.png",
+      "native_path": "items_hd_clock_20/native_32px_per_cell/watch_pocket_broken.png"
+    },
+    {
+      "id": "clock_cuckoo",
+      "name": "布谷鸟钟",
+      "category": "clock",
+      "category_cn": "钟表与西洋仪器",
+      "shape": "1x2",
+      "hd_path": "items_hd_clock_20/hd_64px_per_cell/clock_cuckoo.png",
+      "native_path": "items_hd_clock_20/native_32px_per_cell/clock_cuckoo.png"
+    },
+    {
+      "id": "sextant",
+      "name": "六分仪",
+      "category": "clock",
+      "category_cn": "钟表与西洋仪器",
+      "shape": "1x2",
+      "hd_path": "items_hd_clock_20/hd_64px_per_cell/sextant.png",
+      "native_path": "items_hd_clock_20/native_32px_per_cell/sextant.png"
+    },
+    {
+      "id": "clock_turret",
+      "name": "塔楼钟模型",
+      "category": "clock",
+      "category_cn": "钟表与西洋仪器",
+      "shape": "1x2",
+      "hd_path": "items_hd_clock_20/hd_64px_per_cell/clock_turret.png",
+      "native_path": "items_hd_clock_20/native_32px_per_cell/clock_turret.png"
+    },
+    {
+      "id": "orrery_planet",
+      "name": "行星仪",
+      "category": "clock",
+      "category_cn": "钟表与西洋仪器",
+      "shape": "2x2",
+      "hd_path": "items_hd_clock_20/hd_64px_per_cell/orrery_planet.png",
+      "native_path": "items_hd_clock_20/native_32px_per_cell/orrery_planet.png"
+    },
+    {
+      "id": "watch_chain_gold",
+      "name": "金表链",
+      "category": "clock",
+      "category_cn": "钟表与西洋仪器",
+      "shape": "1x2",
+      "hd_path": "items_hd_clock_20/hd_64px_per_cell/watch_chain_gold.png",
+      "native_path": "items_hd_clock_20/native_32px_per_cell/watch_chain_gold.png"
+    },
+    {
+      "id": "story_wooden_box_locked",
+      "name": "内字上锁木匣",
+      "category": "story_diandang",
+      "category_cn": "典当春秋剧情与民生",
+      "shape": "2x2",
+      "hd_path": "items_hd_story_20/hd_64px_per_cell/story_wooden_box_locked.png",
+      "native_path": "items_hd_story_20/native_32px_per_cell/story_wooden_box_locked.png"
+    },
+    {
+      "id": "story_missing_ledger_pages",
+      "name": "缺失三页账页",
+      "category": "story_diandang",
+      "category_cn": "典当春秋剧情与民生",
+      "shape": "2x1",
+      "hd_path": "items_hd_story_20/hd_64px_per_cell/story_missing_ledger_pages.png",
+      "native_path": "items_hd_story_20/native_32px_per_cell/story_missing_ledger_pages.png"
+    },
+    {
+      "id": "story_forged_iou_addendum",
+      "name": "伪造借据补页",
+      "category": "story_diandang",
+      "category_cn": "典当春秋剧情与民生",
+      "shape": "2x1",
+      "hd_path": "items_hd_story_20/hd_64px_per_cell/story_forged_iou_addendum.png",
+      "native_path": "items_hd_story_20/native_32px_per_cell/story_forged_iou_addendum.png"
+    },
+    {
+      "id": "story_master_letter",
+      "name": "师父遗信",
+      "category": "story_diandang",
+      "category_cn": "典当春秋剧情与民生",
+      "shape": "1x1",
+      "hd_path": "items_hd_story_20/hd_64px_per_cell/story_master_letter.png",
+      "native_path": "items_hd_story_20/native_32px_per_cell/story_master_letter.png"
+    },
+    {
+      "id": "story_palace_inventory",
+      "name": "广储司失物清单",
+      "category": "story_diandang",
+      "category_cn": "典当春秋剧情与民生",
+      "shape": "2x2",
+      "hd_path": "items_hd_story_20/hd_64px_per_cell/story_palace_inventory.png",
+      "native_path": "items_hd_story_20/native_32px_per_cell/story_palace_inventory.png"
+    },
+    {
+      "id": "story_reform_secret_letter",
+      "name": "维新密信",
+      "category": "story_diandang",
+      "category_cn": "典当春秋剧情与民生",
+      "shape": "1x1",
+      "hd_path": "items_hd_story_20/hd_64px_per_cell/story_reform_secret_letter.png",
+      "native_path": "items_hd_story_20/native_32px_per_cell/story_reform_secret_letter.png"
+    },
+    {
+      "id": "story_kco_bill_of_lading",
+      "name": "洋行提货单",
+      "category": "story_diandang",
+      "category_cn": "典当春秋剧情与民生",
+      "shape": "2x1",
+      "hd_path": "items_hd_story_20/hd_64px_per_cell/story_kco_bill_of_lading.png",
+      "native_path": "items_hd_story_20/native_32px_per_cell/story_kco_bill_of_lading.png"
+    },
+    {
+      "id": "story_bank_draft_yongchang",
+      "name": "永昌钱庄庄票",
+      "category": "story_diandang",
+      "category_cn": "典当春秋剧情与民生",
+      "shape": "2x1",
+      "hd_path": "items_hd_story_20/hd_64px_per_cell/story_bank_draft_yongchang.png",
+      "native_path": "items_hd_story_20/native_32px_per_cell/story_bank_draft_yongchang.png"
+    },
+    {
+      "id": "story_fake_seal_stamp",
+      "name": "白三伪刻印章",
+      "category": "story_diandang",
+      "category_cn": "典当春秋剧情与民生",
+      "shape": "1x1",
+      "hd_path": "items_hd_story_20/hd_64px_per_cell/story_fake_seal_stamp.png",
+      "native_path": "items_hd_story_20/native_32px_per_cell/story_fake_seal_stamp.png"
+    },
+    {
+      "id": "story_consulate_card",
+      "name": "领事馆引荐名片",
+      "category": "story_diandang",
+      "category_cn": "典当春秋剧情与民生",
+      "shape": "1x1",
+      "hd_path": "items_hd_story_20/hd_64px_per_cell/story_consulate_card.png",
+      "native_path": "items_hd_story_20/native_32px_per_cell/story_consulate_card.png"
+    },
+    {
+      "id": "story_cotton_robe",
+      "name": "王婆粗布棉袍",
+      "category": "story_diandang",
+      "category_cn": "典当春秋剧情与民生",
+      "shape": "2x2",
+      "hd_path": "items_hd_story_20/hd_64px_per_cell/story_cotton_robe.png",
+      "native_path": "items_hd_story_20/native_32px_per_cell/story_cotton_robe.png"
+    },
+    {
+      "id": "story_copper_basin",
+      "name": "铜脸盆",
+      "category": "story_diandang",
+      "category_cn": "典当春秋剧情与民生",
+      "shape": "2x1",
+      "hd_path": "items_hd_story_20/hd_64px_per_cell/story_copper_basin.png",
+      "native_path": "items_hd_story_20/native_32px_per_cell/story_copper_basin.png"
+    },
+    {
+      "id": "story_silver_longevity_lock",
+      "name": "长命银锁",
+      "category": "story_diandang",
+      "category_cn": "典当春秋剧情与民生",
+      "shape": "1x1",
+      "hd_path": "items_hd_story_20/hd_64px_per_cell/story_silver_longevity_lock.png",
+      "native_path": "items_hd_story_20/native_32px_per_cell/story_silver_longevity_lock.png"
+    },
+    {
+      "id": "story_wild_ginseng",
+      "name": "老山人参",
+      "category": "story_diandang",
+      "category_cn": "典当春秋剧情与民生",
+      "shape": "2x1",
+      "hd_path": "items_hd_story_20/hd_64px_per_cell/story_wild_ginseng.png",
+      "native_path": "items_hd_story_20/native_32px_per_cell/story_wild_ginseng.png"
+    },
+    {
+      "id": "story_opera_headdress",
+      "name": "点翠戏班头面",
+      "category": "story_diandang",
+      "category_cn": "典当春秋剧情与民生",
+      "shape": "2x2",
+      "hd_path": "items_hd_story_20/hd_64px_per_cell/story_opera_headdress.png",
+      "native_path": "items_hd_story_20/native_32px_per_cell/story_opera_headdress.png"
+    },
+    {
+      "id": "story_spyglass_jiawu",
+      "name": "甲午千里镜",
+      "category": "story_diandang",
+      "category_cn": "典当春秋剧情与民生",
+      "shape": "2x1",
+      "hd_path": "items_hd_story_20/hd_64px_per_cell/story_spyglass_jiawu.png",
+      "native_path": "items_hd_story_20/native_32px_per_cell/story_spyglass_jiawu.png"
+    },
+    {
+      "id": "story_ming_bronze_buddha",
+      "name": "明代铜佛",
+      "category": "story_diandang",
+      "category_cn": "典当春秋剧情与民生",
+      "shape": "1x2",
+      "hd_path": "items_hd_story_20/hd_64px_per_cell/story_ming_bronze_buddha.png",
+      "native_path": "items_hd_story_20/native_32px_per_cell/story_ming_bronze_buddha.png"
+    },
+    {
+      "id": "story_steelyard_dengzi",
+      "name": "戥子小秤",
+      "category": "story_diandang",
+      "category_cn": "典当春秋剧情与民生",
+      "shape": "2x1",
+      "hd_path": "items_hd_story_20/hd_64px_per_cell/story_steelyard_dengzi.png",
+      "native_path": "items_hd_story_20/native_32px_per_cell/story_steelyard_dengzi.png"
+    },
+    {
+      "id": "story_appraisal_manual",
+      "name": "古玩辨伪图谱",
+      "category": "story_diandang",
+      "category_cn": "典当春秋剧情与民生",
+      "shape": "2x2",
+      "hd_path": "items_hd_story_20/hd_64px_per_cell/story_appraisal_manual.png",
+      "native_path": "items_hd_story_20/native_32px_per_cell/story_appraisal_manual.png"
+    },
+    {
+      "id": "story_british_notice",
+      "name": "英商保护告示",
+      "category": "story_diandang",
+      "category_cn": "典当春秋剧情与民生",
+      "shape": "1x2",
+      "hd_path": "items_hd_story_20/hd_64px_per_cell/story_british_notice.png",
+      "native_path": "items_hd_story_20/native_32px_per_cell/story_british_notice.png"
+    }
+  ]
+}

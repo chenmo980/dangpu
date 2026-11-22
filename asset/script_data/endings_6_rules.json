@@ -1,0 +1,63 @@
+{
+  "evaluation_order": [
+    {
+      "priority": 1,
+      "id": "gengzi_jiehui",
+      "title": "庚子劫灰",
+      "tone": "悲",
+      "condition": "第五章保库最终判定失败",
+      "illustration": "endings/ending_grade_d.png"
+    },
+    {
+      "priority": 2,
+      "id": "pochan",
+      "title": "破产",
+      "tone": "苦",
+      "condition": "第四章被封铺且第五章流落路线战后现银 < 100两",
+      "illustration": "endings/ending_grade_c.png"
+    },
+    {
+      "priority": 3,
+      "id": "maizhu_qiurong",
+      "title": "卖主求荣",
+      "tone": "讽",
+      "condition": "卖主砖 >= 3，或（官府 >= 15 且 江湖 <= -10）",
+      "illustration": "endings/ending_grade_c.png"
+    },
+    {
+      "priority": 4,
+      "id": "heishi_xiaoxiong",
+      "title": "黑市枭雄",
+      "tone": "暗",
+      "condition": "（黑市标记 >= 3 且 江湖 >= 10）或（木匣据为己有 且 江湖 >= 10）",
+      "illustration": "endings/ending_heishi.png"
+    },
+    {
+      "priority": 5,
+      "id": "yishi",
+      "title": "义士",
+      "tone": "壮",
+      "condition": "木匣公之于世 且 义举 >= 3",
+      "illustration": "endings/ending_yishi.png"
+    },
+    {
+      "priority": 6,
+      "id": "bainian_laohao",
+      "title": "百年老号（正版/守成版）",
+      "tone": "暖",
+      "condition": "以上均不满足；信誉 >= 30 为正版（ending_grade_a.png），否则为守成版（ending_grade_b.png）",
+      "illustration_true": "endings/ending_grade_a.png",
+      "illustration_steady": "endings/ending_grade_b.png"
+    }
+  ],
+  "reputation_tracks": [
+    "信誉",
+    "江湖",
+    "官府"
+  ],
+  "hidden_flags": [
+    "义举",
+    "卖主砖",
+    "黑市标记"
+  ]
+}

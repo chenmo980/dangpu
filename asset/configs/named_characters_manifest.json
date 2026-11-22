@@ -1,0 +1,58 @@
+[
+  {
+    "id": "named_shunzi",
+    "name": "小顺子",
+    "role": "学徒 / 目击者成长线",
+    "sprite_256": "characters/named_portraits_256/named_shunzi_256.png",
+    "sprite_128": "characters/named_portraits_128/named_shunzi_128.png"
+  },
+  {
+    "id": "named_shenmo",
+    "name": "蒙面人·沈墨",
+    "role": "广储司笔帖式 / 主线木匣",
+    "sprite_256": "characters/named_portraits_256/named_shenmo_256.png",
+    "sprite_128": "characters/named_portraits_128/named_shenmo_128.png"
+  },
+  {
+    "id": "named_hu_erye",
+    "name": "胡二爷",
+    "role": "义和钱庄管事 / 主线反派",
+    "sprite_256": "characters/named_portraits_256/named_hu_erye_256.png",
+    "sprite_128": "characters/named_portraits_128/named_hu_erye_128.png"
+  },
+  {
+    "id": "named_eunuch_fu",
+    "name": "福公公",
+    "role": "宫中太监 / 盗宝链源头",
+    "sprite_256": "characters/named_portraits_256/named_eunuch_fu_256.png",
+    "sprite_128": "characters/named_portraits_128/named_eunuch_fu_128.png"
+  },
+  {
+    "id": "named_xiaojuxian",
+    "name": "小菊仙",
+    "role": "戏班名角 / 赌债赎身人情链",
+    "sprite_256": "characters/named_portraits_256/named_xiaojuxian_256.png",
+    "sprite_128": "characters/named_portraits_128/named_xiaojuxian_128.png"
+  },
+  {
+    "id": "named_qian_boss",
+    "name": "钱掌柜",
+    "role": "老字号对手兼盟友",
+    "sprite_256": "characters/named_portraits_256/named_qian_boss_256.png",
+    "sprite_128": "characters/named_portraits_128/named_qian_boss_128.png"
+  },
+  {
+    "id": "named_wangpo",
+    "name": "王婆",
+    "role": "第一章教学老妪 / 街坊护铺",
+    "sprite_256": "characters/named_portraits_256/named_wangpo_256.png",
+    "sprite_128": "characters/named_portraits_128/named_wangpo_128.png"
+  },
+  {
+    "id": "named_huiming",
+    "name": "慧明和尚",
+    "role": "中元铜磬 / 不欺匾人情链",
+    "sprite_256": "characters/named_portraits_256/named_huiming_256.png",
+    "sprite_128": "characters/named_portraits_128/named_huiming_128.png"
+  }
+]

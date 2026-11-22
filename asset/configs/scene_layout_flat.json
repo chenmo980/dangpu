@@ -75,6 +75,10 @@
     "rain_day": {
       "bg": "scenes/bg_alley_hd_rain.png",
       "fg": "scenes/fg_interior_hd_day.png"
+    },
+    "gengzi_war_night": {
+      "bg": "scenes/bg_alley_hd_war.png",
+      "fg": "scenes/fg_interior_flat_night_hd.png"
     }
   }
 }

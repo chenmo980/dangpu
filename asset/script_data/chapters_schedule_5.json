@@ -1,0 +1,2237 @@
+{
+  "total_chapters": 5,
+  "chapters": [
+    {
+      "chapter": 1,
+      "title": "清明",
+      "default_bg": "scenes/bg_alley_hd_day.png",
+      "target_silver_tael": 70,
+      "guest_count": 21,
+      "guests": [
+        {
+          "id": "C01",
+          "name": "王婆",
+          "job": "孤寡老妪",
+          "appearance": "佝偻、蓝布褂",
+          "speech_style": "絮叨，句句叫“掌柜的行行好”",
+          "patience": 5,
+          "lie_rate": 0,
+          "portrait_path": "characters/named_portraits_256/named_wangpo_256.png"
+        },
+        {
+          "id": "C02",
+          "name": "油头少年",
+          "job": "街头混混",
+          "appearance": "油亮辫子、腰缠红绳",
+          "speech_style": "嘴硬、催得急",
+          "patience": 2,
+          "lie_rate": 0.9,
+          "portrait_path": "characters/portraits_256/npc_outlaw_256.png"
+        },
+        {
+          "id": "C03",
+          "name": "蒙面人",
+          "job": "身份不明",
+          "appearance": "斗笠、手背有刀疤",
+          "speech_style": "只说一句话",
+          "patience": 1,
+          "lie_rate": 0,
+          "portrait_path": "characters/named_portraits_256/named_shenmo_256.png"
+        },
+        {
+          "id": "C04",
+          "name": "刘铁头",
+          "job": "铜匠",
+          "appearance": "满手老茧、皮围裙",
+          "speech_style": "直来直去",
+          "patience": 4,
+          "lie_rate": 0.1,
+          "portrait_path": "characters/portraits_256/npc_commoner_256.png"
+        },
+        {
+          "id": "C05",
+          "name": "翠儿",
+          "job": "丫鬟",
+          "appearance": "双丫髻、怯生生",
+          "speech_style": "声音小，左顾右盼",
+          "patience": 3,
+          "lie_rate": 0.6,
+          "portrait_path": "characters/portraits_256/npc_lady_256.png"
+        },
+        {
+          "id": "C06",
+          "name": "孙秀才",
+          "job": "落第书生",
+          "appearance": "长衫打补丁",
+          "speech_style": "之乎者也，爱讲典故",
+          "patience": 4,
+          "lie_rate": 0.2,
+          "portrait_path": "characters/portraits_256/npc_connoisseur_256.png"
+        },
+        {
+          "id": "C07",
+          "name": "马三",
+          "job": "地痞",
+          "appearance": "歪戴瓜皮帽",
+          "speech_style": "先套近乎后翻脸",
+          "patience": 2,
+          "lie_rate": 0.8,
+          "portrait_path": "characters/portraits_256/npc_outlaw_256.png"
+        },
+        {
+          "id": "C08",
+          "name": "赵太太",
+          "job": "小脚太太",
+          "appearance": "绸衣、手绢遮面",
+          "speech_style": "怕被认出，催快办",
+          "patience": 3,
+          "lie_rate": 0,
+          "portrait_path": "characters/portraits_256/npc_lady_256.png"
+        },
+        {
+          "id": "C09",
+          "name": "德五爷",
+          "job": "没落旗人",
+          "appearance": "旧马褂、提鸟笼",
+          "speech_style": "死要面子，不许说“当”，要说“借”",
+          "patience": 3,
+          "lie_rate": 0.3,
+          "portrait_path": "characters/portraits_256/npc_prodigal_256.png"
+        },
+        {
+          "id": "C10",
+          "name": "鹞子李",
+          "job": "骗子",
+          "appearance": "衣冠楚楚",
+          "speech_style": "自称旗人后裔",
+          "patience": 3,
+          "lie_rate": 1,
+          "portrait_path": "characters/portraits_256/npc_outlaw_256.png"
+        },
+        {
+          "id": "C11",
+          "name": "张拉车",
+          "job": "人力车夫",
+          "appearance": "汗巾、赤脚",
+          "speech_style": "急，说东家赏的",
+          "patience": 3,
+          "lie_rate": 0.7,
+          "portrait_path": "characters/portraits_256/npc_commoner_256.png"
+        },
+        {
+          "id": "C12",
+          "name": "小菊仙",
+          "job": "戏班花旦",
+          "appearance": "胭脂未卸",
+          "speech_style": "爱讲排场，情绪起伏",
+          "patience": 3,
+          "lie_rate": 0.2,
+          "portrait_path": "characters/named_portraits_256/named_xiaojuxian_256.png"
+        },
+        {
+          "id": "C13",
+          "name": "胡郎中",
+          "job": "江湖郎中",
+          "appearance": "药箱、山羊胡",
+          "speech_style": "能说会道",
+          "patience": 4,
+          "lie_rate": 0.6,
+          "portrait_path": "characters/portraits_256/npc_connoisseur_256.png"
+        },
+        {
+          "id": "C14",
+          "name": "烟鬼周",
+          "job": "烟鬼",
+          "appearance": "面黄肌瘦、哈欠",
+          "speech_style": "手抖、什么都当",
+          "patience": 2,
+          "lie_rate": 0.7,
+          "portrait_path": "characters/portraits_256/npc_commoner_256.png"
+        },
+        {
+          "id": "C15",
+          "name": "钱掌柜",
+          "job": "古玩贩子",
+          "appearance": "金丝眼镜",
+          "speech_style": "笑里藏刀，懂行",
+          "patience": 5,
+          "lie_rate": 0.5,
+          "portrait_path": "characters/named_portraits_256/named_qian_boss_256.png"
+        },
+        {
+          "id": "C16",
+          "name": "胡二爷",
+          "job": "钱庄管事",
+          "appearance": "狐皮帽、玉烟嘴",
+          "speech_style": "冷嘲热讽",
+          "patience": 5,
+          "lie_rate": 0,
+          "portrait_path": "characters/named_portraits_256/named_hu_erye_256.png"
+        },
+        {
+          "id": "C17",
+          "name": "捕头刘头",
+          "job": "县衙快班捕快",
+          "appearance": "青布号衣、铁尺、锁链",
+          "speech_style": "官腔，暗示要好处",
+          "patience": 3,
+          "lie_rate": 0,
+          "portrait_path": "characters/portraits_256/npc_yamen_256.png"
+        },
+        {
+          "id": "C18",
+          "name": "福公公",
+          "job": "出宫太监",
+          "appearance": "尖嗓、无须",
+          "speech_style": "出手阔绰",
+          "patience": 4,
+          "lie_rate": 0.4,
+          "portrait_path": "characters/named_portraits_256/named_eunuch_fu_256.png"
+        },
+        {
+          "id": "C19",
+          "name": "孙秀才（回访）",
+          "job": "落第书生",
+          "appearance": "神色慌张",
+          "speech_style": "压低声音",
+          "patience": 2,
+          "lie_rate": 0,
+          "portrait_path": "characters/portraits_256/npc_connoisseur_256.png"
+        },
+        {
+          "id": "C20",
+          "name": "陌生兵丁",
+          "job": "绿营兵",
+          "appearance": "号坎破旧",
+          "speech_style": "粗声、急用钱",
+          "patience": 2,
+          "lie_rate": 0.5,
+          "portrait_path": "characters/portraits_256/npc_commoner_256.png"
+        },
+        {
+          "id": "C126",
+          "name": "赵管家",
+          "job": "赵家管家",
+          "appearance": "青布长衫、手转核桃",
+          "speech_style": "客气里带威胁，动辄“请刘头来”",
+          "patience": 3,
+          "lie_rate": 0.2,
+          "portrait_path": "characters/portraits_256/npc_commoner_256.png"
+        }
+      ],
+      "schedule_days": [
+        {
+          "天": "1",
+          "主题": "开张·教学",
+          "固定客人": "C01, C02, C03, C04",
+          "教学/玩法重点": "签当契、第一张当票、试金石教学、蒙面人留匣",
+          "事件": "—"
+        },
+        {
+          "天": "2",
+          "主题": "寻常日",
+          "固定客人": "C05, C06, 随机×4",
+          "教学/玩法重点": "活当与当期说明",
+          "事件": "—"
+        },
+        {
+          "天": "3",
+          "主题": "戥子解锁",
+          "固定客人": "C07, C08, 随机×4",
+          "教学/玩法重点": "称重鉴定灌铅银",
+          "事件": "钱庄胡二爷巡视"
+        },
+        {
+          "天": "4",
+          "主题": "旗人与赃物",
+          "固定客人": "C09, C10, C11, 随机×3",
+          "教学/玩法重点": "行话压价、赃物识别",
+          "事件": "捕头刘头首次盘查"
+        },
+        {
+          "天": "5",
+          "主题": "人情日",
+          "固定客人": "C12, C08回访, 随机×4",
+          "教学/玩法重点": "赎当流程",
+          "事件": "—"
+        },
+        {
+          "天": "6",
+          "主题": "真假人参",
+          "固定客人": "C13, C05回访, 随机×4",
+          "教学/玩法重点": "同类真假对比",
+          "事件": "米价上涨（客流+20%）"
+        },
+        {
+          "天": "7",
+          "主题": "黑市试探",
+          "固定客人": "C14, C15, 随机×3",
+          "教学/玩法重点": "禁物选择、古玩商议价",
+          "事件": "夜里有人敲后门（夜当预告）"
+        },
+        {
+          "天": "8",
+          "主题": "字画陷阱",
+          "固定客人": "C15, C09回访, 随机×3",
+          "教学/玩法重点": "字画辨伪",
+          "事件": "—"
+        },
+        {
+          "天": "9",
+          "主题": "抉择",
+          "固定客人": "C18, C19, 随机×3",
+          "教学/玩法重点": "维新密信：收留/报官/装糊涂",
+          "事件": "—"
+        },
+        {
+          "天": "10",
+          "主题": "旬末结账",
+          "固定客人": "C20, C16, 随机×2",
+          "教学/玩法重点": "交首旬息银30两；评价本旬",
+          "事件": "胡二爷收息；不足则借新债"
+        }
+      ]
+    },
+    {
+      "chapter": 2,
+      "title": "端午（戊戌变法）",
+      "default_bg": "scenes/bg_alley_hd_day.png",
+      "target_silver_tael": 600,
+      "guest_count": 29,
+      "guests": [
+        {
+          "id": "C40",
+          "name": "胡二爷",
+          "job": "钱庄管事",
+          "appearance": "狐皮帽换成夏布长衫",
+          "speech_style": "笑着逼债",
+          "patience": 5,
+          "lie_rate": 0.6,
+          "portrait_path": "characters/named_portraits_256/named_hu_erye_256.png"
+        },
+        {
+          "id": "C25",
+          "name": "陈阿福",
+          "job": "洋行买办",
+          "appearance": "西装配瓜皮帽",
+          "speech_style": "广东官话夹英文",
+          "patience": 4,
+          "lie_rate": 0.3,
+          "portrait_path": "characters/portraits_256/npc_comprador_256.png"
+        },
+        {
+          "id": "C28",
+          "name": "钱小洋",
+          "job": "假洋鬼子",
+          "appearance": "剪了辫子、戴假洋帽",
+          "speech_style": "满口“OK”“密斯脱”",
+          "patience": 2,
+          "lie_rate": 0.9,
+          "portrait_path": "characters/portraits_256/npc_commoner_256.png"
+        },
+        {
+          "id": "C41",
+          "name": "小顺子",
+          "job": "学徒",
+          "appearance": "瘦小、抱包袱",
+          "speech_style": "嘴快",
+          "patience": 4,
+          "lie_rate": 0,
+          "portrait_path": "characters/named_portraits_256/named_shunzi_256.png"
+        },
+        {
+          "id": "C35",
+          "name": "小刘",
+          "job": "布庄伙计",
+          "appearance": "青布短褂",
+          "speech_style": "闷声不响",
+          "patience": 3,
+          "lie_rate": 0.1,
+          "portrait_path": "characters/portraits_256/npc_commoner_256.png"
+        },
+        {
+          "id": "C21",
+          "name": "孙秀才",
+          "job": "维新联络人",
+          "appearance": "长衫换新，眉飞色舞",
+          "speech_style": "“皇上要变法了！”",
+          "patience": 4,
+          "lie_rate": 0.2,
+          "portrait_path": "characters/portraits_256/npc_connoisseur_256.png"
+        },
+        {
+          "id": "C26",
+          "name": "吴二",
+          "job": "洋行仓库杂役",
+          "appearance": "汗衫、手指沾油泥",
+          "speech_style": "东张西望",
+          "patience": 2,
+          "lie_rate": 0.8,
+          "portrait_path": "characters/portraits_256/npc_comprador_256.png"
+        },
+        {
+          "id": "C37",
+          "name": "林生",
+          "job": "水师学堂学生",
+          "appearance": "短发、旧学堂制服",
+          "speech_style": "提起甲午就红眼",
+          "patience": 3,
+          "lie_rate": 0.1,
+          "portrait_path": "characters/portraits_256/npc_commoner_256.png"
+        },
+        {
+          "id": "C36",
+          "name": "张拉车",
+          "job": "人力车夫",
+          "appearance": "比上回胖了点",
+          "speech_style": "憨笑",
+          "patience": 3,
+          "lie_rate": 0.4,
+          "portrait_path": "characters/portraits_256/npc_commoner_256.png"
+        },
+        {
+          "id": "C32",
+          "name": "赵太太",
+          "job": "小脚太太",
+          "appearance": "绸衣、不再遮脸",
+          "speech_style": "话里带刺也带怕",
+          "patience": 3,
+          "lie_rate": 0.1,
+          "portrait_path": "characters/portraits_256/npc_lady_256.png"
+        },
+        {
+          "id": "C38",
+          "name": "苏三娘",
+          "job": "绣娘",
+          "appearance": "手指有针眼",
+          "speech_style": "细声细气",
+          "patience": 4,
+          "lie_rate": 0,
+          "portrait_path": "characters/portraits_256/npc_commoner_256.png"
+        },
+        {
+          "id": "C43",
+          "name": "周少",
+          "job": "盐商少爷",
+          "appearance": "绸衫、手摇折扇",
+          "speech_style": "挥金如土",
+          "patience": 3,
+          "lie_rate": 0.5,
+          "portrait_path": "characters/portraits_256/npc_prodigal_256.png"
+        },
+        {
+          "id": "C22",
+          "name": "小菊仙",
+          "job": "戏班花旦",
+          "appearance": "卸了妆，眼睛红",
+          "speech_style": "强颜欢笑",
+          "patience": 3,
+          "lie_rate": 0.2,
+          "portrait_path": "characters/named_portraits_256/named_xiaojuxian_256.png"
+        },
+        {
+          "id": "C23",
+          "name": "金老板",
+          "job": "戏班班主",
+          "appearance": "金牙、一身烟味",
+          "speech_style": "笑里藏刀",
+          "patience": 2,
+          "lie_rate": 0.7,
+          "portrait_path": "characters/named_portraits_256/named_xiaojuxian_256.png"
+        },
+        {
+          "id": "C44",
+          "name": "谭生",
+          "job": "新学书生",
+          "appearance": "剪短辫子藏在帽里",
+          "speech_style": "慷慨激昂",
+          "patience": 3,
+          "lie_rate": 0.2,
+          "portrait_path": "characters/portraits_256/npc_connoisseur_256.png"
+        },
+        {
+          "id": "C27",
+          "name": "梅德兰先生（James Maitland）",
+          "job": "英商",
+          "appearance": "高个、怀表链空着",
+          "speech_style": "中文生硬",
+          "patience": 3,
+          "lie_rate": 0,
+          "portrait_path": "characters/portraits_256/npc_comprador_256.png"
+        },
+        {
+          "id": "C29",
+          "name": "胡郎中",
+          "job": "江湖郎中",
+          "appearance": "药箱换新",
+          "speech_style": "能说会道",
+          "patience": 4,
+          "lie_rate": 0.5,
+          "portrait_path": "characters/portraits_256/npc_connoisseur_256.png"
+        },
+        {
+          "id": "C24",
+          "name": "马三",
+          "job": "地痞",
+          "appearance": "带着两个跟班",
+          "speech_style": "翻脸比翻书快",
+          "patience": 2,
+          "lie_rate": 0.8,
+          "portrait_path": "characters/portraits_256/npc_outlaw_256.png"
+        },
+        {
+          "id": "C39",
+          "name": "刘头",
+          "job": "县衙快班捕头",
+          "appearance": "青布号衣、腰挂铁尺",
+          "speech_style": "官腔",
+          "patience": 3,
+          "lie_rate": 0,
+          "portrait_path": "characters/portraits_256/npc_yamen_256.png"
+        },
+        {
+          "id": "C30",
+          "name": "钱掌柜",
+          "job": "古玩商",
+          "appearance": "金丝眼镜",
+          "speech_style": "笑里藏刀",
+          "patience": 5,
+          "lie_rate": 0.5,
+          "portrait_path": "characters/named_portraits_256/named_qian_boss_256.png"
+        },
+        {
+          "id": "C34",
+          "name": "鹞子李",
+          "job": "骗子",
+          "appearance": "这回扮成买办",
+          "speech_style": "学洋腔",
+          "patience": 3,
+          "lie_rate": 1,
+          "portrait_path": "characters/portraits_256/npc_outlaw_256.png"
+        },
+        {
+          "id": "C31",
+          "name": "德五爷",
+          "job": "没落旗人",
+          "appearance": "瘦了一圈",
+          "speech_style": "依旧要面子",
+          "patience": 3,
+          "lie_rate": 0.2,
+          "portrait_path": "characters/portraits_256/npc_prodigal_256.png"
+        },
+        {
+          "id": "C42",
+          "name": "福公公",
+          "job": "出宫太监",
+          "appearance": "尖嗓",
+          "speech_style": "“宫里赏的”",
+          "patience": 4,
+          "lie_rate": 0.4,
+          "portrait_path": "characters/named_portraits_256/named_eunuch_fu_256.png"
+        },
+        {
+          "id": "C45",
+          "name": "何婶",
+          "job": "纺线女工",
+          "appearance": "指头上缠着线头",
+          "speech_style": "说话小心，怕给人添麻烦",
+          "patience": 4,
+          "lie_rate": 0,
+          "portrait_path": "characters/portraits_256/npc_lady_256.png"
+        },
+        {
+          "id": "C46",
+          "name": "齐老夫子",
+          "job": "私塾老先生",
+          "appearance": "洗得发白的蓝衫、铜框眼镜",
+          "speech_style": "之乎者也，一声长叹",
+          "patience": 3,
+          "lie_rate": 0,
+          "portrait_path": "characters/portraits_256/npc_commoner_256.png"
+        },
+        {
+          "id": "C47",
+          "name": "杜四",
+          "job": "钱庄散票的混混",
+          "appearance": "短打、腰别秤杆、右耳缺半块",
+          "speech_style": "压低嗓子说“海下的买卖”",
+          "patience": 2,
+          "lie_rate": 0.5,
+          "portrait_path": "characters/portraits_256/npc_outlaw_256.png"
+        },
+        {
+          "id": "C48",
+          "name": "乔把总",
+          "job": "被裁绿营把总",
+          "appearance": "号衣褪色，“兵”字补子掉了一半",
+          "speech_style": "苦笑、自嘲",
+          "patience": 3,
+          "lie_rate": 0.1,
+          "portrait_path": "characters/portraits_256/npc_commoner_256.png"
+        },
+        {
+          "id": "C49",
+          "name": "郝六",
+          "job": "义和号跑街",
+          "appearance": "算盘别在腰后",
+          "speech_style": "油滑，眼睛往库房瞟",
+          "patience": 2,
+          "lie_rate": 0.6,
+          "portrait_path": "characters/portraits_256/npc_commoner_256.png"
+        },
+        {
+          "id": "C33",
+          "name": "孟先生",
+          "job": "义和钱庄老账房",
+          "appearance": "瓜皮帽、老花镜，后拄拐",
+          "speech_style": "慢声细语，话里有话",
+          "patience": 4,
+          "lie_rate": 0.1,
+          "portrait_path": "characters/portraits_256/npc_rival_256.png"
+        }
+      ],
+      "schedule_days": [
+        {
+          "天": "1",
+          "主题": "补页",
+          "固定客人": "胡二爷、陈阿福、钱小洋、小顺子(未雇时)",
+          "教学/玩法重点": "解锁放大镜；洋货真假",
+          "事件": "胡二爷拿出“补页”：师父另欠2700两；小顺子信任/胆气开章折算"
+        },
+        {
+          "天": "2",
+          "主题": "洋布压境",
+          "固定客人": "小刘、随机×7",
+          "教学/玩法重点": "洋货品类定价",
+          "事件": "布庄关门，街上多了失业伙计；夜：小顺子成长线2-1·柜角"
+        },
+        {
+          "天": "3",
+          "主题": "名册",
+          "固定客人": "孙秀才、吴二、随机×6",
+          "教学/玩法重点": "禁物托存抉择；赃物识别",
+          "事件": "—"
+        },
+        {
+          "天": "4",
+          "主题": "甲午余痛",
+          "固定客人": "林生、张拉车、随机×6",
+          "教学/玩法重点": "活当与人情",
+          "事件": "—"
+        },
+        {
+          "天": "5",
+          "主题": "应节",
+          "固定客人": "赵太太、苏三娘、周少、随机×5",
+          "教学/玩法重点": "大额银锭称重",
+          "事件": "端午前市面热闹（客流+10%）"
+        },
+        {
+          "天": "6",
+          "主题": "赌债",
+          "固定客人": "小凤仙、金老板、随机×6",
+          "教学/玩法重点": "同一人情链两方客人",
+          "事件": "—"
+        },
+        {
+          "天": "7",
+          "主题": "新学",
+          "固定客人": "谭生、随机×7",
+          "教学/玩法重点": "维新书籍（尚未禁）",
+          "事件": "—"
+        },
+        {
+          "天": "8",
+          "主题": "京里传言",
+          "固定客人": "梅德兰、随机×7",
+          "教学/玩法重点": "赃物归还抉择",
+          "事件": "京里传言要变法（洋货、新学书需求+20%）；诏书未下"
+        },
+        {
+          "天": "9",
+          "主题": "鹿茸",
+          "固定客人": "胡郎中、随机×7",
+          "教学/玩法重点": "放大镜看切面",
+          "事件": "—"
+        },
+        {
+          "天": "10",
+          "主题": "第一旬结账",
+          "固定客人": "马三、刘头、胡二爷",
+          "教学/玩法重点": "禁物/举报；交息60两",
+          "事件": "马三报复：举报恒裕当收赃（县衙快班查赃）；结账后小顺子成长线2-2·胡二爷的手"
+        },
+        {
+          "天": "11~14",
+          "主题": "洋行线",
+          "固定客人": "周少回访、钱掌柜、鹞子李、陈阿福",
+          "教学/玩法重点": "宣德炉对决；提货单抉择",
+          "事件": "第12天钱掌柜对决"
+        },
+        {
+          "天": "15",
+          "主题": "名册回访",
+          "固定客人": "孙秀才、随机×6",
+          "教学/玩法重点": "名册去留",
+          "事件": "京里传言要废八股（上谕在第30天）"
+        },
+        {
+          "天": "16~19",
+          "主题": "寻常日",
+          "固定客人": "何婶(16)、齐老夫子(17)、德五爷(18)、杜四(19)、随机×28",
+          "教学/玩法重点": "旧当票；八股书；禁物·盐引",
+          "事件": "米价小涨；第17天翁同龢失势传言；第18天（四月廿三）《明定国是诏》"
+        },
+        {
+          "天": "20",
+          "主题": "第二旬结账",
+          "固定客人": "福公公、胡二爷",
+          "教学/玩法重点": "宫中流物伏笔；交息75两",
+          "事件": "—"
+        },
+        {
+          "天": "21~29",
+          "主题": "端午前",
+          "固定客人": "乔把总(21)、郝六(22)、小刘回访(23)、林生回访(24)、梅德兰回访(27)、胡二爷+刘头(28)、随机×60",
+          "教学/玩法重点": "备大账",
+          "事件": "第22天邸抄：翁同龢开缺、荣禄署直隶总督；第25天夜：小顺子看见胡二爷进英商仓库（成长线2-3·跟了半条街）；第27天广储司黄签碗"
+        },
+        {
+          "天": "30",
+          "主题": "端午大账",
+          "固定客人": "胡二爷",
+          "教学/玩法重点": "交息90两+还本375两",
+          "事件": "五月初五废八股上谕；结账分支（钱掌柜作保封顶180两；仍交不起→失败路线(a)跑街一旬）；章末字幕"
+        }
+      ]
+    },
+    {
+      "chapter": 3,
+      "title": "中秋（戊戌政变）",
+      "default_bg": "scenes/bg_alley_flat_night_hd.png",
+      "target_silver_tael": 1200,
+      "guest_count": 30,
+      "guests": [
+        {
+          "id": "C50",
+          "name": "胡二爷",
+          "job": "钱庄管事",
+          "appearance": "腰里多了把洋手枪",
+          "speech_style": "越笑越冷",
+          "patience": 5,
+          "lie_rate": 0.6,
+          "portrait_path": "characters/named_portraits_256/named_hu_erye_256.png"
+        },
+        {
+          "id": "C63",
+          "name": "慧明和尚",
+          "job": "僧人",
+          "appearance": "灰布僧衣",
+          "speech_style": "慢声细语",
+          "patience": 5,
+          "lie_rate": 0,
+          "portrait_path": "characters/named_portraits_256/named_huiming_256.png"
+        },
+        {
+          "id": "C64",
+          "name": "白三",
+          "job": "古董骗子",
+          "appearance": "长衫马褂、手上戴三个戒指（第17天戒指没了）",
+          "speech_style": "自称琉璃厂来的",
+          "patience": 3,
+          "lie_rate": 1,
+          "portrait_path": "characters/portraits_256/npc_outlaw_256.png"
+        },
+        {
+          "id": "C65",
+          "name": "达大人",
+          "job": "革职四品官",
+          "appearance": "补服旧了、花翎还在",
+          "speech_style": "打官腔掩饰窘迫",
+          "patience": 3,
+          "lie_rate": 0.3,
+          "portrait_path": "characters/portraits_256/npc_yamen_256.png"
+        },
+        {
+          "id": "C51",
+          "name": "孙秀才",
+          "job": "维新联络人",
+          "appearance": "第3天意气风发；第23天满身泥",
+          "speech_style": "先是高谈阔论，后来声音发抖",
+          "patience": 3,
+          "lie_rate": 0.1,
+          "portrait_path": "characters/portraits_256/npc_connoisseur_256.png"
+        },
+        {
+          "id": "C57",
+          "name": "钱掌柜",
+          "job": "古玩商",
+          "appearance": "金丝眼镜",
+          "speech_style": "带来《古玩辨伪图谱》",
+          "patience": 5,
+          "lie_rate": 0.4,
+          "portrait_path": "characters/named_portraits_256/named_qian_boss_256.png"
+        },
+        {
+          "id": "C52",
+          "name": "德五爷",
+          "job": "没落旗人",
+          "appearance": "穿着旧号坎去旗营打听",
+          "speech_style": "话少了",
+          "patience": 3,
+          "lie_rate": 0.1,
+          "portrait_path": "characters/portraits_256/npc_prodigal_256.png"
+        },
+        {
+          "id": "C58",
+          "name": "陈阿福",
+          "job": "洋行买办/掌眼",
+          "appearance": "（转投你时）换了长衫",
+          "speech_style": "广东官话",
+          "patience": 4,
+          "lie_rate": 0.1,
+          "portrait_path": "characters/portraits_256/npc_comprador_256.png"
+        },
+        {
+          "id": "C61",
+          "name": "林生",
+          "job": "新建陆军新兵",
+          "appearance": "剃了头、穿新号坎",
+          "speech_style": "话变少了",
+          "patience": 3,
+          "lie_rate": 0,
+          "portrait_path": "characters/portraits_256/npc_commoner_256.png"
+        },
+        {
+          "id": "C56",
+          "name": "刘头",
+          "job": "县衙快班捕头",
+          "appearance": "青布号衣，腰挂铁尺，胳膊上缠白布",
+          "speech_style": "奉命查人",
+          "patience": 3,
+          "lie_rate": 0.3,
+          "portrait_path": "characters/portraits_256/npc_yamen_256.png"
+        },
+        {
+          "id": "C69",
+          "name": "赵太太",
+          "job": "小脚太太",
+          "appearance": "绸衣",
+          "speech_style": "咬着牙说话",
+          "patience": 3,
+          "lie_rate": 0.1,
+          "portrait_path": "characters/portraits_256/npc_lady_256.png"
+        },
+        {
+          "id": "C53",
+          "name": "翠儿",
+          "job": "烟馆女佣",
+          "appearance": "瘦得脱相",
+          "speech_style": "（被逐时）不敢看人",
+          "patience": 2,
+          "lie_rate": 0.4,
+          "portrait_path": "characters/portraits_256/npc_lady_256.png"
+        },
+        {
+          "id": "C54",
+          "name": "黄胖子",
+          "job": "烟馆老板",
+          "appearance": "满脸油光",
+          "speech_style": "嘴甜心黑",
+          "patience": 2,
+          "lie_rate": 0.8,
+          "portrait_path": "characters/portraits_256/npc_commoner_256.png"
+        },
+        {
+          "id": "C66",
+          "name": "桑吉喇嘛",
+          "job": "游方喇嘛（假）",
+          "appearance": "红袍、念珠",
+          "speech_style": "念经念错",
+          "patience": 3,
+          "lie_rate": 1,
+          "portrait_path": "characters/portraits_256/npc_commoner_256.png"
+        },
+        {
+          "id": "C67",
+          "name": "王哨官",
+          "job": "绿营哨官",
+          "appearance": "号坎、佩刀",
+          "speech_style": "粗声粗气",
+          "patience": 2,
+          "lie_rate": 0.6,
+          "portrait_path": "characters/portraits_256/npc_yamen_256.png"
+        },
+        {
+          "id": "C60",
+          "name": "小菊仙/金老板",
+          "job": "花旦/班主",
+          "appearance": "（依第二章分支）",
+          "speech_style": "—",
+          "patience": 3,
+          "lie_rate": 0.3,
+          "portrait_path": "characters/named_portraits_256/named_xiaojuxian_256.png"
+        },
+        {
+          "id": "C59",
+          "name": "马三",
+          "job": "地痞",
+          "appearance": "夜里蒙着脸",
+          "speech_style": "学“三长两短”敲门",
+          "patience": 2,
+          "lie_rate": 0.9,
+          "portrait_path": "characters/portraits_256/npc_outlaw_256.png"
+        },
+        {
+          "id": "C55",
+          "name": "蒙面人（沈墨）",
+          "job": "内务府广储司笔帖式（正白旗包衣汉军）",
+          "appearance": "斗笠、左手墨茧、手背刀疤，受伤，裤脚是泥",
+          "speech_style": "字字斟酌",
+          "patience": 4,
+          "lie_rate": 0.2,
+          "portrait_path": "characters/named_portraits_256/named_shenmo_256.png"
+        },
+        {
+          "id": "C68",
+          "name": "冯夫人",
+          "job": "维新官员家眷",
+          "appearance": "素服、带着幼子",
+          "speech_style": "强撑体面",
+          "patience": 3,
+          "lie_rate": 0.1,
+          "portrait_path": "characters/portraits_256/npc_yamen_256.png"
+        },
+        {
+          "id": "C70",
+          "name": "小顺子",
+          "job": "学徒",
+          "appearance": "—",
+          "speech_style": "欲言又止",
+          "patience": 4,
+          "lie_rate": 0,
+          "portrait_path": "characters/named_portraits_256/named_shunzi_256.png"
+        },
+        {
+          "id": "C71",
+          "name": "福公公",
+          "job": "出宫太监",
+          "appearance": "这回不笑了",
+          "speech_style": "“宫里乱了”",
+          "patience": 4,
+          "lie_rate": 0.5,
+          "portrait_path": "characters/named_portraits_256/named_eunuch_fu_256.png"
+        },
+        {
+          "id": "C72",
+          "name": "苏三娘",
+          "job": "绣娘",
+          "appearance": "—",
+          "speech_style": "—",
+          "patience": 4,
+          "lie_rate": 0,
+          "portrait_path": "characters/portraits_256/npc_commoner_256.png"
+        },
+        {
+          "id": "C44",
+          "name": "谭生",
+          "job": "新学书生（沿用第二章编号）",
+          "appearance": "辫子盘在帽子里，满面红光",
+          "speech_style": "“五百年前我们是一家”",
+          "patience": 3,
+          "lie_rate": 0.1,
+          "portrait_path": "characters/portraits_256/npc_connoisseur_256.png"
+        },
+        {
+          "id": "C73",
+          "name": "褚老大",
+          "job": "船家",
+          "appearance": "赤脚，裤腿卷到膝盖",
+          "speech_style": "“当个酒钱”",
+          "patience": 4,
+          "lie_rate": 0.1,
+          "portrait_path": "characters/portraits_256/npc_commoner_256.png"
+        },
+        {
+          "id": "C74",
+          "name": "郑访员",
+          "job": "《国闻报》访员",
+          "appearance": "洋布长衫，胸前别一支自来水笔",
+          "speech_style": "说话快，爱打听",
+          "patience": 4,
+          "lie_rate": 0,
+          "portrait_path": "characters/portraits_256/npc_commoner_256.png"
+        },
+        {
+          "id": "C75",
+          "name": "侯七",
+          "job": "茶馆包打听",
+          "appearance": "瓜皮帽，小指甲留得老长",
+          "speech_style": "“两头吃，我最拿手”",
+          "patience": 3,
+          "lie_rate": 0.7,
+          "portrait_path": "characters/portraits_256/npc_commoner_256.png"
+        },
+        {
+          "id": "C76",
+          "name": "老常",
+          "job": "内务府苏拉",
+          "appearance": "灰布袍，说话总先往门外看一眼",
+          "speech_style": "欲言又止",
+          "patience": 3,
+          "lie_rate": 0.5,
+          "portrait_path": "characters/portraits_256/npc_commoner_256.png"
+        },
+        {
+          "id": "C77",
+          "name": "纪嫂",
+          "job": "小站新兵家眷",
+          "appearance": "抱着包袱，身后跟个七八岁的孩子",
+          "speech_style": "低声下气",
+          "patience": 4,
+          "lie_rate": 0,
+          "portrait_path": "characters/portraits_256/npc_lady_256.png"
+        },
+        {
+          "id": "C78",
+          "name": "孟掌柜",
+          "job": "裕丰米栈东家",
+          "appearance": "拇指上一枚翡翠扳指",
+          "speech_style": "开门见山",
+          "patience": 3,
+          "lie_rate": 0.6,
+          "portrait_path": "characters/portraits_256/npc_rival_256.png"
+        },
+        {
+          "id": "C79",
+          "name": "谭母",
+          "job": "谭生之母",
+          "appearance": "小脚，扶着门框",
+          "speech_style": "哽咽",
+          "patience": 4,
+          "lie_rate": 0,
+          "portrait_path": "characters/portraits_256/npc_commoner_256.png"
+        }
+      ],
+      "schedule_days": [
+        {
+          "天": "章首",
+          "主题": "中元（前夜）",
+          "固定客人": "小顺子",
+          "教学/玩法重点": "节点3-1 河灯与“陈”字",
+          "事件": "七月十五中元节，河灯；夜当暗号第一次在门外响起（无人）"
+        },
+        {
+          "天": "1",
+          "主题": "七月十六",
+          "固定客人": "胡二爷、慧明、白三、随机×6",
+          "教学/玩法重点": "解锁《古玩辨伪图谱》（第4天）前的旗人器物",
+          "事件": "—"
+        },
+        {
+          "天": "2~3",
+          "主题": "落魄官员",
+          "固定客人": "褚老大（2）、达大人、孙秀才、随机×12",
+          "教学/玩法重点": "官物鉴别；K&Co.洋铁箱；维新书生意气风发",
+          "事件": "—"
+        },
+        {
+          "天": "4~5",
+          "主题": "图谱",
+          "固定客人": "钱掌柜、白三、随机×12",
+          "教学/玩法重点": "解锁《古玩辨伪图谱》；康熙盘对决",
+          "事件": "—"
+        },
+        {
+          "天": "6",
+          "主题": "旗营",
+          "固定客人": "德五爷、随机×7",
+          "教学/玩法重点": "珊瑚朝珠真假",
+          "事件": "德五爷：太后的人进了天津（荣禄到津）"
+        },
+        {
+          "天": "7",
+          "主题": "四章京",
+          "固定客人": "谭生、郑访员、随机×4",
+          "教学/玩法重点": "新学书；照相匣与告白稿",
+          "事件": "京里传来的消息：军机四章京参预新政"
+        },
+        {
+          "天": "8~9",
+          "主题": "故人",
+          "固定客人": "侯七（8）、陈阿福、林生、随机×12",
+          "教学/玩法重点": "洋行线分支；托侯七盯梢",
+          "事件": "—"
+        },
+        {
+          "天": "10",
+          "主题": "第一旬结账",
+          "固定客人": "刘头、胡二爷",
+          "教学/玩法重点": "盘查；交息100两",
+          "事件": "—"
+        },
+        {
+          "天": "11~14",
+          "主题": "寻常日",
+          "固定客人": "老常（11）、德五爷（12）、赵太太（13）、纪嫂（14）、随机×24",
+          "教学/玩法重点": "广储司黄签碗；雍正粉彩瓶；官物军袄",
+          "事件": "第14天：袁大人坐津芦火车进京"
+        },
+        {
+          "天": "15",
+          "主题": "烟馆",
+          "固定客人": "翠儿、黄胖子",
+          "教学/玩法重点": "翠儿去留抉择",
+          "事件": "—"
+        },
+        {
+          "天": "16",
+          "主题": "金佛",
+          "固定客人": "桑吉喇嘛、慧明",
+          "教学/玩法重点": "试金石+图谱对比",
+          "事件": "—"
+        },
+        {
+          "天": "17",
+          "主题": "印床",
+          "固定客人": "白三",
+          "教学/玩法重点": "刻刀与印床（补页伪造线索）",
+          "事件": "京里传来的消息：袁大人赏候补侍郎"
+        },
+        {
+          "天": "18",
+          "主题": "军饷",
+          "固定客人": "王哨官、小菊仙/金老板",
+          "教学/玩法重点": "赃物军饷",
+          "事件": "—"
+        },
+        {
+          "天": "19",
+          "主题": "兵船",
+          "固定客人": "孟掌柜、侯七（回报）",
+          "教学/玩法重点": "囤米抉择；胡二爷两头下注",
+          "事件": "大沽口外来了英国兵船，米价一天涨两成"
+        },
+        {
+          "天": "20",
+          "主题": "第二旬结账",
+          "固定客人": "孙秀才（回当端砚）、胡二爷",
+          "教学/玩法重点": "交息125两",
+          "事件": "—"
+        },
+        {
+          "天": "21",
+          "主题": "夜当开张",
+          "固定客人": "马三（夜）",
+          "教学/玩法重点": "解锁夜当；冒用暗号",
+          "事件": "八月初六：京里传来的消息——太后训政，京城政变；京津火车停开"
+        },
+        {
+          "天": "22",
+          "主题": "夜客",
+          "固定客人": "蒙面人（夜）",
+          "教学/玩法重点": "密物客人；本章核心抉择",
+          "事件": "京里在拿康有为；城门盘查"
+        },
+        {
+          "天": "23~24",
+          "主题": "逃",
+          "固定客人": "孙秀才（夜）、小顺子（拂晓）、冯夫人",
+          "教学/玩法重点": "引荐名片；节点3-2 从码头回来；抄家前的家产",
+          "事件": "—"
+        },
+        {
+          "天": "25",
+          "主题": "搜捕",
+          "固定客人": "刘头、苏三娘",
+          "教学/玩法重点": "县衙快班挨户查赃",
+          "事件": "—"
+        },
+        {
+          "天": "26",
+          "主题": "实话",
+          "固定客人": "小顺子",
+          "教学/玩法重点": "节点3-3 烟嘴声；目击者线推进",
+          "事件": "—"
+        },
+        {
+          "天": "27",
+          "主题": "宫里",
+          "固定客人": "福公公",
+          "教学/玩法重点": "木匣追问",
+          "事件": "—"
+        },
+        {
+          "天": "28",
+          "主题": "京里传来的消息",
+          "固定客人": "—",
+          "教学/玩法重点": "（无客）",
+          "事件": "八月十三：京里传来的消息——六君子于北京菜市口就义"
+        },
+        {
+          "天": "29",
+          "主题": "上谕",
+          "固定客人": "谭母 / 谭生来信、马三（敲诈）",
+          "教学/玩法重点": "谭生线收尾；暗格风险",
+          "事件": "京里发下上谕，督署张贴；缉拿沈墨告示"
+        },
+        {
+          "天": "30",
+          "主题": "中秋大账",
+          "固定客人": "胡二爷",
+          "教学/玩法重点": "交息150两+还本825两",
+          "事件": "结账分支；交不起→钱掌柜收库存（封顶370两）；仍不起→见失败路线 (a)"
+        }
+      ]
+    },
+    {
+      "chapter": 4,
+      "title": "年关（义和拳初起）",
+      "default_bg": "scenes/bg_alley_hd_snow.png",
+      "target_silver_tael": 2500,
+      "guest_count": 29,
+      "guests": [
+        {
+          "id": "C80",
+          "name": "胡二爷",
+          "job": "钱庄管事",
+          "appearance": "貂帽、手下多了两个打手",
+          "speech_style": "“年关了，小朝奉”",
+          "patience": 5,
+          "lie_rate": 0.7,
+          "portrait_path": "characters/named_portraits_256/named_hu_erye_256.png"
+        },
+        {
+          "id": "C81",
+          "name": "流民老李",
+          "job": "山东灾民",
+          "appearance": "一家五口，满脸冻疮",
+          "speech_style": "山东口音，话不多",
+          "patience": 3,
+          "lie_rate": 0,
+          "portrait_path": "characters/portraits_256/npc_commoner_256.png"
+        },
+        {
+          "id": "C82",
+          "name": "米贩孙瘸子",
+          "job": "米贩",
+          "appearance": "一瘸一拐，米袋子鼓",
+          "speech_style": "“年关米贵，爱要不要”",
+          "patience": 2,
+          "lie_rate": 0.8,
+          "portrait_path": "characters/portraits_256/npc_commoner_256.png"
+        },
+        {
+          "id": "C83",
+          "name": "米行周掌柜",
+          "job": "米行掌柜",
+          "appearance": "胖、穿缎面棉袍",
+          "speech_style": "精明",
+          "patience": 4,
+          "lie_rate": 0.2,
+          "portrait_path": "characters/portraits_256/npc_rival_256.png"
+        },
+        {
+          "id": "C84",
+          "name": "达大人",
+          "job": "革职官员",
+          "appearance": "补服当了，只剩皮袍",
+          "speech_style": "不再打官腔",
+          "patience": 3,
+          "lie_rate": 0.1,
+          "portrait_path": "characters/portraits_256/npc_yamen_256.png"
+        },
+        {
+          "id": "C71",
+          "name": "福公公",
+          "job": "出宫太监",
+          "appearance": "裹着大氅，左右看",
+          "speech_style": "“宫里在清查”",
+          "patience": 4,
+          "lie_rate": 0.6,
+          "portrait_path": "characters/named_portraits_256/named_eunuch_fu_256.png"
+        },
+        {
+          "id": "C85",
+          "name": "白三",
+          "job": "古董骗子",
+          "appearance": "换了个铺面招牌",
+          "speech_style": "“琉璃厂”说成“西琉璃厂”了",
+          "patience": 3,
+          "lie_rate": 1,
+          "portrait_path": "characters/portraits_256/npc_outlaw_256.png"
+        },
+        {
+          "id": "C86",
+          "name": "翠儿/小刘/陈阿福",
+          "job": "伙计",
+          "appearance": "（依前章分支）",
+          "speech_style": "—",
+          "patience": 4,
+          "lie_rate": 0,
+          "portrait_path": "characters/portraits_256/npc_comprador_256.png"
+        },
+        {
+          "id": "C87",
+          "name": "貂领贩子",
+          "job": "皮货贩",
+          "appearance": "满身膻味",
+          "speech_style": "嘴快",
+          "patience": 2,
+          "lie_rate": 0.9,
+          "portrait_path": "characters/portraits_256/npc_commoner_256.png"
+        },
+        {
+          "id": "C88",
+          "name": "赵太太",
+          "job": "赵家掌家太太",
+          "appearance": "换了主母的头面",
+          "speech_style": "说话有了底气",
+          "patience": 4,
+          "lie_rate": 0,
+          "portrait_path": "characters/portraits_256/npc_lady_256.png"
+        },
+        {
+          "id": "C89",
+          "name": "拳民大师兄",
+          "job": "义和拳",
+          "appearance": "红头巾、腰缠红带",
+          "speech_style": "“刀枪不入”",
+          "patience": 2,
+          "lie_rate": 0.4,
+          "portrait_path": "characters/portraits_256/npc_outlaw_256.png"
+        },
+        {
+          "id": "C90",
+          "name": "教民王约翰",
+          "job": "教民",
+          "appearance": "穿洋布长衫，挂十字",
+          "speech_style": "怕得发抖",
+          "patience": 3,
+          "lie_rate": 0.2,
+          "portrait_path": "characters/portraits_256/npc_commoner_256.png"
+        },
+        {
+          "id": "C91",
+          "name": "小菊仙",
+          "job": "天福茶园头牌",
+          "appearance": "（依前章）",
+          "speech_style": "爽利",
+          "patience": 4,
+          "lie_rate": 0,
+          "portrait_path": "characters/named_portraits_256/named_xiaojuxian_256.png"
+        },
+        {
+          "id": "C92",
+          "name": "小顺子",
+          "job": "学徒",
+          "appearance": "—",
+          "speech_style": "这回敢说了",
+          "patience": 4,
+          "lie_rate": 0,
+          "portrait_path": "characters/named_portraits_256/named_shunzi_256.png"
+        },
+        {
+          "id": "C93",
+          "name": "钱掌柜",
+          "job": "古玩商",
+          "appearance": "金丝眼镜",
+          "speech_style": "“这是最后一回考你”",
+          "patience": 5,
+          "lie_rate": 0.4,
+          "portrait_path": "characters/named_portraits_256/named_qian_boss_256.png"
+        },
+        {
+          "id": "C94",
+          "name": "德五爷",
+          "job": "没落旗人",
+          "appearance": "旗营差事丢了",
+          "speech_style": "依旧提笼子（新买的鸟）",
+          "patience": 3,
+          "lie_rate": 0.1,
+          "portrait_path": "characters/portraits_256/npc_prodigal_256.png"
+        },
+        {
+          "id": "C95",
+          "name": "刘头",
+          "job": "县衙快班捕头",
+          "appearance": "胳膊上不缠白布了",
+          "speech_style": "心虚",
+          "patience": 3,
+          "lie_rate": 0.5,
+          "portrait_path": "characters/portraits_256/npc_yamen_256.png"
+        },
+        {
+          "id": "C96",
+          "name": "陈阿福/梅德兰",
+          "job": "洋行（梅德兰：英商，K&Co.股东）",
+          "appearance": "—",
+          "speech_style": "—",
+          "patience": 4,
+          "lie_rate": 0.1,
+          "portrait_path": "characters/portraits_256/npc_comprador_256.png"
+        },
+        {
+          "id": "C97",
+          "name": "马三",
+          "job": "地痞",
+          "appearance": "给钱庄当打手了",
+          "speech_style": "“二爷让我来的”",
+          "patience": 2,
+          "lie_rate": 0.9,
+          "portrait_path": "characters/portraits_256/npc_outlaw_256.png"
+        },
+        {
+          "id": "C98",
+          "name": "沈墨",
+          "job": "内务府笔帖式",
+          "appearance": "（若存活）",
+          "speech_style": "—",
+          "patience": 4,
+          "lie_rate": 0,
+          "portrait_path": "characters/named_portraits_256/named_shenmo_256.png"
+        },
+        {
+          "id": "C99",
+          "name": "县太爷（公堂）",
+          "job": "天津县令",
+          "appearance": "官帽、八字胡",
+          "speech_style": "看谁的银子多",
+          "patience": 3,
+          "lie_rate": 0.5,
+          "portrait_path": "characters/portraits_256/npc_commoner_256.png"
+        },
+        {
+          "id": "C118",
+          "name": "黄讼师",
+          "job": "讼师（胡二爷眼线）",
+          "appearance": "瓜皮帽，袖着手",
+          "speech_style": "“刀笔二字，不是白叫的”",
+          "patience": 3,
+          "lie_rate": 0.8,
+          "portrait_path": "characters/named_portraits_256/named_hu_erye_256.png"
+        },
+        {
+          "id": "C119",
+          "name": "苏三娘",
+          "job": "码头扛活工人之妻",
+          "appearance": "揣着手炉，手冻得通红",
+          "speech_style": "絮叨房钱、婆婆",
+          "patience": 3,
+          "lie_rate": 0.3,
+          "portrait_path": "characters/portraits_256/npc_commoner_256.png"
+        },
+        {
+          "id": "C120",
+          "name": "胡郎中",
+          "job": "走方郎中",
+          "appearance": "山羊胡上结着冰碴",
+          "speech_style": "吆喝式，夸药",
+          "patience": 2,
+          "lie_rate": 0.9,
+          "portrait_path": "characters/portraits_256/npc_connoisseur_256.png"
+        },
+        {
+          "id": "C121",
+          "name": "小石头",
+          "job": "刻字铺学徒（白三徒弟）",
+          "appearance": "十三四岁，两手刀口",
+          "speech_style": "怯，问一句答一句",
+          "patience": 3,
+          "lie_rate": 0.1,
+          "portrait_path": "characters/portraits_256/npc_outlaw_256.png"
+        },
+        {
+          "id": "C122",
+          "name": "吴二",
+          "job": "洋行杂役",
+          "appearance": "缩着脖子",
+          "speech_style": "压低声音递消息",
+          "patience": 2,
+          "lie_rate": 0.5,
+          "portrait_path": "characters/portraits_256/npc_comprador_256.png"
+        },
+        {
+          "id": "C123",
+          "name": "王哨官",
+          "job": "新军哨官",
+          "appearance": "号坎换了新的",
+          "speech_style": "横，按刀柄",
+          "patience": 2,
+          "lie_rate": 0.6,
+          "portrait_path": "characters/portraits_256/npc_yamen_256.png"
+        },
+        {
+          "id": "C124",
+          "name": "王婆",
+          "job": "孤老",
+          "appearance": "比开春时又矮了些",
+          "speech_style": "絮叨孙子小栓",
+          "patience": 4,
+          "lie_rate": 0.1,
+          "portrait_path": "characters/named_portraits_256/named_wangpo_256.png"
+        },
+        {
+          "id": "C125",
+          "name": "张拉车",
+          "job": "洋车夫",
+          "appearance": "车把上挂着冰溜子",
+          "speech_style": "苦笑",
+          "patience": 3,
+          "lie_rate": 0,
+          "portrait_path": "characters/portraits_256/npc_commoner_256.png"
+        }
+      ],
+      "schedule_days": [
+        {
+          "天": "1",
+          "主题": "腊月",
+          "固定客人": "胡二爷、流民老李、随机×9",
+          "教学/玩法重点": "年关定价；伙计系统预告",
+          "事件": "山东大水，流民进城（客流+30%）"
+        },
+        {
+          "天": "2",
+          "主题": "米价",
+          "固定客人": "孙瘸子、周掌柜、随机×8",
+          "教学/玩法重点": "掺砂米鉴别；囤米抉择",
+          "事件": "米价一石涨到六两"
+        },
+        {
+          "天": "3",
+          "主题": "皮货",
+          "固定客人": "达大人、随机×9",
+          "教学/玩法重点": "皮毛鉴别",
+          "事件": "—"
+        },
+        {
+          "天": "4",
+          "主题": "宫中流物",
+          "固定客人": "福公公（夜当）、随机×9",
+          "教学/玩法重点": "高价赃物；内务府清查风险",
+          "事件": "—"
+        },
+        {
+          "天": "5",
+          "主题": "手炉",
+          "固定客人": "苏三娘（C119）、马三（傍晚·探库）、随机×9",
+          "教学/玩法重点": "后添刻款（误导破绽）；探库抉择",
+          "事件": "城南路面结冰，城根流民搭窝棚"
+        },
+        {
+          "天": "6",
+          "主题": "假如意",
+          "固定客人": "白三、随机×9",
+          "教学/玩法重点": "新玉/老玉对比",
+          "事件": "—"
+        },
+        {
+          "天": "7",
+          "主题": "伙计",
+          "固定客人": "翠儿/小刘/陈阿福",
+          "教学/玩法重点": "解锁雇伙计（客流+25%）",
+          "事件": "—"
+        },
+        {
+          "天": "8~9",
+          "主题": "腊八 / 珐琅",
+          "固定客人": "慧明、胡郎中（C120，8）、福公公（夜当）、随机×20",
+          "教学/玩法重点": "假虫草鉴别；舍粥抉择",
+          "事件": "腊八寺庙舍粥"
+        },
+        {
+          "天": "10",
+          "主题": "第一旬结账",
+          "固定客人": "貂领贩子、胡二爷",
+          "教学/玩法重点": "交息180两",
+          "事件": "解锁“死当拍卖”（每旬末一次）"
+        },
+        {
+          "天": "11~14",
+          "主题": "掌家",
+          "固定客人": "小石头（C121，11）、吴二（C122，11）、赵太太（12、14）、王哨官（C123，13）、老李闺女（13）、白三（14）、随机×36",
+          "教学/玩法重点": "刻刀与印坯；海关假戳；克扣军衣；大额地契活当；伪地契",
+          "事件": "—"
+        },
+        {
+          "天": "15",
+          "主题": "揭帖",
+          "固定客人": "拳民大师兄、随机×9",
+          "教学/玩法重点": "—",
+          "事件": "墙上贴出“扶清灭洋”揭帖"
+        },
+        {
+          "天": "16",
+          "主题": "教案",
+          "固定客人": "王约翰、随机×9",
+          "教学/玩法重点": "教堂赃物抉择",
+          "事件": "—"
+        },
+        {
+          "天": "17",
+          "主题": "茶园",
+          "固定客人": "小菊仙、随机×9；小顺子（夜）",
+          "教学/玩法重点": "人情回报；成长线4-1狗洞",
+          "事件": "—"
+        },
+        {
+          "天": "18",
+          "主题": "暗账",
+          "固定客人": "小顺子（夜）",
+          "教学/玩法重点": "目击者证词；钱庄暗账",
+          "事件": "—"
+        },
+        {
+          "天": "19",
+          "主题": "宋版",
+          "固定客人": "钱掌柜、随机×9",
+          "教学/玩法重点": "最后一次对决",
+          "事件": "—"
+        },
+        {
+          "天": "20",
+          "主题": "第二旬结账",
+          "固定客人": "德五爷、胡二爷",
+          "教学/玩法重点": "交息220两；拍卖",
+          "事件": "—"
+        },
+        {
+          "天": "21",
+          "主题": "作证",
+          "固定客人": "刘头、随机×9",
+          "教学/玩法重点": "说服刘头",
+          "事件": "—"
+        },
+        {
+          "天": "22",
+          "主题": "年关前",
+          "固定客人": "王婆（C124）、胡二爷（夜·私了）、随机×18",
+          "教学/玩法重点": "冬衣潮；私了抉择",
+          "事件": "—"
+        },
+        {
+          "天": "23",
+          "主题": "小年",
+          "固定客人": "张拉车（C125）、小顺子（夜·祭灶）、随机×18",
+          "教学/玩法重点": "冬衣潮；灶王像",
+          "事件": "祭灶"
+        },
+        {
+          "天": "24",
+          "主题": "军火",
+          "固定客人": "陈阿福/梅德兰、马三",
+          "教学/玩法重点": "军火证据；纵火事件",
+          "事件": "夜里库房起火（条件触发）"
+        },
+        {
+          "天": "25",
+          "主题": "扫房",
+          "固定客人": "黄讼师（C118）、达大人（回赎）、随机×9",
+          "教学/玩法重点": "讼师眼线识破；炭敬礼单",
+          "事件": "—"
+        },
+        {
+          "天": "26",
+          "主题": "当票",
+          "固定客人": "沈墨（夜，若存活）",
+          "教学/玩法重点": "当票合璧（不开匣）",
+          "事件": "—"
+        },
+        {
+          "天": "27",
+          "主题": "出逃",
+          "固定客人": "福公公",
+          "教学/玩法重点": "—",
+          "事件": "内务府清查到天津"
+        },
+        {
+          "天": "28",
+          "主题": "公堂",
+          "固定客人": "胡二爷、县太爷、证人（含小顺子·成长线4-2）",
+          "教学/玩法重点": "公堂对质：补页真伪（若第22天私了：公堂不开，县衙“和息”批文）",
+          "事件": "—"
+        },
+        {
+          "天": "29",
+          "主题": "除夕（廿九）",
+          "固定客人": "胡二爷 / 钱庄账房 / 新管事；小顺子（夜·4-3拜师）",
+          "教学/玩法重点": "交息250两+还本1800两+节敬50两（私了：250+300+50）；人情凑银封顶550",
+          "事件": "章末字幕；封铺→失败路线(b)"
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "title": "庚子（八国联军入津）",
+      "default_bg": "scenes/bg_alley_hd_war.png",
+      "target_silver_tael": 800,
+      "guest_count": 33,
+      "guests": [
+        {
+          "id": "C100",
+          "name": "流落街头的达大人",
+          "job": "逃难官员",
+          "appearance": "官服换了布衣",
+          "speech_style": "“城要守不住了”",
+          "patience": 3,
+          "lie_rate": 0.2,
+          "portrait_path": "characters/portraits_256/npc_yamen_256.png"
+        },
+        {
+          "id": "C101",
+          "name": "洋行职员史密斯",
+          "job": "洋行职员",
+          "appearance": "西装沾泥",
+          "speech_style": "中文只会“多少钱”",
+          "patience": 2,
+          "lie_rate": 0.1,
+          "portrait_path": "characters/portraits_256/npc_comprador_256.png"
+        },
+        {
+          "id": "C102",
+          "name": "拳民二师兄",
+          "job": "义和团",
+          "appearance": "红巾、黄符",
+          "speech_style": "“烧二毛子！”",
+          "patience": 2,
+          "lie_rate": 0.5,
+          "portrait_path": "characters/portraits_256/npc_outlaw_256.png"
+        },
+        {
+          "id": "C103",
+          "name": "骗子（无名）",
+          "job": "趁乱骗子",
+          "appearance": "—",
+          "speech_style": "—",
+          "patience": 2,
+          "lie_rate": 1,
+          "portrait_path": "characters/portraits_256/npc_commoner_256.png"
+        },
+        {
+          "id": "C55",
+          "name": "沈墨",
+          "job": "内务府笔帖式",
+          "appearance": "（若存活）",
+          "speech_style": "—",
+          "patience": 4,
+          "lie_rate": 0,
+          "portrait_path": "characters/named_portraits_256/named_shenmo_256.png"
+        },
+        {
+          "id": "C104",
+          "name": "旗人张太太",
+          "job": "旗人家眷",
+          "appearance": "带着两个孩子",
+          "speech_style": "“城里不能待了”",
+          "patience": 3,
+          "lie_rate": 0.1,
+          "portrait_path": "characters/portraits_256/npc_lady_256.png"
+        },
+        {
+          "id": "C95",
+          "name": "刘头",
+          "job": "前县衙快班捕头",
+          "appearance": "号衣扔了，脸上有血",
+          "speech_style": "求你收留",
+          "patience": 2,
+          "lie_rate": 0.4,
+          "portrait_path": "characters/portraits_256/npc_yamen_256.png"
+        },
+        {
+          "id": "C105",
+          "name": "码头苦力",
+          "job": "苦力",
+          "appearance": "—",
+          "speech_style": "—",
+          "patience": 3,
+          "lie_rate": 0.2,
+          "portrait_path": "characters/portraits_256/npc_commoner_256.png"
+        },
+        {
+          "id": "C106",
+          "name": "钱庄伙计（落难）",
+          "job": "钱庄伙计",
+          "appearance": "身上有烧伤",
+          "speech_style": "“钱庄烧了”",
+          "patience": 3,
+          "lie_rate": 0.3,
+          "portrait_path": "characters/portraits_256/npc_rival_256.png"
+        },
+        {
+          "id": "C107",
+          "name": "米贩",
+          "job": "米贩",
+          "appearance": "—",
+          "speech_style": "—",
+          "patience": 2,
+          "lie_rate": 0.7,
+          "portrait_path": "characters/portraits_256/npc_commoner_256.png"
+        },
+        {
+          "id": "C108",
+          "name": "洋行杂役吴二",
+          "job": "洋行杂役",
+          "appearance": "（第二章）",
+          "speech_style": "—",
+          "patience": 2,
+          "lie_rate": 0.8,
+          "portrait_path": "characters/portraits_256/npc_comprador_256.png"
+        },
+        {
+          "id": "C93",
+          "name": "钱掌柜",
+          "job": "古玩商",
+          "appearance": "金丝眼镜碎了一片",
+          "speech_style": "“我铺子烧了”",
+          "patience": 5,
+          "lie_rate": 0.2,
+          "portrait_path": "characters/named_portraits_256/named_qian_boss_256.png"
+        },
+        {
+          "id": "C109",
+          "name": "武卫前军溃兵",
+          "job": "清兵",
+          "appearance": "号衣破烂",
+          "speech_style": "“给钱！”",
+          "patience": 1,
+          "lie_rate": 0.6,
+          "portrait_path": "characters/portraits_256/npc_commoner_256.png"
+        },
+        {
+          "id": "C88",
+          "name": "赵太太",
+          "job": "赵家掌家",
+          "appearance": "—",
+          "speech_style": "“赵家后院有地窖”",
+          "patience": 4,
+          "lie_rate": 0,
+          "portrait_path": "characters/portraits_256/npc_lady_256.png"
+        },
+        {
+          "id": "C63",
+          "name": "慧明和尚",
+          "job": "僧人",
+          "appearance": "寺被烧了",
+          "speech_style": "“佛像托你”",
+          "patience": 5,
+          "lie_rate": 0,
+          "portrait_path": "characters/named_portraits_256/named_huiming_256.png"
+        },
+        {
+          "id": "C94",
+          "name": "德五爷",
+          "job": "旗营老兵",
+          "appearance": "穿上了旧号坎",
+          "speech_style": "“爷去守城”",
+          "patience": 3,
+          "lie_rate": 0,
+          "portrait_path": "characters/portraits_256/npc_prodigal_256.png"
+        },
+        {
+          "id": "C91",
+          "name": "小菊仙",
+          "job": "花旦",
+          "appearance": "—",
+          "speech_style": "“我去上海”",
+          "patience": 4,
+          "lie_rate": 0,
+          "portrait_path": "characters/named_portraits_256/named_xiaojuxian_256.png"
+        },
+        {
+          "id": "C24",
+          "name": "马三",
+          "job": "拳民跟班",
+          "appearance": "头上缠红巾",
+          "speech_style": "“我现在是大师兄的人”",
+          "patience": 2,
+          "lie_rate": 0.9,
+          "portrait_path": "characters/portraits_256/npc_outlaw_256.png"
+        },
+        {
+          "id": "C110",
+          "name": "邮差",
+          "job": "邮差",
+          "appearance": "—",
+          "speech_style": "—",
+          "patience": 3,
+          "lie_rate": 0,
+          "portrait_path": "characters/portraits_256/npc_commoner_256.png"
+        },
+        {
+          "id": "C111",
+          "name": "俄国兵",
+          "job": "联军士兵",
+          "appearance": "—",
+          "speech_style": "比划",
+          "patience": 1,
+          "lie_rate": 0.5,
+          "portrait_path": "characters/portraits_256/npc_commoner_256.png"
+        },
+        {
+          "id": "C112",
+          "name": "逃难古董商",
+          "job": "古董商",
+          "appearance": "—",
+          "speech_style": "—",
+          "patience": 2,
+          "lie_rate": 0.6,
+          "portrait_path": "characters/portraits_256/npc_connoisseur_256.png"
+        },
+        {
+          "id": "C80",
+          "name": "胡二爷",
+          "job": "落魄钱庄管事",
+          "appearance": "貂帽没了，满脸胡茬",
+          "speech_style": "求你当东西",
+          "patience": 2,
+          "lie_rate": 0.8,
+          "portrait_path": "characters/named_portraits_256/named_hu_erye_256.png"
+        },
+        {
+          "id": "C61",
+          "name": "林生",
+          "job": "武卫前军",
+          "appearance": "头上缠着绷带",
+          "speech_style": "“聂军门战死了”",
+          "patience": 3,
+          "lie_rate": 0,
+          "portrait_path": "characters/portraits_256/npc_commoner_256.png"
+        },
+        {
+          "id": "C27",
+          "name": "梅德兰（James Maitland）",
+          "job": "英商",
+          "appearance": "表链刻“J.M.”",
+          "speech_style": "“我能护住你的门”",
+          "patience": 4,
+          "lie_rate": 0,
+          "portrait_path": "characters/portraits_256/npc_comprador_256.png"
+        },
+        {
+          "id": "C113",
+          "name": "联军士兵",
+          "job": "联军士兵",
+          "appearance": "—",
+          "speech_style": "—",
+          "patience": 1,
+          "lie_rate": 0.5,
+          "portrait_path": "characters/portraits_256/npc_commoner_256.png"
+        },
+        {
+          "id": "C114",
+          "name": "小栓（王婆的孙子）",
+          "job": "拳民少年",
+          "appearance": "头缠红巾，腰别没开刃的片刀",
+          "speech_style": "“喝了符水，洋枪打不进来！”",
+          "patience": 2,
+          "lie_rate": 0.1,
+          "portrait_path": "characters/named_portraits_256/named_wangpo_256.png"
+        },
+        {
+          "id": "C115",
+          "name": "红灯照姑娘",
+          "job": "红灯照",
+          "appearance": "红衣红裤，手提红灯笼",
+          "speech_style": "站在门口不进门，要灯油钱",
+          "patience": 3,
+          "lie_rate": 0.2,
+          "portrait_path": "characters/portraits_256/npc_lady_256.png"
+        },
+        {
+          "id": "C120",
+          "name": "胡郎中",
+          "job": "江湖郎中",
+          "appearance": "药箱换成了背篓",
+          "speech_style": "“七厘散！跌打刀伤的圣药！”",
+          "patience": 3,
+          "lie_rate": 0.7,
+          "portrait_path": "characters/portraits_256/npc_connoisseur_256.png"
+        },
+        {
+          "id": "C125",
+          "name": "张拉车",
+          "job": "人力车夫",
+          "appearance": "满身尘土，拉着空洋车",
+          "speech_style": "“一趟一两银子”",
+          "patience": 3,
+          "lie_rate": 0.1,
+          "portrait_path": "characters/portraits_256/npc_commoner_256.png"
+        },
+        {
+          "id": "C90",
+          "name": "教民王约翰",
+          "job": "教民",
+          "appearance": "辫子盘进帽子，脸上抹了锅灰",
+          "speech_style": "“就求您一宿”",
+          "patience": 3,
+          "lie_rate": 0,
+          "portrait_path": "characters/portraits_256/npc_commoner_256.png"
+        },
+        {
+          "id": "C116",
+          "name": "K&Co.梁买办",
+          "job": "洋行买办",
+          "appearance": "西装外头套马褂",
+          "speech_style": "“不是当价，是租钱”",
+          "patience": 4,
+          "lie_rate": 0.6,
+          "portrait_path": "characters/portraits_256/npc_comprador_256.png"
+        },
+        {
+          "id": "C117",
+          "name": "粥棚里的孩子（教民孤儿）",
+          "job": "孤儿",
+          "appearance": "脖子挂红绳，坠小铜十字",
+          "speech_style": "不说话",
+          "patience": 1,
+          "lie_rate": 0,
+          "portrait_path": "characters/portraits_256/npc_commoner_256.png"
+        },
+        {
+          "id": "C119",
+          "name": "苏三娘",
+          "job": "绣娘",
+          "appearance": "拉着十五六岁的闺女",
+          "speech_style": "“我得把闺女送出去”",
+          "patience": 3,
+          "lie_rate": 0.1,
+          "portrait_path": "characters/portraits_256/npc_commoner_256.png"
+        }
+      ],
+      "schedule_days": [
+        {
+          "天": "1",
+          "农历": "五月十五",
+          "主题": "拳民进城",
+          "固定客人": "史密斯、二师兄、随机×5",
+          "教学/玩法重点": "战时定价；“二毛子货”风险",
+          "事件": "拳民焚烧教堂；城里洋货一夜之间成了祸根"
+        },
+        {
+          "天": "2~4",
+          "农历": "五月十六～十八",
+          "主题": "乱",
+          "固定客人": "骗子、沈墨（3，夜）、小栓（4）、红灯照姑娘（4）",
+          "教学/玩法重点": "趁乱骗局；钦差路线；劝小栓；灯油捐",
+          "事件": "红灯照过街（4）"
+        },
+        {
+          "天": "5",
+          "农历": "五月十九",
+          "主题": "金条",
+          "固定客人": "张太太、骗子",
+          "教学/玩法重点": "金条称重",
+          "事件": "旗人家眷开始逃"
+        },
+        {
+          "天": "6",
+          "农历": "五月二十",
+          "主题": "刘头",
+          "固定客人": "刘头",
+          "教学/玩法重点": "收留抉择；小顺子5-1 质问刘头",
+          "事件": "拳民在街上搜“二毛子”"
+        },
+        {
+          "天": "7",
+          "农历": "五月廿一",
+          "主题": "大沽",
+          "固定客人": "码头苦力",
+          "教学/玩法重点": "—",
+          "事件": "五月廿一：大沽炮台失陷（公历6/17）"
+        },
+        {
+          "天": "8",
+          "农历": "五月廿二",
+          "主题": "钱庄焚",
+          "固定客人": "钱庄伙计",
+          "教学/玩法重点": "废银票陷阱；水龙",
+          "事件": "义和钱庄被拳民焚毁"
+        },
+        {
+          "天": "9~10",
+          "农历": "五月廿三～廿四",
+          "主题": "细软",
+          "固定客人": "达大人、骗子、米贩",
+          "教学/玩法重点": "东珠（宫中流物）/蚌珠；战时米",
+          "事件": "—"
+        },
+        {
+          "天": "11",
+          "农历": "五月廿五",
+          "主题": "宣战",
+          "固定客人": "吴二",
+          "教学/玩法重点": "—",
+          "事件": "五月廿五：朝廷向各国宣战（公历6/21）"
+        },
+        {
+          "天": "12",
+          "农历": "五月廿六",
+          "主题": "钱掌柜",
+          "固定客人": "钱掌柜",
+          "教学/玩法重点": "寄存/联手",
+          "事件": "钱掌柜的铺子被烧"
+        },
+        {
+          "天": "13~14",
+          "农历": "五月廿七～廿八",
+          "主题": "溃兵",
+          "固定客人": "张拉车、胡郎中、溃兵（13）；赵太太、王约翰、梁买办（14，傍晚/夜）",
+          "教学/玩法重点": "挪库存；识破假七厘散；地窖；藏教民；代藏军火",
+          "事件": "紫竹林租界激战"
+        },
+        {
+          "天": "15~17",
+          "农历": "五月廿九～六月初一",
+          "主题": "托付",
+          "固定客人": "慧明、德五爷、小菊仙",
+          "教学/玩法重点": "托存品（不可转卖）",
+          "事件": "—"
+        },
+        {
+          "天": "18",
+          "农历": "六月初二",
+          "主题": "马三",
+          "固定客人": "马三",
+          "教学/玩法重点": "—",
+          "事件": "—"
+        },
+        {
+          "天": "19",
+          "农历": "六月初三",
+          "主题": "围城·号衣",
+          "固定客人": "德五爷、教民孤儿",
+          "教学/玩法重点": "施粥；藏孩子",
+          "事件": "城外炮声日夜不停"
+        },
+        {
+          "天": "⏩",
+          "农历": "六月初四",
+          "主题": "闭门",
+          "固定客人": "—",
+          "教学/玩法重点": "跳过一日（不营业）",
+          "事件": "炮火连天，上板闭门"
+        },
+        {
+          "天": "20",
+          "农历": "六月初五",
+          "主题": "来信",
+          "固定客人": "邮差",
+          "教学/玩法重点": "孙秀才来信",
+          "事件": "—"
+        },
+        {
+          "天": "21",
+          "农历": "六月初六",
+          "主题": "老龙头",
+          "固定客人": "达大人（县衙卷宗）、小栓（伤号）",
+          "教学/玩法重点": "卷宗处置；救小栓",
+          "事件": "老龙头火车站激战"
+        },
+        {
+          "天": "22",
+          "农历": "六月初七",
+          "主题": "俄国兵",
+          "固定客人": "俄国兵",
+          "教学/玩法重点": "联军赃物",
+          "事件": "—"
+        },
+        {
+          "天": "23",
+          "农历": "六月初八",
+          "主题": "嫁衣",
+          "固定客人": "苏三娘、骗子（假路条）",
+          "教学/玩法重点": "识破假路条；夜里炮火抢救",
+          "事件": "炮弹落进城里；夜里后院中弹"
+        },
+        {
+          "天": "⏩",
+          "农历": "六月初九",
+          "主题": "闭门",
+          "固定客人": "—",
+          "教学/玩法重点": "跳过一日（不营业）",
+          "事件": "炮火连天，上板闭门"
+        },
+        {
+          "天": "24",
+          "农历": "六月初十",
+          "主题": "青花罐",
+          "固定客人": "古董商、骗子",
+          "教学/玩法重点": "图谱真假对比",
+          "事件": "—"
+        },
+        {
+          "天": "25",
+          "农历": "六月十一",
+          "主题": "围城",
+          "固定客人": "随机（第19~25天合计×40）",
+          "教学/玩法重点": "保库开销",
+          "事件": "—"
+        },
+        {
+          "天": "26",
+          "农历": "六月十二",
+          "主题": "仇人",
+          "固定客人": "胡二爷",
+          "教学/玩法重点": "胡二爷当东西；小顺子5-2 门帘后",
+          "事件": "—"
+        },
+        {
+          "天": "27",
+          "农历": "六月十三",
+          "主题": "八里台",
+          "固定客人": "林生",
+          "教学/玩法重点": "—",
+          "事件": "六月十三：聂士成战死八里台（公历7/9）"
+        },
+        {
+          "天": "⏩",
+          "农历": "六月十四",
+          "主题": "闭门",
+          "固定客人": "—",
+          "教学/玩法重点": "跳过一日（不营业）",
+          "事件": "炮火连天，上板闭门"
+        },
+        {
+          "天": "28",
+          "农历": "六月十五",
+          "主题": "开匣",
+          "固定客人": "沈墨（或独自）",
+          "教学/玩法重点": "木匣真相揭晓",
+          "事件": "—"
+        },
+        {
+          "天": "⏩",
+          "农历": "六月十六",
+          "主题": "闭门",
+          "固定客人": "—",
+          "教学/玩法重点": "跳过一日（不营业）",
+          "事件": "炮火连天，上板闭门"
+        },
+        {
+          "天": "29",
+          "农历": "六月十七",
+          "主题": "库房",
+          "固定客人": "胡二爷（夜）",
+          "教学/玩法重点": "最后的对峙；小顺子5-3 库房高光抉择",
+          "事件": "—"
+        },
+        {
+          "天": "30",
+          "农历": "六月十八",
+          "主题": "城陷",
+          "固定客人": "梅德兰",
+          "教学/玩法重点": "护铺；保库判定",
+          "事件": "六月十八：天津城陷（公历7/14）"
+        },
+        {
+          "天": "31",
+          "农历": "六月十九",
+          "主题": "劫后",
+          "固定客人": "联军士兵",
+          "教学/玩法重点": "联军抢掠；结局判定",
+          "事件": "六月十九：联军入城，大掠三日"
+        }
+      ]
+    }
+  ]
+}
