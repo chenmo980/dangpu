@@ -1,0 +1,38 @@
+[
+  {
+    "id": "ending_grade_a",
+    "grade": "A",
+    "title": "甲等·金字招牌",
+    "desc": "财源广进、宾客盈门",
+    "file": "endings/ending_grade_a.png",
+    "width": 647,
+    "height": 346
+  },
+  {
+    "id": "ending_grade_b",
+    "grade": "B",
+    "title": "乙等·守成持业",
+    "desc": "账目井然、安稳度日",
+    "file": "endings/ending_grade_b.png",
+    "width": 647,
+    "height": 346
+  },
+  {
+    "id": "ending_grade_c",
+    "grade": "C",
+    "title": "丙等·官府查封",
+    "desc": "夜雨贴封、衙役锁门",
+    "file": "endings/ending_grade_c.png",
+    "width": 647,
+    "height": 347
+  },
+  {
+    "id": "ending_grade_d",
+    "grade": "D",
+    "title": "丁等·人去楼空",
+    "desc": "月冷空架、散落当票",
+    "file": "endings/ending_grade_d.png",
+    "width": 647,
+    "height": 347
+  }
+]

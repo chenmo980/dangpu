@@ -7,7 +7,9 @@
     "sprite_256": "npc_commoner_256.png",
     "headshot_64": "npc_commoner_head64.png",
     "sprite_angry_128": "portraits_angry_128/npc_commoner_angry_128.png",
-    "sprite_angry_256": "portraits_angry_256/npc_commoner_angry_256.png"
+    "sprite_angry_256": "portraits_angry_256/npc_commoner_angry_256.png",
+    "sprite_happy_128": "portraits_happy_128/npc_commoner_happy_128.png",
+    "sprite_happy_256": "portraits_happy_256/npc_commoner_happy_256.png"
   },
   {
     "id": "npc_prodigal",
@@ -17,7 +19,9 @@
     "sprite_256": "npc_prodigal_256.png",
     "headshot_64": "npc_prodigal_head64.png",
     "sprite_angry_128": "portraits_angry_128/npc_prodigal_angry_128.png",
-    "sprite_angry_256": "portraits_angry_256/npc_prodigal_angry_256.png"
+    "sprite_angry_256": "portraits_angry_256/npc_prodigal_angry_256.png",
+    "sprite_happy_128": "portraits_happy_128/npc_prodigal_happy_128.png",
+    "sprite_happy_256": "portraits_happy_256/npc_prodigal_happy_256.png"
   },
   {
     "id": "npc_outlaw",
@@ -27,7 +31,9 @@
     "sprite_256": "npc_outlaw_256.png",
     "headshot_64": "npc_outlaw_head64.png",
     "sprite_angry_128": "portraits_angry_128/npc_outlaw_angry_128.png",
-    "sprite_angry_256": "portraits_angry_256/npc_outlaw_angry_256.png"
+    "sprite_angry_256": "portraits_angry_256/npc_outlaw_angry_256.png",
+    "sprite_happy_128": "portraits_happy_128/npc_outlaw_happy_128.png",
+    "sprite_happy_256": "portraits_happy_256/npc_outlaw_happy_256.png"
   },
   {
     "id": "npc_yamen",
@@ -37,7 +43,9 @@
     "sprite_256": "npc_yamen_256.png",
     "headshot_64": "npc_yamen_head64.png",
     "sprite_angry_128": "portraits_angry_128/npc_yamen_angry_128.png",
-    "sprite_angry_256": "portraits_angry_256/npc_yamen_angry_256.png"
+    "sprite_angry_256": "portraits_angry_256/npc_yamen_angry_256.png",
+    "sprite_happy_128": "portraits_happy_128/npc_yamen_happy_128.png",
+    "sprite_happy_256": "portraits_happy_256/npc_yamen_happy_256.png"
   },
   {
     "id": "npc_connoisseur",
@@ -47,7 +55,9 @@
     "sprite_256": "npc_connoisseur_256.png",
     "headshot_64": "npc_connoisseur_head64.png",
     "sprite_angry_128": "portraits_angry_128/npc_connoisseur_angry_128.png",
-    "sprite_angry_256": "portraits_angry_256/npc_connoisseur_angry_256.png"
+    "sprite_angry_256": "portraits_angry_256/npc_connoisseur_angry_256.png",
+    "sprite_happy_128": "portraits_happy_128/npc_connoisseur_happy_128.png",
+    "sprite_happy_256": "portraits_happy_256/npc_connoisseur_happy_256.png"
   },
   {
     "id": "npc_comprador",
@@ -57,7 +67,9 @@
     "sprite_256": "npc_comprador_256.png",
     "headshot_64": "npc_comprador_head64.png",
     "sprite_angry_128": "portraits_angry_128/npc_comprador_angry_128.png",
-    "sprite_angry_256": "portraits_angry_256/npc_comprador_angry_256.png"
+    "sprite_angry_256": "portraits_angry_256/npc_comprador_angry_256.png",
+    "sprite_happy_128": "portraits_happy_128/npc_comprador_happy_128.png",
+    "sprite_happy_256": "portraits_happy_256/npc_comprador_happy_256.png"
   },
   {
     "id": "npc_rival",
@@ -67,7 +79,9 @@
     "sprite_256": "npc_rival_256.png",
     "headshot_64": "npc_rival_head64.png",
     "sprite_angry_128": "portraits_angry_128/npc_rival_angry_128.png",
-    "sprite_angry_256": "portraits_angry_256/npc_rival_angry_256.png"
+    "sprite_angry_256": "portraits_angry_256/npc_rival_angry_256.png",
+    "sprite_happy_128": "portraits_happy_128/npc_rival_happy_128.png",
+    "sprite_happy_256": "portraits_happy_256/npc_rival_happy_256.png"
   },
   {
     "id": "npc_lady",
@@ -77,6 +91,8 @@
     "sprite_256": "npc_lady_256.png",
     "headshot_64": "npc_lady_head64.png",
     "sprite_angry_128": "portraits_angry_128/npc_lady_angry_128.png",
-    "sprite_angry_256": "portraits_angry_256/npc_lady_angry_256.png"
+    "sprite_angry_256": "portraits_angry_256/npc_lady_angry_256.png",
+    "sprite_happy_128": "portraits_happy_128/npc_lady_happy_128.png",
+    "sprite_happy_256": "portraits_happy_256/npc_lady_happy_256.png"
   }
 ]

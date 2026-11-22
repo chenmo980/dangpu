@@ -70,5 +70,21 @@
     "width": 123,
     "height": 128,
     "usage": "右侧铜油灯动态火苗第2帧（与 f1 交替 4-6 FPS 闪烁）"
+  },
+  {
+    "id": "event_yamen_seal_strip",
+    "name": "官府查抄封条",
+    "file": "ui_kit/event_yamen_seal_strip.png",
+    "width": 192,
+    "height": 192,
+    "usage": "官府查抄或丙等触发时贴在木窗/店门上的朱砂交叉封条"
+  },
+  {
+    "id": "event_buyer_bubble",
+    "name": "求购心愿气泡",
+    "file": "ui_kit/event_buyer_bubble.png",
+    "width": 192,
+    "height": 192,
+    "usage": "求购客(T1)头顶/窗旁展示心仪品类与出价的心愿气泡框"
   }
 ]

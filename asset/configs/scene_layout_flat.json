@@ -65,5 +65,16 @@
       1360,
       760
     ]
+  },
+  "title_screen_cover": "scenes/title_screen_cover_hd.png",
+  "weather_variants": {
+    "snow_night": {
+      "bg": "scenes/bg_alley_hd_snow.png",
+      "fg": "scenes/fg_interior_flat_night_hd.png"
+    },
+    "rain_day": {
+      "bg": "scenes/bg_alley_hd_rain.png",
+      "fg": "scenes/fg_interior_hd_day.png"
+    }
   }
 }
